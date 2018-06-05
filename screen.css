@@ -9,11 +9,11 @@ body {
 	font-size:90%;
 }
 a {
-	color:#369;
+	color:#000;
 }
 a:hover {
 	color:#fff;
-	background:#369;
+	background:#000;
 	text-decoration:none;
 }
 h1, h2, h3, h4 {
