@@ -12,11 +12,6 @@ body {
 a {
 	color:#000;
 }
-a:hover {
-	color:#fff;
-	background:#000;
-	text-decoration:none;
-}
 h2 {
 	color:#369;
 }
@@ -24,6 +19,9 @@ h2 {
 	color:#369;
 }
 #pdf {
+	color:#c00;
+}
+#external {
 	color:#c00;
 }
 #arxiv {
