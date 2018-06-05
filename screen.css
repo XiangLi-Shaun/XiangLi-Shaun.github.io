@@ -17,6 +17,12 @@ a:hover {
 	background:#000;
 	text-decoration:none;
 }
+h2 {
+	color:#369;
+}
+#datetime {
+	color:#369;
+}
 h1, h2, h3, h4 {
 	margin:.8em 0 .2em 0;
 	padding:0;
