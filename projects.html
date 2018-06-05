@@ -47,20 +47,33 @@
 		<td><figcaption align="center">Semantic segmentation results by U-Net and dU-Net. Different colors indicate different RBC types. Deformed sampling locations centered at the red points are shown to the right.</figcaption></td></tr>
 		</table>
 		<h3 align="justify" id="SCD_paper">Related publication:</h3>
-		<h4 align="justify">A summary of dU-Net and the preliminary results has been accepted by MICCAI 2018, which is also at <a href="https://arxiv.org/abs/1711.00049">arXiv</a>.</h4>
+		<h4 align="justify">A summary of dU-Net and the preliminary results has been accepted by MICCAI 2018, which is also at <a href="https://arxiv.org/abs/1710.08149" id="arxiv">arXiv</a>.</h4>
 		<h3 align="justify" id="SCD_code">Source code:</h3>
 		<h4 align="justify">Source code of 2D/3D dU-Net can be found at GitHub links: <a href="https://github.com/XiangLi-Shaun/deformableConvolution_3D">3D deformable convolution network</a> and <a href="https://github.com/XiangLi-Shaun/deformableConvolution_2D">2D deformable convolution network.</a></h4>
 		<br /><hr><br />
 		<h2 id="PMX">Pneumothorax prescreening on CT images:</h2>
 		<h4 align="justify">Pneumothorax is a potentially life threatening condition characterized by the abnormal presence of free air in the thorax. Tension pneumothorax is widely considered an emergent critical finding, that requires special communication of the imaging results. For the detection of pneumothorax, timeliness can be challenging when chest CT examinations cannot be reviewed by the radiologists immediately. To address this chanllege, at <a href="https://www.massgeneral.org/Imaging/">MGH Radiology</a> and <a href="https://www.ccds.io/">MGH/BWH Center for Clinical Data Science</a> we are building a deep learning-enabled system to autmatically detect the presence of pneumothorax on chest CT imagesupon completion of scanning. The system can alert the radiologists and other attending providers to reprioritize the CT work list for cases likely to harbor a pneumothorax. </h4>
-		<p align="center"><img src="./img/project_PMX01.png" /></p>
+		<p align="center"><img src="./img/project_PMX01.png"  height="250"/></p>
 		<figcaption align="center">Illustration of the need for a rapid screening system to re-prioritizing the work list for hospital management.</figcaption>
 		<h4 align="justify">The pilot system has been tested in a pseudo-online manner with perfect sensitivity, illustrated in the figures below. The system will be further integrated into the clinical workflow at the point of completion of each chest CT scan, making it useful for patients with pre-existing chest diseases that place them at higher risk for pneumothorax, and for patients presenting in the emergency department for rapid triage. </h4>
-		<p align="center"><img src="./img/project_PMX02.png" /></p>
+		<p align="center"><img src="./img/project_PMX02.png"  height="250"/></p>
 		<figcaption align="center">Visualization of pneumothorax detection results (all positive) from nine patients, shown in axial view.</figcaption>
 		<h3 align="justify" id="PMX_news">Media coverage:</h3>
 		<h4>Presentation of the system in ARRS 2018 is covered by auntminnie, the report can be found <a href="https://www.auntminnie.com/index.aspx?sec=sup&sub=aic&pag=dis&ItemID=120691&wf=7612">here</a>.</h4>
 		<h4>This project is among the four finalist of the 2018 NVIDIA Global Impact Award, detailed information can be found <a href="https://blogs.nvidia.com/blog/2018/02/26/ai-radiology-machine-learning-global-impact-awards/">here.</a></h4>		
+		<br /><hr><br />
+		<h2 id="MM">Multi-modal medical image analysis:</h2>
+		<h4 align="justify">Multi-modality medical imaging techniques have been increasingly applied in clinical practice and research studies, where it has been well-recognized that multi-modal imaging can reveal rich information of the imaging target. In this study at <a href="https://www.massgeneral.org/Imaging/">MGH Radiology</a> and <a href="https://www.ccds.io/">MGH/BWH Center for Clinical Data Science</a>, we are exploring how it can help advancing the accuracy and robustness for computer aided detection in a systemtic framework.</h4>
+		<p align="center"><img src="./img/project_MM01.png"  height="250"/></p>
+		<figcaption align="center">Multi-modal images on the same target location. (a): PET; (b): CT; (c): T1; (d): T2.</figcaption>
+		 <h4 align="justify">We first proposed an algorithmic architecture for supervised multi-modal medical analysis strategies: the feature learning level fusion, classifier level fusion, and decision-making level fusion. Then based on this algorithmic architecture, we built multi-modal Convolutional Neural Networks (CNN) that performs fusion across CT, MR and PET images at various stages. </h4>
+		 <p align="center"><img src="./img/project_MM02.png"  height="350"/></p>
+		<figcaption align="center">Illustration of the structure for networks with different fusion level. The yellow arrows indicate the fusion location.</figcaption>
+		 <h4 align="justify">For the task of detecting and segmenting Soft Tissue Sarcoma, multi-modal deep learning system shows much superior performance than single-modal systems, even using images of lowered quality. The capability of maintaining high segmentation accuracy on low-dose images with added modality of the proposed system provides a new perspective in medical image acquisition and analysis.</h4>
+		<p align="center"><img src="./img/project_MM03.png"  height="250"/></p>
+		<figcaption align="center">(a) Ground truth shown as yellow contour line overlaid on the T2 image. (b) Result from fusion network based on PET+CT+T1. (c) Result from single-modality network based on T2. (d-f) Results from single-modality network based on PET, CT and T1, respectively.</figcaption>
+		<h3 align="justify" id="MM_paper">Related publication:</h3>
+		<h4 align="justify">Our paper on the study of multimodal fusion schemes has been accepted by ISBI 2018, which is also at <a href="https://arxiv.org/abs/1711.00049" id="arxiv">arXiv</a>.</h4>
 		</div>
 		<div class="col2">
 		<h3><a href="#SCD">RBC Semantic Segmentation</a></h3>
@@ -72,7 +85,10 @@
 		<ul>
 			<li><h4><a href="#PMX_news">Media coverage</a></h4></li>
 		</ul>
-			
+		<h3><a href="#MM">Multi-modal Imaging</a></h3>
+		<ul>
+			<li><h4><a href="#MM_paper">Related publication</a></h4></li>
+		</ul>		
 		</div>
 	</div>
 </div>
