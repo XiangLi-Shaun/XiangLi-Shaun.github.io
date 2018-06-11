@@ -27,9 +27,7 @@
 		<li><a href="index.html">About Me</a></li>
 		<li><a href="publication.html">Publications</a></li>
 		<li><a href="projects.html">Projects</a></li>
-		
 	</ul>
-	<p id="layoutdims">......</p>
 </div>
 <div class="colmask leftmenu">
 	<div class="colleft">
@@ -74,11 +72,17 @@
 		<figcaption align="center">(a) Ground truth shown as yellow contour line overlaid on the T2 image. (b) Result from fusion network based on PET+CT+T1. (c) Result from single-modality network based on T2. (d-f) Results from single-modality network based on PET, CT and T1, respectively.</figcaption>
 		<h3 align="justify" id="MM_paper">Related publication:</h3>
 		<h4 align="justify">Our paper on the study of multimodal fusion schemes has been accepted by ISBI 2018, which is also at <a href="https://arxiv.org/abs/1711.00049" id="arxiv">arXiv</a>.</h4>
-		
 		<h2 id="spCNN">Self-paced learning for convolutional neural network (spCNN):</h2>
-		<h4 align="justify">The development of a robust and reliable deep learning model for computer-aided diagnosis (CAD) is highly challenging due to the combination of the high heterogeneity in the medical images and the relative lack of training samples. Annotation and labeling of the medical images is much more expensive and time-consuming than other applications (e.g. natrual images) and often involves manual labor from multiple domain experts.  In this collaborative work between <a href="https://www.ccds.io/">MGH/BWH Center for Clinical Data Science</a> and Prof. Jieping Ye's group at <a href="https://medicine.umich.edu/dept/computational-medicine-bioinformatics/">Department of Computational Medicine and Bioinformatic at University of Michigan</a>, we developed multi-stage, self-paced learning framework utilizing a convolutional neural network (CNN). The key contribution of this approach is that we augment the size of training samples by refining the unlabeled instances with a self-paced learning framework. Experimental result shows that the self-pace boosted network consistently makes good prediciton with very scarce manual labels. The performance gain indicates that applications with limited training samples such as medical image analysis can benefit from self-paced learning.
-		<p align="center"><img src="./img/project_spCNN02.png"  height="250"/></p>
-		<figcaption align="center">Comparison of the classification accuracies among the raw CNN (last row) and spCNN under different significant levels (I for <i>p</i>=0.1, II for <i>p</i>=0.05 and III for <i>p</i>=0.025) for FDR-controlled statistical testing.</figcaption>
+		<h4 align="justify">The development of a robust and reliable deep learning model for computer-aided diagnosis (CAD) is highly challenging due to the combination of the high heterogeneity in the medical images and the relative lack of training samples. Annotation and labeling of the medical images is much more expensive and time-consuming than other applications (e.g. natrual images) and often involves manual labor from multiple domain experts.  In this collaborative work between <a href="https://www.ccds.io/">MGH/BWH Center for Clinical Data Science</a> and Prof. Jieping Ye's group at <a href="https://medicine.umich.edu/dept/computational-medicine-bioinformatics/">Department of Computational Medicine and Bioinformatic at University of Michigan</a>, we developed multi-stage, self-paced learning framework utilizing a convolutional neural network (CNN).</h4>
+		<Table><tr align="center"><td><img src="./img/project_spCNN01.png" height="200"/></td><td><img src="./img/project_spCNN02.png" height="200"/></td></tr>
+		<tr><td><figcaption align="center">Left: Illustration of the conventional CNN approach of performing image classification. Right: Illustration of the spCNN framework consists of the main Classification Module similar to the conventional approach, and the Bootstrapping Module which provides the extra training data through virtual sample selection based on the bootstrapping CNNs performed on the new unlabeled data.</figcaption></td>
+		<td><figcaption align="center">Six sample image patches from each of the 3 classes.</td></tr>
+		</table>
+		<h4>The key contribution of this approach is that we augment the size of training samples by refining the unlabeled instances with a self-paced learning framework. Experimental result shows that the self-pace boosted network consistently makes good prediciton with very scarce manual labels. The performance gain indicates that applications with limited training samples such as medical image analysis can benefit from self-paced learning.</h4>
+		<Table><tr align="center"><td><img src="./img/project_spCNN03.png" height="200"/></td><td><img src="./img/project_spCNN04.png" height="200"/></td></tr>
+		<tr><td><figcaption align="center">Illustration of the 10-folds bootstrapping results of the new data on 3 example image patches. Captions of the table columns (I, II and III) indicate the prediction probability of the given patch belonging to the corresponding class.</figcaption></td>
+		<td><figcaption align="center">Comparison of the classification accuracies among the raw CNN (last row) and spCNN under different significant levels (I for <i>p</i>=0.1, II for <i>p</i>=0.05 and III for <i>p</i>=0.025) for FDR-controlled statistical testing.</td></tr>
+		</table>
 		<h3 align="justify" id="spCNN_paper">Related publication:</h3>
 		<h4 align="justify">A summary of the methodology and preliminary resutls from applying spCNN on chest Computed Tomography (CT) images has been accepted by MLMI 2018, which is also at <a href="https://arxiv.org/abs/1707.06145" id="arxiv">arXiv</a>.</h4>
 		</div>
