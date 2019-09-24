@@ -24,6 +24,9 @@ h2 {
 #external {
 	color:#c00;
 }
+#publisher {
+	font-style: italic;
+}
 #arxiv {
 	color:#c00;
 }
