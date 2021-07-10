@@ -131,6 +131,14 @@ img {
 	padding:0 0 1em 0;
 	overflow:hidden;
 }
+.col4 {
+	float:left;
+	position:relative;
+	padding:0 0 1em 0;
+	overflow:hidden;
+	font-size:90%;
+	font-family: "Palatino Linotype", Georgia, Arial;
+}
 /* 2 Column (left menu) settings */
 .leftmenu {
 	background:#fff;		/* right column background colour */
@@ -144,6 +152,10 @@ img {
 	left:102%;			/* 100% plus left column left padding */
 }
 .leftmenu .col2 {
+	width:21%;			/* left column content width (column width minus left and right padding) */
+	left:6%;			/* (right column left and right padding) plus (left column left padding) */
+}
+.leftmenu .col4 {
 	width:21%;			/* left column content width (column width minus left and right padding) */
 	left:6%;			/* (right column left and right padding) plus (left column left padding) */
 }
