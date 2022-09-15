@@ -9,6 +9,11 @@ body {
 	font-size:90%;
 	font-family: "Palatino Linotype", Georgia, Arial;
 }
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+	text-align: center;
+  }
 a {
 	color:#000;
 }
