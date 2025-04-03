@@ -1,510 +1,783 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<title>Xiang "Shaun" Li, Assistant Professor, Massachusetts General Hospital and Harvard Medical School</title>
-	<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
-	<meta name="description" content="Xiang Shaun Li, Assistant Professor, Massachusetts General Hospital and Harvard Medical School" />
-	<meta name="keywords" content="Xiang Li, Boston, MGH, HMS, Harvard" />
-	<meta name="robots" content="index, follow" />
-	<link rel="stylesheet" type="text/css" href="./screen.css" media="screen" />
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-140374480-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <meta charset="UTF-8">
+  <title>Xiang "Shaun" Li, Assistant Professor, Massachusetts General Hospital and Harvard Medical School</title>
 
-  gtag('config', 'UA-140374480-1');
-</script>
+  <!-- Import two fonts:
+       1) Montserrat Black for large headings
+       2) Source Code Pro for body text (monospace) -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Source+Code+Pro:wght@400;700&display=swap" 
+    rel="stylesheet"
+  >
+
+  <style>
+    /* -----------------------------------------------------
+       BASE STYLES & RESET
+    ------------------------------------------------------ */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html, body {
+      height: 100%;
+    }
+    body {
+      /* White background */
+      background: #ffffff;
+      /* Use monospace for body text */
+      font-family: 'Source Code Pro', monospace;
+      /* Black-themed body text */
+      color: #111111;
+      line-height: 1.6;
+      padding: 20px;
+    }
+
+    /* CSS Variables for easier theming */
+    :root {
+      --accent-color: #8ae234;         /* Terminal-like green */
+      --accent-color-light: #b3f75e;   /* Lighter hover shade */
+      --border-color: #dddddd;         /* Light border lines */
+      --bg-card: #fafafa;             /* Light card background */
+      --heading-color: #000000;       /* Headings in deep black */
+    }
+
+    /* -----------------------------------------------------
+       LINKS & GENERAL ELEMENTS
+    ------------------------------------------------------ */
+    a {
+      color: var(--accent-color);
+      text-decoration: none;
+      transition: color 0.2s ease-in-out;
+    }
+    a:hover {
+      color: var(--accent-color-light);
+      text-decoration: underline;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid var(--border-color);
+      margin: 30px 0;
+    }
+
+    /* -----------------------------------------------------
+       WRAPPER / CONTAINERS
+    ------------------------------------------------------ */
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    /* -----------------------------------------------------
+       HEADER
+    ------------------------------------------------------ */
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+      border-bottom: 2px solid var(--border-color);
+    }
+    /* Heaviest weight heading font */
+    header h1 {
+      font-size: 2rem;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 900;  /* black-style font weight */
+      color: var(--heading-color);
+      letter-spacing: -1px; /* optional slight tightening */
+    }
+    nav a {
+      margin-left: 20px;
+      font-weight: 700;
+    }
+
+    /* -----------------------------------------------------
+       SECTION TITLES
+    ------------------------------------------------------ */
+    h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 900;
+      font-size: 1.5rem;
+      color: var(--heading-color);
+      margin-bottom: 15px;
+      border-bottom: 2px dashed var(--accent-color);
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    /* -----------------------------------------------------
+       ABOUT SECTION
+    ------------------------------------------------------ */
+    #about p {
+      margin-bottom: 20px;
+      font-size: 1rem;
+    }
+
+    /* -----------------------------------------------------
+       UPDATES / BLOG-LIKE SECTION
+    ------------------------------------------------------ */
+    .updates {
+      margin-bottom: 40px;
+    }
+    .update {
+      margin-bottom: 20px;
+      padding: 15px;
+      background: var(--bg-card);
+      border-left: 5px solid var(--accent-color);
+      border-radius: 4px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+      transition: transform 0.2s ease;
+	  
+    }
+    .update:hover {
+      transform: translateY(-2px);
+    }
+    .update-date {
+      font-size: 0.9rem;
+      color: #555555;
+      margin-bottom: 8px;
+    }
+    .update p {
+      font-size: 1rem;
+      color: #222222;
+    }
+
+    /* -----------------------------------------------------
+       PUBLICATIONS
+    ------------------------------------------------------ */
+    .publications .publication {
+      margin-bottom: 15px;
+      padding: 15px;
+      background: var(--bg-card);
+      border-left: 5px solid var(--accent-color);
+      border-radius: 4px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+      transition: transform 0.2s ease;
+    }
+    .publications .publication:hover {
+      transform: translateY(-2px);
+    }
+    .publications strong {
+      color: var(--accent-color);
+      font-weight: 700;
+    }
+    .publications a {
+      font-size: 0.95rem;
+    }
+
+    /* -----------------------------------------------------
+       FOOTER
+    ------------------------------------------------------ */
+    footer {
+      margin-top: 50px;
+      padding-top: 20px;
+      border-top: 2px solid var(--border-color);
+      text-align: center;
+      font-size: 0.9rem;
+      color: #666666;
+    }
+    footer p {
+      margin-bottom: 10px;
+    }
+    footer a {
+      margin: 0 5px;
+    }
+
+	.collapsible.collapsed {
+  max-height: 800px; /* Adjust this height to show a few updates initially */
+  overflow: hidden;
+  position: relative;
+  transition: max-height 0.4s ease-in-out;
+  /*overflow-y: scroll;*/      /* Always show vertical scrollbar */
+}
+
+.collapsible.expanded {
+  max-height: 999999px;
+  
+}
+
+#toggle-updates {
+  display: inline-block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: var(--accent-color, #8ae234);
+  cursor: pointer;
+  font-family: 'Source Code Pro', monospace;
+}
+
+.update::-webkit-scrollbar {
+  width: 8px;
+}
+
+.update::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+
+.update::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.about-bio {
+  flex: 1 1 40%;
+}
+
+.about-contact {
+  flex: 1 1 35%;
+  background: #f9f9f9;
+  padding: 20px;
+  border-left: 4px solid #111111;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.about-contact h3 {
+  margin-bottom: 10px;
+}
+
+.about-contact p {
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+}
+
+.about-links {
+  list-style-type: none;
+  padding-left: 0;
+  font-size: 0.95rem;
+}
+
+.about-links li {
+  margin-bottom: 8px;
+}
+
+.about-list {
+  padding-left: 1.2rem;
+  margin: 15px 0;
+}
+
+.about-list li {
+  margin-bottom: 10px;
+}
+  </style>
+  
 </head>
+
 <body>
 
-<div id="header">
-	<h3>Xiang "Shaun" Li, Assistant Professor, Massachusetts General Hospital and Harvard Medical School</h3>
-	<ul>
-		<li> a </li>
-		<li><a href="index.html">About Me</a></li>
-		<li><a href="publication.html">Publications</a></li>
-		<li><a href="projects.html">Projects</a></li>
-		<li><a href="AIxMed.html">AIxMed Seminar</a></li>
-	</ul>
-</div>
-<div class="colmask leftmenu">
-	<div class="colleft">
-		<div class="col1">
+  <div class="container">
+    <!-- HEADER -->
+    <header>
+      <h1>Xiang Li</h1>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#updates">Updates</a>
+        <a href="#publications">Publications</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
 
-		<h3 id="datetime">December 30th, 2023</h3>
-		<h4>Started serving as the Associate Editor for <a href="https://direct.mit.edu/dint/" id="external">Data Intelligence</a>.
-		</h4>				
-		
-		<h3 id="datetime">December 18th, 2023</h3>
-		<h4>Started serving as the Associate Editor for <a href="https://cis.ieee.org/publications/ieee-transactions-on-artificial-intelligence/" id="external">IEEE Transactions on Artificial Intelligence</a>.
-		</h4>			
-
-		<h3 id="datetime">December 13th, 2023</h3>
-		<h4>Our work on the development of a cyclic image to/from text model, "AdaMatch-Cyclic", is now availabl on <a href="https://arxiv.org/abs/2312.08078" id="external">arXiv</a>. In this collaborative work with Dr. Yixuan Yuan at the Chinese University of Hong Kong (CUHK), we explored the fine-grained mapping between chest x-ray images and their corresponding radiology reports and developed generative model for the image and text correspondingly. Preliminary result shows that the cyclic generation model can accurately capture word-patch relationsihp and perform effective text generation (report writing) and image generation. 
-		</h4>
-
-		<h3 id="datetime">November 10h, 2023</h3>
-		<h4>Another work from us on evaluating GPT-4v for its potential in medicine: "Multimodal ChatGPT for Medical Applications: an Experimental Study of GPT-4V", is now availabl on <a href="https://arxiv.org/abs/2312.05256" id="external">arXiv</a>. In this work, we performed a large-scale evaluation probing GPT-4V's capabilities and limitations on specialties including radiology, oncology, ophthalmology, pathology, and more. Tasks include modality recognition, anatomy localization, disease diagnosis, report generation, and lesion detection. It was found that GPT-4V is proficiency in modality and anatomy recognition but difficulty with disease diagnosis and localization. GPT-4V also excels at diagnostic report generation, indicating strong image captioning skills. While promising for biomedical imaging AI, GPT-4V requires further enhancement and validation before clinical deployment. 
-		</h4>
+    <!-- ABOUT SECTION -->
+	<section id="about" class="about-section">
+		<div class="about-container">
+		  <!-- Left Column: Bio and Services -->
+		  <div class="about-bio">
+			<p>
+			  I am an <strong>Assistant Professor</strong> at the <strong>Massachusetts General Hospital (MGH)</strong> and <strong>Harvard Medical School (HMS)</strong>, Department of Radiology, and an Affiliate Faculty Member at the <strong>Kempner Institute for Natural and Artificial Intelligence of Harvard University</strong>.
+			</p>
+			<p>
+			  I received my postdoc training at MGH/HMS under the co-mentorship of Associate Prof. <strong>Quanzheng Li</strong> and Distinguished Professor, National Academy of Medicine member <strong>James H. Thrall</strong>. I earned my Ph.D. in Computer Science from the <strong>University of Georgia</strong>, supervised by AIMBE fellow, Distinguish Prof. <strong>Tianming Liu</strong>.
+			</p>
+			<p>
+			  My primary research interest is artificial intellegnece for healthcare, with a focus on <strong>medical foundation models, <strong></strong>medical generative AI</strong>, <strong>medical informatics</strong>, <strong>counterfactual causal inference</strong>, and <strong>neuroimaging</strong>. 
+			</p>
+      <p>
+        My <a target="_blank" href="./pdf/CV_xiang.pdf">Curriculum Vitae (PDF)</a>.
+      </p>
+      <p>Visit my <a target="_blank" href="https://www.linkedin.com/in/xiang-li-11b2b99/">LinkedIn</a> for most update-to-date recruitment information.<p>
+	  
 			
-		<h3 id="datetime">November 4th, 2023</h3>
-		<h4>Our work on generative multi-view learning, "Structure Mapping Generative Adversarial Network for Multi-view Information Mapping Pattern Mining", was accepted by <i>IEEE Transactions on Pattern Analysis and Machine Intelligence</i>. In this collaborative work with Dr. Xia-An Bi from Hunan Normal University, we proposesd a Structure Mapping Generative adversarial network (SM-GAN) framework, which utilizes the consistency and complementarity of multi-view data. Compared with regular GAN, we added a structural information mapping module to model the structural information mapping from the micro-view to the macro-view. Its preprint on PubMed can be found <a href="https://pubmed.ncbi.nlm.nih.gov/37930908/" id="external">here</a>.
-		</h4>	
-
-		<h3 id="datetime">November 3rd, 2023</h3>
-		<h4>Started serving as the Associate Editor for <a href="https://bmcbiomedeng.biomedcentral.com/" id="external">BMC Biomedical Engineering</a>.
-		</h4>	
-		
-		<h3 id="datetime">October 29th, 2023</h3>
-		<h4>Our work on evaluating the medical image understanding capability of GPT-4v, "Multimodal ChatGPT for Medical Applications: an Experimental Study of GPT-4V", is now availabl on <a href="https://arxiv.org/abs/2310.19061" id="external">arXiv</a>. In this work, we found that the current version of GPT-4V is not recommended for real-world diagnostics due to its unreliable and suboptimal accuracy in responding to diagnostic medical questions. In addition, we delineate seven unique facets of GPT-4V's behavior in medical VQA task, highlighting its constraints within this complex arena. The paper has been recommended by Hugging Face <a href="https://huggingface.co/papers?date=2023-10-31">>here</a>.
-		</h4>	
-
-		<h3 id="datetime">October 20th, 2023</h3>
-		<h4>Our work on graph transformer representation of dynamic brain imaging data, "Large-scale Graph Representation Learning of Dynamic Brain Connectome with Transformers", was accepted by <i>NeurIPS 2023 Temporal Graph Learning Workshop</i>. In this collaborative work with Dr. Byung-Hoon Kim from Yonsei University College of Medicine, we developed a representation learning framework for modeling dynamic functional connectivity with graph transformers. By the novel "connectome embedding" concept developed in this work, we are able to characterize the position, structure, and time information of the functional connectivity graph within an integrated embedding. Experiment results from multiple fMRI datasets show state-of-the-art performance of the proposed framework in gender classification and age regression tasks. Its OpenReview link can be found <a href="https://openreview.net/forum?id=WvFHDkIhmp" id="external">here</a>.
-		</h4>	
-
-		<h3 id="datetime">October 13th, 2023</h3>
-		<h4>Our work on knowledge graph discovery from unstructured text data, "Coarse-to-fine Knowledge Graph Domain Adaptation based on Distantly-supervised Iterative Training", was accepted by <i>IEEE International Conference on Bioinformatics and Biomedicine 2023 (BIBM 2023)</i>. In this collaborative work with the South China University of Technology, we developed an integrated framework for adapting and re-learning knowledge graphs from one coarse domain (biomedical) to a finer-define domain (oncology). Its arXiv link can be found <a href="https://arxiv.org/abs/2211.02849" id="external">here</a>.
-		</h4>	
-		
-		<h3 id="datetime">September 27th, 2023</h3>
-		<h4>Our recent paper, "MedEdit: Model Editing for Medical Question Answering with External Knowledge Bases", is now on <a href="https://arxiv.org/abs/2309.16035" id="external">arXiv</a>. In this collaborative work with Prof. Ninghao Liu from the University of Georgia, we developed a comprehensive retrieval strategy to extract medical facts from an external knowledge base, and then incorporated them into the query prompt for the LLM. This work demonstrates the potential of model editing to enhance LLM performance, offering a practical approach to mitigate the challenges of black-box LLMs.
-		</h4>		
-
-		<h3 id="datetime">September 24th, 2023</h3>
-		<h4>Our recent paper, "MediViSTA-SAM: Zero-shot Medical Video Analysis with Spatio-temporal SAM Adaptation", is now on <a href="https://arxiv.org/abs/2309.13539" id="external">arXiv</a>. As the Segmentation Anything Model (SAM) has become prominent for its generalization abilities, we developed MediViSTA-SAM for adapting SAM to medical video data. The model can effectively capture both long and short-range temporal dependency structures through its cross-frame attention mechanism. Furthermore, MediViSTA-SAM utilizes a novel U-shaped encoder and an adapted mask decoder to handle objects of various dimensions. MediViSTA-SAM was tested on echocardiography datasets from multiple vendors/institutions and achieved state-of-the-art performance in segmenting the left ventricle and left atrium from echocardiogram video data.
-		</h4>			
-
-		<h3 id="datetime">September 22nd, 2023</h3>
-		<h4>Our research on fine-tuning LLM for radiation oncology, "RadOnc-GPT: A Large Language Model for Radiation Oncology", is now on <a href="https://arxiv.org/abs/2309.10160" id="external">arXiv</a>. RadOnc-GPT is fined-tuned using an extensive dataset encompassing radiation oncology patient records and clinical observations sourced from Mayo Clinic Arizona. Clinical implication of RadOnc-GPT is investigated on three tasks: generating radiotherapy treatment plans, determining optimal radiation modalities, and providing diagnostic descriptions/ICD codes based on patient diagnostic details. When benchmarked against general-domain large language models, RadOnc-GPT has superior performance, characterized by its enhanced clarity, specificity, and clinical relevance. This work underscores the revolutionary potential of domain-centric language models for healthcare practice that demands specialized expertise.
-		</h4>			
-
-		<h3 id="datetime">September 22nd, 2023</h3>
-		<h4>Started working as the Affiliate Faculty Member at the <a href="https://www.harvard.edu/kempner-institute/">Kempner Institute for Natural and Artificial Intelligence</a> of Harvard University.
-		</h4>			
-
-		<h3 id="datetime">September 16th, 2023</h3>
-		<h4>Our recent paper, "MA-SAM: Modality-agnostic SAM Adaptation for 3D Medical Image Segmentation", is now on <a href="https://arxiv.org/abs/2309.08842" id="external">arXiv</a>. While the Segment Anything Model (SAM) has showcased stellar results in general-domain image segmentation, it needs further adaptation to be working on medical images due to its limitation to 2-D images. Recognizing the importance of the third dimension, either volumetric or temporal, we developed MA-SAM, a modality-agnostic framework tailored for a wide variety of 3D medical imaging modalities, equipping our efficient parameter fine-tuning strategy and the 3D adapters design. We tested MA-SAM on ten diverse datasets spanning 3D CT, 3D MRI, and surgical videos. The model can achieve superior performance over major medical segmentation algorithms, including nnU-Net, by notable margins. The code of MA-SAM is accessible on <a href="https://github.com/cchen-cc/MA-SAM" id="external">GitHub</a>.
-		</h4>	
-
-		<h3 id="datetime">September 10th, 2023</h3>
-		<h4>Our paper on analyzing ChatGPT-generated language data and its comparison to human-written language, "Differentiate ChatGPT-generated and Human-written Medical Texts", has been accepted by the <a href="mededu.jmir.org">JMIR Medical Education (JME)</a>. In this collaborative work between us, Univeristy of Georgia, and South China University of Technology, we analyzed the linguistic features of the ChatGPT-generated txt versus human-generated to uncover differences in vocabulary, part-of-speech, dependency, sentiment, perplexity, etc. We also developed A BERT-based model to detect medical texts generated by ChatGPT with high accuracy. Its arXiv version can be found <a href="https://arxiv.org/abs/2304.11567" id="external">here</a>.
-		</h4>
-
-		<h3 id="datetime">August 29th, 2023</h3>
-		<h4>Our work on fine-tuning LLaMA2 for radiology, "Radiology-Llama2: Best-in-Class Large Language Model for Radiology", is now on <a href="https://arxiv.org/abs/2309.08842" id="external">arXiv</a>. Radiology-Llama2 is a large language model specialized for radiology by fine-tuning a large dataset of radiology reports, targeting at generating coherent and clinically useful impressions from radiological findings. Quantitative evaluations using ROUGE metrics on the MIMIC-CXR and OpenI datasets demonstrate that Radiology-Llama2 achieves state-of-the-art performance compared to other large language models. Additional assessments by radiology experts highlight the model's strengths in understandability, coherence, relevance, conciseness, and clinical utility. The work illustrates the potential of domain-specific language models designed and tuned for specialized fields in healthcare. When properly evaluated and deployed, such models can transform fields like radiology by automating tasks and providing clinical decision-making support.
-		</h4>
-
-		<h3 id="datetime">August 18th, 2023</h3>
-		<h4>Our paper on the fine-tuning and adaptation of LLMs on radiology report data to develop foundation models for radiology, entitled "Tailoring Large Language Models to Radiology: A preliminary approach to LLM adaptation for a highly specialized domain", is accepted by <i>Machine Learning in Medical Imaging (MLMI 2023)</i> for oral presentation. In this work, we developed a domain-specific large language model (LLM) for radiology by fine-tuning LLaMA on the findings-impression pairs extracted from the radiology reports in the MIMIC dataset. The work demonstrated promising performance and show potential applications in radiological diagnosis, research, and communication, suggesting a promising direction for tailored medical language models with conversational abilities. Its arXiv version can be found <a href="https://arxiv.org/abs/2306.08666" id="external">here</a>.
-		</h4>
-
-		<h3 id="datetime">August 18th, 2023</h3>
-		<h4>Our paper on view classification for echocardiogram ultrasound imaging, entitled "Multi-task Learning for Hierarchically-Structured Images: Study on Echocardiogram View Classification", has been accepted by the <i>MICCAI Workshop of Special Interest Group on Medical Ultrasound</i>. In this collaborative work with cardiologists and sonographers at Massachusetts General Hospital and Brigham and Women's Hospital, we developed a Multi-task Residual Neural Network (MTRNN) with a hierarchically structured output for echocardiogram view classification, showcasing superior performance. The design of this work can be extended to other data classification scenarios with hierarchical data labels as well. 
-		</h4>		
-		
-		<h3 id="datetime">August 8th, 2023</h3>
-		<h4>Our abstract on predicting the early discharge of patients after receiving Transcatheter Aortic Valve Replacement (TAVR), entitled "Machine Learning Model for the Prediction of Early Discharge of Patient Underwent Transcatheter Aortic Valve Replacement Using Electronic Medical Record", has been accepted to be presented at the <i>American Heart Association’s annual Scientific Sessions 2023 (AHA 2023)</i>. In this collaborative work with cardiologists at Massachusetts General Hospital and Brigham and Women's Hospital, we collected electronic health record (EHR) data from patients who underwent TAVR and trained a machine learning model to predict the early discharge (within two days) of patients, which has been critical for accelerating patient recovery and saving costs. 
-		</h4>			
-
-		<h3 id="datetime">July 7th, 2023</h3>
-		<h4>Our abstract on differentiating people with Alzheimer's disease and normal aging by their speech audio and transcripts, entitled "Alzheimer's Disease Prediction through Patients Speech Transcript Using Pre-trained Language Models", has been accepted to the presented at the <i>American Medical Informatics Association (AMIA) 2023 Annual Symposium</i>. This study explores methods for detecting combineing pre-trained language models, Graph Neural Networks (GNN), text data augmentation by ChatGPT, and contrastive learning for text-audio data fusion. Its arXiv version can be found <a href="https://arxiv.org/abs/2307.02514" id="external">here</a>.
-		</h4>			
-		
-		<h3 id="datetime">June 1st, 2023</h3>
-		<h4>Promoted to Assistant Professor at Department of Radiology, Harvard Medical School and Massachusetts General Hospital.</h4>
-
-		<h3 id="datetime">May 6th, 2023</h3>
-		<h4><a href="https://mmmi2023.github.io/">https://mmmi2023.github.io/</a><br />
-		This year we will continue organizing the MICCAI workshop on Multiscale Multimodal Medical Imaging (MMMI 2023). If you work on related areas, we are looking forward to your paper submission. The submission deadline is <strike>July 14th</strike>July 31st, 2023.
-		<img src="./img/MMMI2023.png" width="600"/>
-		</h4>
-
-		<h3 id="datetime">March 17th, 2023</h3>
-		<h4>Our paper on the development of novel fiber segmentation method and its application for autism diagnosis, "Accurate corresponding fiber tract segmentation via FiberGeoMap learner with application to autism" is accepted by <i>Cerebral Cortex</i> and available at <a target="_blank" href="https://academic.oup.com/cercor/article-abstract/33/13/8405/7133663" id="external">here</a>.
-		</h4>
-
-		<h3 id="datetime">March 14th, 2023</h3>
-		<h4>Our paper on the open community bench-testing platform for reserach on neuron tracing, "BigNeuron: a resource to benchmark and predict performance of algorithms for automated tracing of neurons in light microscopy datasets" is accepted by <i>Nature Methods</i> and available at <a target="_blank" href="https://www.nature.com/articles/s41592-023-01848-5" id="external">here</a>. This work was initiated and devloped by the team led by <a href="http://penglab.com/" id="external">Dr. Hanchuan Peng</a>, who's a member of my Phd. committee.
-		</h4>	
-
-		<h3 id="datetime">February 28th, 2023</h3>
-		<h4>Our absract on predicting the clinical outcomes (length-of-stay and readmission) of aortic stenosis patients after receiving Surgical Aortic Valve Replacement (SAVR)or Transcatheter Aortic Valve Replacement (TAVR), entitled "Machine Learning Model for Aortic Stenosis Patient Outcome Prediction", has been accepted to be presented at the <i>AMIA 2023 Clinical Informatics Conference 2023</i>. Risk stratification and patient outcome prediction are helpful for physicians in guiding clinical decision-making and the hospital’s resource allocation and patient management. In this work on preoperative aortic stenosis (AS) patient outcome prediction, we showed that by applying machine learning methods to a comprehensive list of the patient electronic health record (EHR) data, superior prediction performance could be achieved compared with the current regression-based risk score systems. 
-		</h4>	
-
-		<h3 id="datetime">December 16th, 2022</h3>
-		<h4>Our first paper on the language processing in medical domain, "ClinicalRadioBERT: Knowledge-Infused Few Shot Learning for Clinical Notes Named Entity Recognition" is accepted by International Workshop on Machine Learning in Medical Imaging (MLMI 2022)and available at <a target="_blank" href="https://link.springer.com/chapter/10.1007/978-3-031-21014-3_28" id="external">here</a>. In this paper, we proposed the knowledge-infused few-shot learning (KI-FSL) approach to develop the ClinicalRadioBERT model for the task of radiotherapy clinical notes named entity recognition (NER)..
-		</h4>
-		
-		<h3 id="datetime">October 13th, 2022</h3>
-		<h4>Proceeding of MMMI 2022 as part of the MICCAI 2022 conference proceeding, published as Lecture Notes in Computer Science (LNCS) book series, is now available for free access via the MMMI 2022 official website at <a href="https://mmmi2022.github.io/" id="external">here</a>. Note that the full proceeding is only accessible directed from that website, and will be available for 4 weeks. Cover of this proceeding can be downloaded <a target="_blank" href="./pdf/2022_Bookmatter_MultiscaleMultimodalMedicalIma.pdf" id="pdf">here</a>.
-		</h4>
-				
-		<h3 id="datetime">July 1st, 2022</h3>
-		<h4>We have been awarded by the National Institutes of Health for 2-year support of our project, "Identification of Multi-modal Imaging Biomarkers for Early Prediction of MCI-AD Conversion via Multigraph Representation" (1R03AG078625-01). Alzheimer's disease (AD) will result in cognitive decline and dementia and is a leading cause of mortality in the growing elderly population. As a progressive disease, AD typically has an insidious onset with overlapping clinical features with the transitional state of Mild Cognitive Impairment (MCI). Analysis of the relationship between MCI and AD with a focus on the converting factors, by the co-modeling of a wide array of imaging methods, can help us in a deeper understanding of the disease mechanism, which can lead to more accurate early diagnosis and identification of better intervention techniques.
-		</h4>    
-		
-		<h3 id="datetime">April 5th, 2022</h3>
-		<h4><a href="https://mmmi2022.github.io/">https://mmmi2022.github.io/</a><br />
-		This year we will continue organizing the MICCAI workshop on Multiscale Multimodal Medical Imaging (MMMI 2022). If you work on related areas, we are looking forward to your paper submission. The submission deadline is July 22nd, 2022.
-		<img src="./img/MMMI2022.png" width="600"/>
-		</h4>	
-
-		<h3 id="datetime">March 15th, 2022</h3>
-		<h4>We have been awarded by the National Institutes of Health for a 4-year support of our project, "Deep Learning Based Phenotyping and Treatment Optimization of Heart Failure with Preserved Ejection Fraction" (1R01HL159183-01A1). Heart failure with preserved ejection fraction (HFpEF) is a major public health problem that is rising in prevalence with the aging population. By performing deep phenotyping of the patients from their Cardiac Magnetic Resonance images and Electronic Health Record simultaneously, we aim to provide phenotypic-specific, individualized treatment optimization based on the current massive amount of clinical data using deep learning.</h4>	
-		
-		<h3 id="datetime">February 8th, 2022</h3>
-		<h4>Our paper on structural connectivity-based parcellation of cortical surface has been accepted by <i> BME Frontiers</i>. With collaboration with the Laboratory of Mathematics in Imaging in Brigham and Women's Hospital, we have developed a Spatial-graph Convolution Parcellation (SGCP) model, utilizing contrastive learning on the graphs for parcellating cortical surface into sub-regions. Preprint version of the paper can be found <a target="_blank" href="https://downloads.spj.sciencemag.org/bmef/aip/9814824.pdf" id="pdf">here.</a></h4>	
-
-		<h3 id="datetime">February 4th, 2022</h3>
-		<h4>I have received the 2021 MGH Thrall Innovation Grants Award for funding my research of lung cancer screening by transformed chest X-ray imaging. The project is called "Chest Radiographs-based Lung Cancer Screening by the DeepProjection Technique" based on the DeepProjection technique previously developed by us which can generate near-real volumetric 3D CT image from a single 2D Chest Radiograph (CXR) image. By replacing CT scans with CXR-generated pseudo-CTs for lung cancer screening, we can reduce radiation doses, scan time and cost for the screening, as well as better availability for remote healthcare sites. News of this award can be found <a target="_blank" href="https://gordon.mgh.harvard.edu/gc/mgh-thrall-innovation-grants-awarded-to-two-gordon-center-faculty/" id="external">here</a>, and covered by the Rad Times over <a target="_blank" href="https://radhub.massgeneral.org/radtimes/2022/01/27/james-thrall-innovation-grant-award-recipients/" id="external">here</a>.</h4>	
-
-		<h3 id="datetime">December 1st, 2021</h3>
-		<h4>Our paper "Artificial Intelligence and Machine Learning in Radiology: Opportunities, Challenges, Pitfalls, and Criteria for Success
-			" is awarded the <a target="_blank" href="https://www.journals.elsevier.com/journal-of-the-american-college-of-radiology/most-cited-articles" id="external">"Most Cited Articles"</a> of <i>Journal of the American College of Radiology</i>.</h4>
-		<h4><img src="./img/JACR.png" width="600"/></h4>
-		
-
-		<h3 id="datetime">September 27th, 2021</h3>
-		<h4>We have the pleasure to host the research topic of "Multi-Dimensional Characterization of Neuropsychiatric Disorders" in <i>Frontiers in Neuroscience - Brain Imaging Methods</i>. Link to this research topic can be found <a target="_blank" href="https://www.frontiersin.org/research-topics/24953/multi-dimensional-characterization-of-neuropsychiatric-disorders" id="external">here</a>. All research related to the identification of multi-modal biomarkers for psychiatric disorders and multi-modal fusion methodologies are welcomed! Deadline for the intention-to-submit is <u>December 23rd, 2021</u>.</h4>
-		
-		
-		<h3 id="datetime">August 13th, 2021</h3>
-		<h4>Our work on multi-hospital federated learning for combined analysis of chest X-ray images and electronic health records data towards the prediction of COVID-19 patient's risk in the emergency department has been accepted by <i>Nature Medicine</i>. Its link can be found <a target="_blank" href="https://www.nature.com/articles/s41591-021-01506-3" id="external">here</a> (open access). This work, led by Mass General Brigham and NVIDIA, shows how federated learning enables creation of robust AI models for healthcare and other industries constrained by confidential and sparse data. Coverage of this work by NVidia can be found <a target="_blank" href="https://blogs.nvidia.com/blog/2021/09/15/federated-learning-nature-medicine/" id="external">here</a>.</h4>
-		<iframe width="560" height="315" src="https://www.youtube.com/embed/cOXVrtkv6FE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-		
-
-		<h3 id="datetime">June 7th, 2021</h3>
-		<h4>Our work on the co-modeling of brain iron deposition and gene expression patterns in Alzheimer’s disease patients have been accepted by <i>Frontiers in Human Neuroscience</i>. Its link can be found <a target="_blank" href="https://www.frontiersin.org/articles/10.3389/fnhum.2021.654381/full/" id="external">here</a> (open access).</h4>
-		<h4>In this work, by combining AD progression-related regions identified from SWI imaging with gene expression data from Allen Brain Atlas, we observed considerable overlap between these two modalities. Further, we have identified a new potential AD-related gene (MEF2C) closely related to the interaction between iron deposition and AD progression in the brain.</h4>
-		
-		
-		<h3 id="datetime">March 23rd, 2021</h3>
-		<h4>Our work on severe outcome prediction and a clinical risk score (CO-RISK score) system for COVID-19 patient triage at emergency department is now online at <a target="_blank" href="https://arxiv.org/abs/2103.11269" id="arxiv">arXiv</a>.</h4>
-		<h4>In this study we constructed the "MGB Cohort", a database covering all patients suspected of COVID-19 presented to the emergency department at the four hospital sites of the MGB system. A total of 11,060 patients were used in the model development and validation, according to our inclusion/exclusion criteria. A deep learning system based on the architecture of Deep and Cross network was developed to predict the patient's outcome in 24/72 hours based on the EHR and imaging (CXR) data up to the initial present to the emergency department. </h4>
-
-		
-		<h3 id="datetime">February 1st, 2021</h3>
-		<h4>Our work on analyzing chest radiograph of COVID-19 patients using deep metric learning, "Deep metric learning-based image retrieval system for chest radiograph and its clinical applications in COVID-19", has been accepted by <i>Medical Image Analysis</i>. Its link can be found <a target="_blank" href="https://www.sciencedirect.com/science/article/pii/S1361841521000396/" id="external">here</a>, its pdf can be downloaded <a target="_blank" href="./pdf/1-s2.0-S1361841521000396-main.pdf" id="pdf">here</a>.</h4>
-		<h4>In this work, Aoxiao Zhong, a PhD student at Harvard SEAS and I together developed a deep metric learning model based on a contrastive learning scheme with attention module, in order to perform chest radiograph image retrieval by a query image from incoming patients. By doing so, we can perform diagnosis of chest radiograph based on the labels of retrieved images, as well as visual comparisons by the physicians of the images between query and retrieved images. The whole framework is currently undergoing the preliminary deployment stage to the clinical workflow of MGB system.</h4>
-		
-		
-		<h3 id="datetime">October 30th, 2020</h3>
-		<h4>Our work on modeling multi-label objects for image analysis, "Multi-label Detection and Classification of Red Blood Cells in Microscopic Images", has been accepted by <i>The 7th Big Data Analytic Technology For Bioinformatics and Health Informatics Workshop (KDDBHI 2020)</i>, its link can be found <a target="_blank" href="https://ieeexplore.ieee.org/abstract/document/9377782/" id="external">here</a>, its pdf can be downloaded <a target="_blank" href="./pdf/1910.02672.pdf" id="pdf">here</a>.</h4>
-		<h4>This work was developed by my mentored trainees, Wei Qiu and Jiaming Guo, who were visiting undergraduate students at MGH. The model aims at solving multi-label (e.g. multiple type of deformed cells) problem in medical image semantic segmentation.</h4>
-		
-		
-		<h3 id="datetime">October 5th, 2020</h3>
-		<h4>Our work on using federated learning for stratifying COVID-19 patient's risk at Emergency Department across multiple hospitals, the EMR-CXR-AI-Model (EXAM) study, was covered by NVidia <a target="_blank" href="https://blogs.nvidia.com/blog/2020/10/05/federated-learning-covid-oxygen-needs/" id="external">here</a>.
-		
-		
-		<h3 id="datetime">June 23rd, 2020</h3>
-		<h4>Our work on deformable U-Net, validated on the RBC segmentation task, "Automated Semantic Segmentation of Red Blood Cells for Sickle Cell Disease", has been accepted by <i>IEEE Journal of Biomedical and Health Informatics</i>, its link can be found <a target="_blank" href="https://ieeexplore.ieee.org/abstract/document/9122550/" id="external">here</a>, its pdf can be downloaded <a target="_blank" href="./pdf/09122550.pdf" id="pdf">here</a>.</h4>
-		<h4>This work is an extension of our previous conference presentation at MICCAI 2018, "RBC Semantic Segmentation For Sickle Cell Disease Based on Deformable U-Net".</h4>
-		
-		
-		<h3 id="datetime">June 22nd, 2020</h3>
-		<h4>Two papers accepted by <a target="_blank" href="http://www.miccai2020.org" id="external">MICCAI 2020:</a></h4>
-		<h4>"Discovering Functional Brain Networks with 3D Residual Autoencoder (ResAE)", its link can be found <a target="_blank" href="https://link.springer.com/chapter/10.1007/978-3-030-59728-3_49" id="external">here</a>, its pdf can be downloaded <a target="_blank" href="./pdf/Discovering_Functional_Brain_Networks_with_3D_Residual_Autoencoder_(ResAE).pdf" id="pdf">here</a>.</h4>
-		<h4>and</h4>
-		<h4>"Spatiotemporal Attention Autoencoder (STAAE) for ADHD Classification", its link can be found <a target="_blank" href="https://link.springer.com/chapter/10.1007%2F978-3-030-59728-3_50" id="external">here</a>, its pdf can be downloaded <a target="_blank" href="./pdf/Spatiotemporal_Attention_Autoencoder_(STAAE)_for_ADHD_Classification.pdf" id="pdf">here</a>.</h4>
-		<h4>Both of the works are in collaboration with Dr. Qinglin Dong, a PhD student of Prof. Tianming Liu at the University of Georgia.</h4>
-		
-		
-		<h3 id="datetime">April 7th, 2020</h3>
-		<h4>Our paper, "ASCNet: Adaptive-Scale Convolutional Neural Networks for Multi-Scale Feature Learning", has been awarded by ISBI 2020 as the 2nd place winner of Best Paper Award</h4>
-		<h4>Congratulates to Mo Zhang, my mentored PhD student as the first author of this paper!</h4>
-		<h4><img src="./img/ISBI2020_bestPaper.png" width="600"/></h4>
-		<h4>The announcement video can be found <a target="_blank" href="https://www.youtube.com/watch?v=M5GyJJOKkpE" id="external">here</a>.</h4>
-		<h4>Link to this paper be found on <a target="_blank" href="https://ieeexplore.ieee.org/abstract/document/9098354/" id="external">here</a>, its pdf can be downloaded <a target="_blank" href="./pdf/1907.03241.pdf" id="pdf">here</a>.</h4>
-		
-		
-		<h3 id="datetime">January 17th, 2020</h3>
-		<h4>Our work on fMRI single denoising using dictionary learning method, "Dictionary Learning and Sparse Coding-based Denoising for High-Resolution Brain Activation and Functional Connectivity Modeling: A Task fMRI Study", has been accepted by <i>IEEE Access</i>.</h4>
-		<h4>The link can be found <a target="_blank" href="https://ieeexplore.ieee.org/abstract/document/8979389/" id="external">here</a> (open access).</h4>
-		<h4>This work is an extension of our previous conference presentation at MLMI 2017, "Dictionary Learning and Sparse Coding-based Denoising for High-Resolution Task Functional Connectivity MRI Analysis". In this collaboration work with Dr. Seongah Jeong, a research fellow at Harvard SEAS, we developed a dictionary learning-based method to perform signal denoising on fMRI data, and revealed enhanced activation patterns and functional connectivities from the denoised data.</h4>
-		
-		
-		<h3 id="datetime">January 7th, 2020</h3>
-		<h4>Our work on adaptive scale deep learning method has been accepted by <a target="_blank" href="http://biomedicalimaging.org/2020/" id="external">ISBI 2020:</a></h4>
-		<h4>"ASCNet: Adaptive-Scale Convolutional Neural Networks for Multi-Scale Feature Learning".</h4>
-		<h4>Its link be found on <a target="_blank" href="https://ieeexplore.ieee.org/abstract/document/9098354/" id="external">here</a>, its pdf can be downloaded <a target="_blank" href="./pdf/1907.03241.pdf" id="pdf">here</a>.</h4>
-		
-		
-		<h3 id="datetime">December 24th, 2019</h3>
-		<h4>Our review paper on functional neuroimaging, "Functional Neuroimaging in the New Era of Big Data", is accepted by <i>Genomics, Proteomics and Bioinformatics</i>. The link can be found <a target="_blank" href="https://www.sciencedirect.com/science/article/pii/S1672022919301603" id="external">here</a>, its pdf can be downloaded <a target="_blank" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6943787/pdf/main.pdf" id="pdf">here</a>.</h4>
-		<h4>This work also summarizes my major perspective on the future trend of functional neuroimaging, proposed in my PhD thesis.</h4>
-		<h4><img src="./img/GPB_fig.png" /></h4>
-		
-		
-		<h3 id="datetime">November 5th, 2019</h3>
-		<h4>Our paper on PET image analysis using graph convolution network (GCN), entitled "Predicting Alzheimer’s Disease by Hierarchical Graph Convolution from Positron Emission Tomography Imaging", has been accepted by the <i>IEEE BigData 2019 Workshop of Deep Graph Learning (DGLMA'19)</i>. Its link can be found <a target="_blank" href="https://ieeexplore.ieee.org/document/9005971/" id="external">here</a>, its pdf can be downloaded <a target="_blank" href="https://arxiv.org/pdf/1910.00185.pdf" id="pdf">here</a>.</h4>
-		<h4>This work was developed by my mentored trainees, Wei Qiu and Jiaming Guo, who were visiting undergraduate students at MGH. It is among the first works leveraging graph representation for analyzing medical imaging data.</h4>
-		
-			
-		<h3 id="datetime">October 7th, 2019</h3>
-		<h4>Our pneumothorax screening paper, "Deep Learning-Enabled System for Rapid Pneumothorax Screening on Chest CT", is covered by <i>The Imaging Wire</i>, link can be found <a target="_blank" href="https://www.theimagingwire.com/2019/10/07/ed-h-index-qure-ai-qa-radiology-corporatization/" id="external" >here</a></h4>
-		
-		
-		<h3 id="datetime">September 24th, 2019</h3>
-		<h4>Our paper on pneumothorax screening based on CT images, "Deep Learning-Enabled System for Rapid Pneumothorax Screening on Chest CT", has been accepted by <i>European Journal of Radiology</i>. Its link can be found <a target="_blank" href="https://www.ejradiology.com/article/S0720-048X(19)30342-0/fulltext" id="external" >here</a>, its pdf can be downloaded <a target="_blank" href="./pdf/1-s2.0-S0720048X19303420-main.pdf" id="pdf">here</a>.</h4>
-		<h4>In this work we aim at speeding up and re-prioritizing the radiology workflow using deep learning, taking advantage of its speed and high diagnostic positive detection in analyzing medical images such as CT in pneumothorax. We further conducted large-scale inter-observational study for evaluating radiologist performance of pneumothorax diagnosis, and investigated how AI and human performed differently.</h4>		
-		
-			
-		<h3 id="datetime">August 20th, 2019</h3>
-		<h4>Two of our abstracts have been accepted by American Heart Association 2019 annual meeting:</h4>
-		<h4>"Personalized Treatment for Heart Failure With Preserved Ejection Fraction Using Deep Reinforcement Learning" is accepted as <a target="_blank" href="https://www.abstractsonline.com/pp8/#!/7891/presentation/31376" id="external">oral presentation</a>, using reinforcement learning to optimize the treatment plans of HFpEF patients. Abstract as appeared in the <i>Circulation</i> journal can be found <a target="_blank" href="https://www.ahajournals.org/doi/abs/10.1161/circ.140.suppl_1.15036" id="external">here</a></h4>
-		<h4>and "Recurrent Neural Network Enhance Phenotyping in Heart Failure With Preserved Ejection Fraction Using Electronic Health Record" is accepted as <a target="_blank" href="https://www.abstractsonline.com/pp8/#!/7891/presentation/26354" id="external">poster presentation</a>, using recurrent neural network to discover HFpEF phenotypes from patients' longitudinal EHR data. Abstract as appeared in the <i>Circulation</i> journal can be found <a target="_blank" href="https://www.ahajournals.org/doi/abs/10.1161/circ.140.suppl_1.12835" id="external">here</a></h4>
-		
-		
-		<h3 id="datetime">August 1st, 2019</h3>
-		<h4>Promoted to Instructor at Department of Radiology, Harvard Medical School and Massachusetts General Hospital.</h4>
-		
-
-		<h3 id="datetime">June 10th, 2019</h3>
-		<h4><a target="_blank" href="https://mmmi2019.github.io/" id="external">https://mmmi2019.github.io/</a></h4>
-		<h4><img src="./img/MMMI2019.png" height=200 /><br />
-		This year Quanzheng Li and I from MGH/HMS, Richard Leahy from USC and Bin Dong from PKU are organising the first MICCAI workshop on Multiscale Multimodal Medical Imaging (MMMI 2019). If you work on related areas, we are looking forward to your paper submission.<br />
-		Proceeding of MMMI 2019 as part of the MICCAI 2019 conference proceeding, published as Lecture Notes in Computer Science (LNCS) book series, is now available online at <a target="_blank" href="https://www.springer.com/us/book/9783030379681" id="external">Springer</a>. Cover of this proceeding can be downloaded <a target="_blank" href="./pdf/2020_Bookmatter_MultiscaleMultimodalMedicalIma.pdf" id="pdf">here</a>.
-		</h4>
-				
-		
-		<h3 id="datetime">May 27th, 2019</h3>
-		<h4>Our paper pulmonary lymph node metastasis modeling using network inference, entitled "Transition Patterns between N1 and N2 Stations Discovered from Data-driven Lymphatic Metastasis Study in Non-Small Cell Lung Cancer", is accepted by 2019 World Conference on Lung Cancer for <a target="_blank" href="https://library.iaslc.org/conference-program?product_id=15&author=&category=&date=&session_type=&session=&presentation=&keyword=Transition%20Patterns%20between&cme=undefined&" id="external">oral presentation</a>.</h4>
-		<h4>This work is based on our own network inference modeling method "PathInf", whicn is online at <a target="_blank" href="https://arxiv.org/abs/1810.00839" id="arxiv">arXiv</a>.</h4>
-		<h4>The PathInf program developed in this work can infer most possible transition paths among variables, only with independently observed instances of a transition process with large missing values.<br />
-		The program is tested on simulation data as well as lung cancer metastasis data on lung lymph nodes. Performance of PathInf is compared with commonly applied GES (Greedy Equivalence Search) method, showing better recovery accuracy, especially for its capability of reducing false positive edges caused by the missing values.</h4>
-				
-		
-		<h3 id="datetime">May 11th, 2019</h3>
-		<h4>Our paper on spatio-temporal modeling of fMRI data, "4D Modeling of fMRI Data via Spatio-Temporal Convolutional Neural Networks (ST-CNN)", is accepted by <i>IEEE Transactions on Cognitive and Developmental Systems</i>. The link can be found <a target="_blank" href="https://ieeexplore.ieee.org/document/8713897" id="external">here</a>, its pdf can be downloaded <a target="_blank" href="./pdf/08713897.pdf" id="pdf">here</a>.</h4>
-		<h4>This work is an extension of our previous conference presentation at MICCAI 2018, "Modeling 4D fMRI Data via Spatio-Temporal Convolutional Neural Networks (ST-CNN)".</h4>
-				
-				
-		<h3 id="datetime">January 2nd, 2019</h3>
-		<h4>Our paper on multi-modal image fusing in a deep learning context, "Deep Learning-based Image Segmentation on Multi-modal Medical Imaging", is accepted by <i>IEEE Transactions on Radiation and Plasma Medical Sciences</i>. The link can be found <a target="_blank" href="https://ieeexplore.ieee.org/document/8599078?arnumber=8599078" id="external">here</a>, its pdf can be downloaded <a target="_blank" href="./pdf/08599078.pdf" id="pdf">here</a>.</h4>
-		<h4>This work is an extension of our previous conference presentation at ISBI 2018, "Medical Image Segmentation Based on Multi-Modal Convolutional Neural Network: Study on Image Fusion Schemes".</h4>
-				
-				
-		<h3 id="datetime">December 18th, 2018</h3>
-		<h4>Four papers accepted by <a target="_blank" href="http:/biomedicalimaging.org/2019/" id="external">ISBI 2019:</a><br />
-		<h4>"Multi-Size Computer-Aided Diagnosis of Positron Emission Tomography Images Using Graph Convolutional Networks"</h4>
-		<h4>This is developed by my mentored trainee, Xuandong Zhao, who was a visiting undergraduate students at MGH. It is our first attempt in using graph representation for medical image analysis, trying to tackle the challenge of varying image sizes in deep learning inputs. We found that graph convolution neural networks, which is based on the concept of non-Euclidean convolution operations, achieves superior performance comparing with traditional 3D CNNs. Its link can be found <a target="_blank" href="https://ieeexplore.ieee.org/document/8759232" id="external">here</a>, its pdf can be downloaded <a target="_blank" href="./pdf/08759232.pdf" id="pdf">here</a>.</h4>
-		<h4>"3D Regional Shape Analysis of Left Ventricle Using MR Images: Abnormal Myocardium Detection and Classification"</h4>
-		<h4>This work summarizes our preliminary results in performing 3D shape analysis of Cardiac MR images, showing that shape spectral analysis based using multilinear principal component analysis can obtain group-wise shape-based image marker for classifying heart failure vs. normal controls, and different heart failure subtypes. Its link can be found <a target="_blank" href="https://ieeexplore.ieee.org/document/8759451" id="external">here</a>, its pdf can be downloaded <a target="_blank" href="./pdf/08759451.pdf" id="pdf">here</a>.</h4>
-		<h4>"Novel Radiomic Features Based on Graph Theory for PET Image Analysis"</h4>
-		<h4>In this work we developed new graph-based radiomics features, which capture better intratumoral heterogeneity from PET images comparing with traditional, image-derived texture features. Its link can be found <a target="_blank" href="https://ieeexplore.ieee.org/document/8759318" id="external">here</a>, its pdf can be downloaded <a target="_blank" href="./pdf/08759318.pdf" id="pdf">here</a>.</h4>		
-		<h4>"Automated Segmentation of Cervical Nuclei in Pap Smear Images using Deformable Multi-path Ensemble Model"</h4>
-		<h4>In this collaborative work with PKU, we developed the Deformable Multipath Ensemble Model (D-MEM) based on an ensembling scheme. It achieved state-of-the-art accuracy for nuclei segmentation in pap smear images for cervical cancer screening. Its link can be found <a target="_blank" href="https://ieeexplore.ieee.org/document/8759262" id="external">here</a>, its pdf can be downloaded <a target="_blank" href="https://arxiv.org/pdf/1812.00527.pdf" id="pdf">here</a>. Presentation slides of it could be found <a target="_blank" href="./pdf/ISBI2019_slides.pdf" id="external">here</a></h4><hr>
-		
-		<h3 id="datetime">August 1st, 2018</h3>
-		<h4>Our left ventricle quantification paper is accepted by <a target="_blank" href="http://stacom2018.cardiacatlas.org/" id="external">STACOM workshop</a> of MICCAI 2018:</h4>
-		<h4>"Multi-Estimator Full Left Ventricle Quantification through Ensemble Learning", its link can be found <a target="_blank" href="https://link.springer.com/chapter/10.1007/978-3-030-12029-0_49" id="external">here, its pdf can be downloaded <a target="_blank" href="https://arxiv.org/pdf/1808.02056.pdf" id="pdf">here</a>. This work is later included in the paper "Left Ventricle Quantification Challenge: A Comprehensive Comparison and Evaluation of Segmentation and Regression for Mid-ventricular Short-axis Cardiac MR Data" (co-authored), its link can be found <a target="_blank" href="https://ieeexplore.ieee.org/document/9372751" id="external">here</a>.</h4>
-		<hr>
-		
-		<h3 id="datetime">June 15th, 2018</h3>
-		<h4>Our <a target="_blank" href="http://www.sciencedirect.com/science/article/pii/S1053811917309035" id="external"></a>Neuroimage paper</a> "Spatio-temporal modeling of connectome-scale brain network interactions via time-evolving graphs" is covered by Editorial of Dialogues in Clinical Neuroscience</h4>
-		<h4>The article, "New ways of understanding brain neurocircuitry", can be found <a target="_blank" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6136127/pdf/DialoguesClinNeurosci-20-83.pdf" id="external">here</a></h4>
-		<hr>		
-		
-		<h3 id="datetime">May 25th, 2018</h3>
-		<h4>Two papers accepted by <a target="_blank" href="http://www.miccai2018.org" id="external">MICCAI 2018:</a></h4>
-		<h4>"RBC Semantic Segmentation For Sickle Cell Disease Based on Deformable U-Net", its link can be found <a target="_blank" href="https://link.springer.com/chapter/10.1007/978-3-030-00937-3_79" id="external">here.</a> The journal version of this paper can be found <a target="_blank" href="https://ieeexplore.ieee.org/abstract/document/9122550" id="external">here</a>, pdf of the journal paper can be downloaded <a target="_blank" href="./pdf/09122550.pdf" id="pdf">here</a>.</h4>
-		<h4>In this collaboration work with Mo Zhang at Peking University and Mengjia Xu at Northeastern University, we developed a fully automatic framework for simultaneous cell segmentation and classification (semantic segmentation) on red blood cells microscopic images.</h4>
-		<h4>and:</h4>
-		<h4>"Modeling 4D fMRI Data via Spatio-Temporal Convolutional Neural Networks (ST-CNN)", which is our collaboration work with Dr. Yu Zhao, a PhD student of Prof. Tianming Liu at the University of Georgia. Its link can be found <a target="_blank" href="https://link.springer.com/chapter/10.1007/978-3-030-00931-1_21" id="external">here</a>. The journal version of this paper can be found <a target="_blank" href="https://ieeexplore.ieee.org/document/8713897" id="external">here</a>, pdf of the journal paper can be downloaded <a target="_blank" href="./pdf/08713897.pdf" id="pdf">here</a>.</h4>
-		<hr>
-						
-		<h3 id="datetime">May 8th, 2018</h3>
-		<h4>Our presentation on pneumothorax detection in American Roentgen Ray Society (ARRS) 2018 Annual Meeting is covered by auntminnie, the report can be found <a target="_blank" href="https://www.auntminnie.com/index.aspx?sec=sup&sub=aic&pag=dis&ItemID=120691&wf=7612" id="external">here</a></h4>
-		<hr>
-		
-		<h3 id="datetime">March 30th, 2018</h3>
-		<h4>Our project on pneumothorax detection is among the four finalist of the 2018 NVIDIA Global Impact Award, detailed information can be found <a target="_blank" href="https://blogs.nvidia.com/blog/2018/02/26/ai-radiology-machine-learning-global-impact-awards/" id="external">here</a></h4>
-		<hr>
-			
-		<h3 id="datetime">February 25th, 2018</h3>
-		<h4>Our paper on distributed analytics for fMRI based on rank-1 decomposition and cloud computing, titled "A Distributed Computing Platform for fMRI Big Data Analytics", has been accepted by <i>IEEE Transactions on Big Data</i>, the link can be found <a target="_blank" href="https://ieeexplore.ieee.org/document/8307234" id="external">here</a>, its pdf can be downloaded <a target="_blank" href="./pdf/DistributedComputingPlatform.pdf" id="pdf">here</a>.</h4>
-		<hr>
-		
-		<h3 id="datetime">February 21th, 2018</h3>
-		<h4>Two reviews on our JACR paper can be found at <a target="_blank" href="http://www.radiologybusiness.com/topics/artificial-intelligence/become-leaders-ai-radiologists-must-address-variety-challenges" id="external">Radiology Business</a> and <a target="_blank" href="https://www.auntminnie.com/index.aspx?sec=log&URL=https%3a%2f%2fwww.auntminnie.com%2findex.aspx%3fsec%3dsup%26sub%3daic%26pag%3ddis%26ItemID%3d119786" id="external">auntminnie.</a></h4>
-		<hr>
-		
-		<h3 id="datetime">February 5th, 2018</h3>
-		<h4>Our perspective paper on the impact of artificial intelligence on radiology is now online at:<i>Journal of the American College of Radiology</i>, the link can be found <a target="_blank" href="http://www.jacr.org/article/S1546-1440(17)31671-X/abstract" id="external">here</a>, its pdf can be downloaded <a target="_blank" href="./pdf/1-s2.0-S154614401731671X-main.pdf" id="pdf">here</a>.</h4>
-		<h4>It has been selected as the Continuing Medical Education (CME) material of the month, for ACR credentials.</h4>
-		<hr>
-		
-		<h3 id="datetime">December 22th, 2017</h3>
-		<h4>Our work on multi-modal image fusion analysis has been accepted by <a target="_blank" href="http://biomedicalimaging.org/2018/" id="external">ISBI 2018:</a></h4>
-		<h4>"Medical Image Segmentation Based on Multi-Modal Convolutional Neural Network: Study on Image Fusion Schemes".</h4>
-		<h4>We discussed three different fusion schemes for performing supervised learning on medical image analysis. This is a preliminary study from us on how to utilize images from different modalities together to make more accurate and robust image-based decision.</h4>
-		<h4>The link to its journal version can be found <a target="_blank" href="https://ieeexplore.ieee.org/abstract/document/8599078" id="external">here</a>, its pdf can be downloaded <a target="_blank" href="./pdf/08599078.pdf" id="pdf">here</a>.</h4>
-		<hr>
-		
-		<h3 id="datetime">November 20th, 2017</h3>
-		<h4>Our work on using deep learning for pneumothorax detection on chest CT images has been accepted by <a target="_blank" href="http://www.arrs.org/AM18/" id="external">American Roentgen Ray Society 2018</a> as oral presentation:</h4>
-		<h4>"Deep Learning Algorithm for rapid automatic detection of pneumothorax on chest CT"</h4>
-		<hr>		
-		
-		<h3 id="datetime">November 14th, 2017</h3>
-		<h4>Another paper on functional brain dynamics, "Spatio-temporal modeling of connectome-scale brain network interactions via time-evolving graphs", has been accepted by <i>Neuroimage</i>, its link can be found <a target="_blank" href="http://www.sciencedirect.com/science/article/pii/S1053811917309035" id="external">here</a>, pdf can be downloaded <a target="_blank" href="./pdf/spatiotemporalModeling.pdf" id="pdf">here</a>.</h4>
-		<h4>In this work we modeled the fMRI signal using dynamic functional networks based on sliding time window approach, then further analyze the patterns of the networks using time-evolving graphs.</h4>
-		<hr>
-		
-		<h3 id="datetime">July 18th, 2017</h3>
-		<h4>Two papers accepted by <a target="_blank" href="mlmi2017.web.unc.edu" id="external">MLMI 2017:</a></h4>
-		<h4>"Self-paced Convolutional Neural Network for Computer Aided Detection in Medical Imaging Analysis", its link can be found <a target="_blank" href="https://link.springer.com/chapter/10.1007/978-3-319-67389-9_25" id="external">here</a>, its pdf can be downloaded <a target="_blank" href="https://arxiv.org/pdf/1707.06145.pdf" id="pdf">here</a>.</h4>
-		<h4>In this work we proposed the self-paced learning method to generate virtual training samples for supervised learning, particularly to overcome the sample size limitations in medical image analysis.</h4>
-		<h4>and:</h4>
-		<h4>"Dictionary Learning and Sparse Coding-based Denoising for High-Resolution Task Functional Connectivity MRI Analysis", its link can be found <a target="_blank" href="https://ieeexplore.ieee.org/document/8979389" id="external">here</a>. The journal version of this work can be found <a target="_blank" href="https://link.springer.com/chapter/10.1007/978-3-319-67389-9_6" id="external">here</a>, its pdf can be downloaded <a target="_blank" href="./pdf/08979389.pdf" id="pdf">here</a>.</h4>
-		<hr>	
-		
-		<h3 id="datetime">May 29th, 2017</h3>
-		<h4>Our work on tensor decomposition on sparse and low rank data is online at <a target="_blank" href="https://arxiv.org/abs/1705.10015" id="arxiv">arXiv</a>.</h4>
-		<h4>The collaboration work with Songting Shi at Peking University offers an integrated framework to perform PARAFAC tensor decomposition on large-scale data with the property of both sparse and low-rank.</h4>
-		<hr>
-		
-		<h3 id="datetime">February 28th, 2017</h3>
-		<h4>Our work on using dictionary learning for fMRI signal de-noising is accepted by <a target="_blank" href="http://www.humanbrainmapping.org/OHBM2017/" id="external">OHBM 2017</a></h4>
-		<h4>"FMRI Signal Denoising by Dictionary Learning for High-Resolution Functional Connectivity Inference", its link can be found <a target="_blank" href="https://archive.aievolution.com/2017/hbm1701/index.cfm?do=abs.viewAbs&abs=2640" id="external">here</a>.
-		</h4>
-		<hr>
-		
-		<h3 id="datetime">January 8th, 2017</h3>
-		<h4>Two papers accepted by <a target="_blank" href="biomedicalimaging.org/2017/" id="external">ISBI 2017:</a></h4>
-		<h4>"Template-guided Functional Network Identification via Supervised Dictionary Learning". Its link can be found <a target="_blank" href="https://ieeexplore.ieee.org/document/7950471" id="external">here</a>, its pdf can be downloaded <a target="_blank" href="./pdf/07950471.pdf" id="pdf">here</a>.</h4>
-		<h4>This work is based on the r1DL model previously proposed in my KDD2016 paper. It has shown fast and accurate performance for identifying target functional networks given a set of pre-defined templates from fMRI signals.</h4>
-		<h4>and:</h4>
-		<h4>"Exploring Human Brain Activation via Nested Sparse Coding and Functional Operators". Its link can be found <a target="_blank" href="https://ieeexplore.ieee.org/document/7950672" id="external">here</a>, its pdf can be downloaded <a target="_blank" href="./pdf/07950672.pdf" id="pdf">here</a>.</h4>
-		<h4>The collaboration work with Shu Zhang, a PhD student of Prof. Tianming Liu, proposed a highly novel framework which characterizes functional networks as the results of "functional operators" inside the brain, which offers a brand new perspective for brain functional decoding.</h4>
-		<hr>	
-		
-		<h3 id="datetime">October 13th, 2016</h3>
-		<h4>Invited talk on the International Workshop on Big Data Neuroimaging Analytics for Brain and Mental Health at the <a target="_blank" href="http://wibih.unomaha.edu/bih/" id="external">2016 International Conference on Brain Informatics and Health</a>. </h4>
-		<hr>
-		
-		<h3 id="datetime">September 14th, 2016</h3>
-		<h4>Joined Harvard Medical School and Massachusetts General Hospital, as well as <a target="_blank" href="https://cidh.massgeneral.org/portfolio/mgh-bwh-center-for-clinical-data-science-ccds/">MGH & BWH Center for Clinical Data Science (CCDS)</a>, as postdoctoral research fellow, under the mentorship of <a target="_blank" href="http://www.massgeneral.org/doctors/doctor.aspx?id=16374" id="external">James H. Thrall, MD</a> and <a target="_blank" href="http://gordon.mgh.harvard.edu/gc/people/faculty/quanzheng-li/" id="external">Dr. Quanzheng Li</a>.</h4>
-		<hr>
-		
-		<h3 id="datetime">June 2nd, 2016</h3>
-		<h4>Two papers accepted by <a target="_blank" href="http://www.miccai2016.org/" id="external">MICCAI 2016:</a></h4>
-		<h4>"Modeling Functional Dynamics of Cortical Gyri and Sulci". Its link can be found <a target="_blank" href="https://link.springer.com/chapter/10.1007/978-3-319-46720-7_3" id="external">here</a>, its pdf can be downloaded <a target="_blank" href="./pdf/ModelingFunctionalDynamicsofCorticalGyriandSulci.pdf" id="pdf">here</a>.</h4>
-		<h4>This work is our preliminary attempt in investigating the differences of functional dynamics between gyri and sulci areas, which are supposed to work in different roles within the brain functional architecture.</h4>
-		<h4>"Discover Mouse Gene Coexpression Landscape Using Dictionary Learning and Sparse Coding"</h4>
-		<h4>The work from Yujie Li using a sparse coding method on the mouse brain gene data obtained a surprisingly cleared-edge map of the mouse brain regions. Its link can be found <a target="_blank" href="https://link.springer.com/chapter/10.1007/978-3-319-46720-7_8" id="external">here</a>. Journal version of this work can be found <a target="_blank" href="https://link.springer.com/article/10.1007%2Fs00429-017-1460-9" id="external">here</a>, pdf can be downloaded <a target="_blank" href="./pdf/Li2017_Article_DiscoverMouseGeneCoexpressionL.pdf" id="pdf">here</a>.</h4>
-		<hr>
-		
-		<h3 id="datetime">May 12th, 2016</h3>
-		<h4>Awarded the Outstanding Graduate Dissertation/Thesis! Thanks to Computer Science Department for the recognition and my advisor, Prof. Tianming Liu, for the mentorship!</h4>
-		<h4><img src="img/commendation_letter_best_dissertation.jpeg" height=200/></h4>
-		<hr>
-		
-		<h3 id="datetime">May 11th, 2016</h3>
-		<h4>Paper accepted by <a target="_blank" href="http://www.kdd.org/kdd2016/" id="external">ACM SigKDD 2016:</a></h4>
-		<h4>"Scalable Fast Rank-1 Dictionary Learning for fMRI Big Data Analysis". Its link can be found <a target="_blank" href="https://www.kdd.org/kdd2016/papers/files/adp0864-li.pdf" id="external">here</a>, pdf can be downloaded <a target="_blank" href="./pdf/2939672.2939730.pdf" id="pdf">here</a>.</h4>
-		<h4>The collaboration work across our group, <a target="_blank" href="cs.uga.edu/~squinn/" id="external">Dr. Shannon Quinn</a> and <a target="_blank" href="http://www.yelab.net/" id="external">Dr. Jieping Ye</a> features our solutions towards fMRI big data analysis by leveraging the distributed computation power by Python Spark.</h4>
-		<hr>
-		
-		<h3 id="datetime">March, 17th, 2016</h3>
-		<h4>Talk on <a target="_blank" href="http://siamseas2016.uga.edu/index.shtml" id="external">SIAM-SEAS</a> session "Parallel and distributed computing for biomedical imaging". The presentation slide could be found <a target="_blank" href="./pdf/Dr1Dl@SIAM.pptx" id="external">here</a></h4>
-		<hr>
-		
-		<h3 id="datetime">December 23, 2015</h3>
-		<h4>Three papers accepted by <a target="_blank" href="biomedicalimaging.org/2016/" id="external">ISBI 2016:</a></h4>
-		<h4>"Modeling Functional Network Dynamics Via Multi-Scale Dictionary Learning and Network Continuums" (with <a target="_blank" href="http://www.yelab.net/">Dr. Jieping Ye)</a></h4>
-		<h4>This work marks the development of "network continnum", a novel concept characterizing the continuous/disruptive dynamics of the functional networks. The model reveals ever-changing spatial patterns of the same networks overtime.</h4>
-		<h4>"Multiple-Demand System Identification and Characterization Via Sparse Representations of fMRI Data"</h4>
-		<h4>This work investigates the well-known multiple-demand system through a network decomposition approach. The work is in sync with our previous Human Brain Mapping paper "Sparse representation of HCP grayordinate data reveals novel functional architecture of cerebral cortex" which focused on MDS on grayordinates (i.e. cortical surface).</h4>
-		<h4>"Identifying Group-Wise Consistent Sub-Networks Via Spatial Sparse Representation of Natural Stimulus fMRI Data" (collaboration work with Cheng Lyu)</h4>
-		<h4>This work offers a great tool for the brain network analysis from based on its spatial distribution, including sub-network identification and calculating similarities among different networks.</h4>
-		<hr>		
-		
-		<h3 id="datetime">October 14th, 2015</h3>
-		<h4>"Sparse representation of HCP grayordinate data reveals novel functional architecture of cerebral cortex", (collaboration work with Xi Jiang) has been accepted by <i>Human Brain Mapping</i>.</h4>
-		<hr>		
-		
-		<h3 id="datetime">July 20th, 2015</h3>
-		<h4>Starting visit at <a target="_blank" href="http://www.yelab.net/" id="external">Prof. Jieping Ye's group</a> at University of Michigan.</h4>
-		<hr>
-		
-		<h3 id="datetime">April 1st, 2015</h3>
-		<h4>Our article, "
-Holistic Atlases of Functional Networks and Interactions Reveal Reciprocal Organizational Architecture of Cortical Function", has been selected as the feature story and cover of <a target="_blank" href="https://www.embs.org/tbme/articles/holistic-atlases-functional-networks-interactions-reveal-reciprocal-organizational-architecture-cortical-function/" id="external"><i>IEEE Transactions on Biomedical Engineering</i></a>.<br />
-		<img src="./img/TMBE_frontCover.png" />
-		</h4>
-		<hr>
-		
-		<h3 id="datetime">March 17th, 2015</h3>
-		<h4>Guest lecture on UGA CSCI6900: Mining Massive Datasets (at Dr. Shannon Quinn's invitation), the presentation slide could be found <a target="_blank" href="./pdf/Dictionary_Learning_in_Functional_Brain_Imaging.pptx" id="pdf">here</a></h4>
-		<hr>
-		
-		<h3 id="datetime">February 13th, 2015</h3>
-		<h4>Thanks to Franklin Foundation for providing the <a target="_blank" href="http://psychology.uga.edu/neuro/awards/index.htm" id="external">travel award</a> to support me for attending ISBI 2015!</h4>
-		<hr>
-		
-		<h3 id="datetime">February 5th, 2015</h3>
-		<h4>Two papers accepted by <a target="_blank" href="biomedicalimaging.org/2015/" id="external">ISBI 2015:</a><br />
-		"Interactive Exemplar-Based Segmentation Toolkit for Biomedical Image Analysis" (with <a target="_blank" href="http://home.penglab.com/" id="external">Dr. Hanchuan Peng)</a><br />
-		and<br />
-		"Characterizing and Differentiating Task-Based and Resting State FMRI Signals Via Two-Stage Dictionary Learning"</h4>
-		<hr>
-		
-		<h3 id="datetime">February 3rd, 2015</h3>
-		<h4>"Characterizing and Differentiating Task-based and Resting State FMRI Signals via Two-stage Sparse Representations" (collaboration work with Shu Zhang) has been accepted by <i>Brain Imaging and Behavior</i><br />
-		</h4>
-		<hr>
-
-		<h3 id="datetime">September 29th, 2014</h3>
-		<h4>Starting a 3-months visit at Allen Institute of Brain Science, with <a target="_blank" href="http://alleninstitute.org/our-institute/our-team/profiles/zhi-zhou/" id="external">Zhi Zhou</a>, <a target="_blank" href="http://alleninstitute.org/our-institute/our-team/profiles/brian-long/" id="external">Brain Long</a>, Hanbo Chen (also from UGA) and <a target="_blank" href="http://home.penglab.com/" id="external">Hanchuan Peng</a>.</h4>
-		<hr>
-		
-		<h3 id="datetime">September 29th, 2014</h3>
-		<h4>"Characterizing and Differentiating Brain State Dynamics via Hidden Markov Models" (collaboration work with Dr. Jinli Ou and Prof. <a target="_blank" href="http://mypage.zju.edu.cn/nonlinearsystems" id="external">Leo Xie</a> at ZJU) has been accepted by <i>Brain Topography</i>.</h4>
-		<hr>
-		
-		<h3 id="datetime">May 13th, 2014</h3>
-		<h4>Oral presentation at <a target="_blank" href="http://biomedicalimaging.org/2014/" id="external">ISBI 2014</a>, on the topics of Bayesian network-based change point detection and sparse representation of functional network using DICCCOL.</h4>
-		<hr>
-		
-		<h3 id="datetime">April 15th, 2013</h3>
-		<h4>Nominated for the best student paper award of <a target="_blank" href="http://www.biomedicalimaging.org/2013/" id="external">ISBI 2013</a>, for my work "Discovering Common Functional Connectomics Signatures". Its oral presentation video could be found <a target="_blank" href="https://www.youtube.com/watch?v=slBoV1_gcmU" target="_blank">here</a>.<br /></h4>
+		  </div>
+	  
+		  <!-- Right Column: Contact & Links -->
+		  <div class="about-contact">
+        <h3>Services (Selected)</h3>
+        <ul class="about-list">
+          <li><strong>Associate Editor</strong>: • <em>Proceedings of the National Academy of Sciences (ad-hoc)</em> • <em>Scientific Report</em> • <em>IEEE Transactions on Medical Imaging</em> • <em>IEEE Transactions on Artificial Intelligence</em> • <em>Data Intelligence</em>, etc.</li>
+          <li><strong>Committee Service</strong>: • <em>Founding Chair of MICCAI on Multiscale Multimodal Medical Imaging</em> • <em>Founding Chair of NeurIPS Workshop on Advancements in Medical Foundation Models</em> • <em>Founding Chair of SAGES Critical View of Safety Challenge</em> • <em>Founding Chair of AAAI Workshop: AI for Health: Leveraging Artificial Intelligence to Revolutionize Healthcare</em> etc.<br />Area Chair of the • <em>MICCAI Conference</em> • <em>IEEE Symposium on Computer-Based Medical Systems</em></li>
+        </ul>
+      
+        <p><strong>Publications</strong>: 150+ peer-reviewed publications, h-index 47. See my <a target="_blank" href="https://scholar.google.com/citations?user=MjkwwiQAAAAJ&hl=en">Google Scholar</a> for more information.</p>
+        
+		  </div>
 		</div>
-		<div class="col4">
-		<p><img src="./img/xiang.jpg" width="200"></p>
-		<p>I am an Assistant Professor at the Massachusetts General Hospital and Harvard Medical School, Department of Radiology, and an Affiliate Faculty Member at the Kempner Institute for Natural and Artificial Intelligence of Harvard University. I received my postdoc training in Massachusetts General Hospital under the co-mentorship of Associate Prof. Quanzheng Li and Distinguished Professor, National Academy of Medicine member James H. Thrall. I received my PhD in Computer Science from the University of Georgia, supervised by Distinguished Professor, AIMBE Fellow Tianming Liu in 2016. My primary research interest is medical data analysis with focus on clinical data streamlining, big data frameworks, multi-modal multi-scale image fusion, and foundation models.</p>
-		<p>Services (selected):
-		<li>Associate Editor: Frontiers in Oncology, Frontiers in Radiology, Frontiers in Neuroscience, Frontiers in Cardiovascular Medicine, Meta-Radiology, BMC Biomedical Engineering, IEEE Transactions on Artificial Intelligence</li>
-		<li>Committee Service: Founding Chair of the International Workshop on Multiscale Multimodal Medical Imaging (MMMI), Area Chair of International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI), Program Committee of ACM SIGKDD Workshop on Mining and Learning from Time Series (MILETS), International Workshop on Medical Image Learning with Noisy and Limited Data (MILLanD), International Conference on Brain Informatics (BI), and Machine Learning in Medical Imaging (MLMI)</li>
-		</p>
-		<p>Publications: 100+ papers with h-index of 33, see my Google Scholar page for more information.</p>
+	  </section>
+	  
+
+    <hr/>
+
+    <!-- RECENT UPDATES -->
+    <section id="updates" class="updates">
+      <h2>Recent Updates</h2>
+	  <div id="updates-content" class="collapsible collapsed">
+      <div class="update">
+        <div class="update-date">February 6th, 2025</div>
+        <p>
+        Our review paper, "Artificial General Intelligence for Medical Imaging Analysis", is selected as the Feature Article for <em>IEEE Reviews in Biomedical Engineering</em>. 
+        <img src="./img/TRBME_v1.png" width="600"/>
+        </p>
+        </div>
+        <div class="update">
+        <div class="update-date">February 5th, 2025</div>
+        <p>
+        Our paper, "MediViSTA: Medical Video Segmentation via Temporal Fusion SAM Adaptation for Echocardiography", has been accepted by the <em>IEEE Journal of Biomedical and Health Informatics</em>. Read the full paper <a target="_blank" href="https://ieeexplore.ieee.org/document/10878483">—>here</a>. <br />
+        This work introduces a 2D SAM adaptation model for medical video segmentation tailored for echocardiography. By incorporating parameter-efficient learning techniques (LoRA) and temporal fusion strategies, our approach effectively optimizes SAM, enhancing segmentation accuracy and ensuring consistency across frames.
+        </p>
+        </div>
+
+        <div class="update">
+          <div class="update-date">Janurary 22nd, 2025</div>
+          <p>
+          Two papers accpeted by <em>ICLR</em> 2025: <br />
+          “Enhancing Cognition and Explainability of Multimodal Foundation Models with Self-Synthesized Data”, our collaborative work with Prof. Ninghao Liu at UGA, tackles the challenge of making large multimodal models not only more accurate in domain-specific tasks but also capable of delivering clear, interpretable explanations. Read the full paper <a target="_blank" href="https://openreview.net/forum?id=lHbLpwbEyt">—>here</a>. <br />
+          "ECHOPulse: ECG Controlled Echocardio-gram Video Generation", leverages single-channel ECG signals (like from an Apple Watch) to generate corresponding cardiac ultrasound (echocardiogram) videos, pushing the boundaries of extreme cross-modality generation. Read the full paper <a target="_blank" href="https://openreview.net/forum?id=i2r7LDjba3">—>here</a>.
+          </p>
+          </div>
+
+        <div class="update">
+          <div class="update-date">December 19th, 2024</div>
+              <p>Our CME Review paper, "Large Language Models and Large Multimodal Models in Medical Imaging: A Primer for Physicians", has been accepted by the <em>Journal of Nuclear Medicine</em>. Read the full paper <a target="_blank" href="https://pubmed.ncbi.nlm.nih.gov/39819692/">—>here</a>.<br />
+              </p>
+        </div>		
+
+        <div class="update">
+          <div class="update-date">December 23rd, 2024</div>
+              <p>The book "Discovering the Frontiers of Human-Robot Interaction" has been published by Springer Nature. We contributed the chapter "Robot Control via Natural Instructions Empowered by Large Language Models", which can be found <a target="_blank" href="https://link.springer.com/chapter/10.1007/978-3-031-66656-8_19">—>here</a><br />
+                We are collaborating with Harvard SEAS on research into medical robotics, with a UR5e robotic arm for our research into intelligent imaging. One of the most critical challenges in the field of control systems today is how to effectively and stably integrate Artificial General Intelligence (AGI) into robot control. In addition to our work on LLM-driven robot control, we are also conducting research on generative AI for guiding robot learning, as well as foundational models for surgical robotics.
+              </p>
+        </div>		
+
+        <div class="update">
+          <div class="update-date">November 14th, 2024</div>
+              <p>Our patent, "Automated Detection and Management of Valvular Heart Disease Using Machine Learning" (US-20240379239-A1), is now public. Read the full document <a target="_blank" href="https://patents.google.com/patent/US20240379239A1/en">—>here</a>. 
+              </p>
+        </div>		
+
+
+        <div class="update">
+          <div class="update-date">November 13th, 2024</div>
+              <p>Our long-paper submission, "MKRAG: Medical Knowledge Retrieval Augmented Generation for Medical Question Answering", received the <strong>Distinguished Paper Award</strong> at <em>AMIA</em> 2024. Its arXiv link can be found <a target="_blank" href="https://arxiv.org/abs/2309.16035">—>here</a>. In this collaborative work with Prof. Ninghao Liu from the University of Georgia, we developed a comprehensive retrieval strategy to extract medical facts from an external knowledge base, and then incorporated them into the query prompt for the LLM. This work demonstrates the potential of model editing to enhance LLM performance, offering a practical approach to mitigate the challenges of black-box LLMs.
+                <img src="./img/1731687404774.jpg" width="600"/>
+              </p>
+        </div>		
+
+        <div class="update">
+          <div class="update-date">November 12th, 2024</div>
+              <p>
+              Two podium abstracts presented at <em>AMIA</em> 2024:
+
+                "Cross-Modal Retrieval for Alzheimer's Disease Diagnosis Using CLIP-Enhanced Dual Deep Hashing," which leverages CLIP alignment for improved cross-modal (any two modalities) retrieval.<br />
+                
+                and <br />
+                "Conditional Score-Based Diffusion Model for Cortical Thickness Trajectory Prediction," which uses diffusion models to predict the trajectory of cortical thickness change over time.<br />
+              </p>
+              
+        </div>
+
+      <div class="update">
+        <div class="update-date">October 16th, 2024</div>
+        <p>
+        Serving as the PAR panel for NIH Academic-Industrial Partnerships for Translation of Technologies.
+        </p>
+        </div>
+
+        <div class="update">
+          <div class="update-date">September 25th, 2024</div>
+          <p>
+          Two papers accepted by <em>NeurIPS</em> 2024:<br />
+          "Eye-gaze Guided Multi-modal Alignment for Medical Representation Learning", where we explored how eye-gaze tracking enhances multi-modal learning for radiology applications. Read the full paper <a target="_blank" href="https://openreview.net/forum?id=0bINeW40u4">—>here</a>. <br />
+          and<br />
+          "Biomedical Visual Instruction Tuning with Clinician Preference Alignment", investigated the alignment between  biomedical visual models with clinician expertise. Read the full paper <a target="_blank" href="https://openreview.net/forum?id=Eogs84mv7N#discussion">—>here</a>. 
+          </p>
+          </div>
+
+        <div class="update">
+          <div class="update-date">August 7th, 2024</div>
+          <p>
+          Our paper, "A generalist vision–language foundation model for diverse biomedical tasks", is accepted by <em>Nature Medicine</em>. The BiomedGPT model is a lightweight, open-source generalist medical AI that excels across 25 datasets and 9 tasks, achieving 16 state-of-the-art results in a diversified array of medical tasks. Read the full paper <a target="_blank" href="https://www.nature.com/articles/s41591-024-03185-2">—>here</a>.<br />
+          </p>
+          </div>
+
+          <div class="update">
+            <div class="update-date">July 22nd, 2024</div>
+                <p>
+                  <a target="_blank" href="https://aim-fm-24.github.io/NeurIPS/">AIM-FM: Advancements In Medical Foundation Models: Explainability, Robustness, Security, and Beyond</a><br />
+                  We will host the First <em>NeurIPS</em> workshop AIM-FM: Advancements In Medical Foundation Models: Explainability, Robustness, Security, and Beyond. This workshop aims to explore the potential of Medical Foundation Models (MFMs) in smart medical assistance, thereby improving patient outcomes and streamlining clinical workflows, with an emphasize on the explainability, robustness, and security of the large-scale multimodal medical assistant, pushing forward its reliability and trustworthiness.
+                </p>
+          </div>
+
+          <div class="update">
+            <div class="update-date">Jun 27th, 2024</div>
+                <p>Our Editor's Blog article, "Can AI solve the clinical data problem?", is now online at <em>Science</em>, which illuminates both the potential benefits and the challenges of integrating AI into clinical workflows. Read the full article <a target="_blank" href="https://www.science.org/content/blog-post/can-ai-solve-clinical-data-problem">—>here</a>.                   
+                </p>
+          </div>
+
+          <div class="update">
+            <div class="update-date">May 5th, 2024</div>
+                <p>Call for Papers: <em>IEEE Transactions on Neural Networks and Learning Systems</em> Special Issue: <strong>Advancements in Foundation Models</strong><br />
+                  Guest Editors:<br />
+                  Tianming Liu, University of Georgia, USA<br />
+                  Xiang Li, Massachusetts General Hospital and Harvard Medical School, USA<br />
+                  Hao Chen, Hong Kong University of Science and Technology, Hong Kong, China<br />
+                  Yixuan Yuan, Chinese University of Hong Kong, Hong Kong, China<br />
+                  Anirban Mukhopadhyay, TU Darmstadt, Germany  <br />
+                  Learn more at <a target="_blank" href="https://cis.ieee.org/images/files/Publications/TNNLS/special-issues/TNNLS_SI_CFP_Advancements_in_Foundation_Models.pdf">—>here</a>.                   
+                </p>
+          </div>
+
+          <div class="update">
+            <div class="update-date">May 1st, 2024</div>
+                <p>Our Position Paper, "TrustLLM: Trustworthiness in Large Language Models", has been accepted by <em>ICML</em> 2024. This work was also recognized by Hugging Face as its daily paper and ranked #1 in likes. Read the full article <a target="_blank" href="https://openreview.net/forum?id=bWUU0LwwMp">—>here</a>
+                </p>
+          </div>
+
+          <div class="update">
+            <div class="update-date">April 26th, 2024</div>
+                <p><a target="_blank" href="https://mmmi2024.github.io/">MMMI 2024</a><br />
+                  This year, we will continue organizing the MICCAI workshop on Multiscale Multimodal Medical Imaging (MMMI 2024), together with the wonderful team from FAU and TUM organizing the 1st Workshop on Machine Learning for Multimodal/-sensor Healthcare Data (ML4MHD 2024).
+                <img src="./img/MMMI2024.jpg" width="600"/>
+                </p>
+          </div>
+
+          <div class="update">
+            <div class="update-date">April 14th, 2024</div>
+                <p>Five papers accepted by <em>MICCAI</em> 2024:<br />
+                "Volumetric Conditional Score-based Residual Diffusion Model for PET Denoising" <a target="_blank" href="https://link.springer.com/chapter/10.1007/978-3-031-72104-5_72">—></a><br />
+                "F2TNet: FMRI to T1w MRI Knowledge Transfer Network for Brain Multi-phenotype Prediction" <a target="_blank" href="https://link.springer.com/chapter/10.1007/978-3-031-72120-5_25">—></a><br />
+                "Conditional Score-Based Diffusion Model for Cortical Thickness Trajectory Prediction" <a target="_blank" href="https://link.springer.com/chapter/10.1007/978-3-031-72069-7_8">—></a><br />
+                "Medical Image Synthesis via Fine-Grained Image-Text Alignment and Anatomy-Pathology Prompt" <a target="_blank" href="https://link.springer.com/chapter/10.1007/978-3-031-72390-2_23">—></a><br />
+                "Hallucination Index: An Image Quality Metric for Generative Reconstruction Models" <a target="_blank" href="https://link.springer.com/chapter/10.1007/978-3-031-72117-5_42">—></a><br />
+                </p>
+          </div>
+          
+
+      <div class="update">
+		<div class="update-date">December 30th, 2023</div>
+		<p>Started serving as the Associate Editor for <em>Data Intelligence</em>.
+		</p></div>				
+		
+		<div class="update">
+			<div class="update-date">December 18th, 2023</div>
+					<p>Started serving as the Associate Editor for <em>IEEE Transactions on Artificial Intelligence</em>.
+					</p>
+		</div>			
+    <div class="update">
+					<div class="update-date">December 13th, 2023</div>
+					<p>Our work on the development of a cyclic image to/from text model, "AdaMatch-Cyclic", has been accepted by <em>ACL</em> 2024 and is now availabl <a target="_blank" href="https://aclanthology.org/2024.acl-long.514/">—>here</a>. In this work we explored the fine-grained mapping between chest x-ray images and their corresponding radiology reports and developed generative model for the image and text correspondingly. Preliminary result shows that the cyclic generation model can accurately capture word-patch relationsihp and perform effective text generation (report writing) and image generation. 
+					</p>
 		</div>
-		<div class="col2">
-		<h4>Reach me at:</h4>
-		<h4>25 New Chardon St, 449A, Boston, MA, 02114<br />
-		xiangli.shaun{at}gmail.com</h4>
-		<h4>My <a target="_blank" href="./pdf/CV_xiang.pdf" id="pdf" target="_blank">CV</a></h4>
-		<h4>My <a target="_blank" href="https://researchers.mgh.harvard.edu/profile?profile_id=15451263" id="external" target="_blank">MGH Researcher</a> page</h4>
-		<h4>My <a target="_blank" href="https://scholar.google.com/citations?user=MjkwwiQAAAAJ&hl=en" id="external" target="_blank">Google Scholar</a> page</h4>
-		<h4>My <a target="_blank" href="https://www.scopus.com/authid/detail.uri?authorId=27168120000" id="external" target="_blank">Scopus author</a> page</h4>		
-		<h4>My <a target="_blank" href="https://dblp.org/pid/40/1491-1.html" id="external" target="_blank">dblp</a> page</h4>
-		<h4>My <a target="_blank" href="https://arxiv.org/a/li_x_10.html" id="external" target="_blank">arXiv author id</a> page</h4>		
-		<h4>My ORCID page</h4>
-		<a target="_blank" href="https://orcid.org/0000-0002-9851-6376" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon">orcid.org/0000-0002-9851-6376</a>
-		<h4><a target="_blank" href="https://www.camca.mgh.harvard.edu/" id="external" target="_blank">Homepage</a> of the Center for Advanced Medical Computing and Analysis (CAMCA) at HMS/MGH, where I'm currently working at.</h4>
-		<h4><a target="_blank" href="http://caid.cs.uga.edu/" id="external" target="_blank">Homepage</a> of the Cortical Architecture Imaging and Discovery (CAID) lab, where I previous joined at UGA computer science department.</h4>
-		<h4><a target="_blank" href="http://home.penglab.com/" id="external" target="_blank">Homepage</a> of the 3D visualization platform I've been previously working at, the Vaa3D system by Dr. Hanchuan Peng.</h4>
-		<!-- Column 2 end -->
+
+		
+		<div class="update">
+			<div class="update-date">November 3rd, 2023</div>
+					<p>Started serving as the Associate Editor for <em>BMC Biomedical Engineering</em>.
+					</p>
+		</div>	
+					
+		<div class="update">
+			<div class="update-date">October 29th, 2023</div>
+					<p>Our work on evaluating the medical image understanding capability of GPT-4v, "Multimodal ChatGPT for Medical Applications: an Experimental Study of GPT-4V", is now availabl on <a target="_blank" href="https://arxiv.org/abs/2310.19061">arXiv</a>. In this work, we found that the current version of GPT-4V is not recommended for real-world diagnostics due to its unreliable and suboptimal accuracy in responding to diagnostic medical questions. In addition, we delineate seven unique facets of GPT-4V's behavior in medical VQA task, highlighting its constraints within this complex arena. The paper has been recommended by Hugging Face <a target="_blank" href="https://huggingface.co/papers?date=2023-10-31">—>here</a>.
+					</p>
+		</div>	
+			
+		<div class="update">
+			<div class="update-date">October 20th, 2023</div>
+					<p>Our work on graph transformer representation of dynamic brain imaging data, "Large-scale Graph Representation Learning of Dynamic Brain Connectome with Transformers", was accepted by <em>NeurIPS 2023 Temporal Graph Learning Workshop</em>. In this collaborative work with Dr. Byung-Hoon Kim from Yonsei University College of Medicine, we developed a representation learning framework for modeling dynamic functional connectivity with graph transformers. By the novel "connectome embedding" concept developed in this work, we are able to characterize the position, structure, and time information of the functional connectivity graph within an integrated embedding. Experiment results from multiple fMRI datasets show state-of-the-art performance of the proposed framework in gender classification and age regression tasks. Its OpenReview link can be found <a target="_blank" href="https://openreview.net/forum?id=WvFHDkIhmp">—>here</a>.
+					</p>
+		</div>	
+			
+		<div class="update">
+			<div class="update-date">September 24th, 2023</div>
+					<p>Our recent paper, "MediViSTA-SAM: Zero-shot Medical Video Analysis with Spatio-temporal SAM Adaptation", is now on <a target="_blank" href="https://arxiv.org/abs/2309.13539">arXiv</a>. As the Segmentation Anything Model (SAM) has become prominent for its generalization abilities, we developed MediViSTA-SAM for adapting SAM to medical video data. The model can effectively capture both long and short-range temporal dependency structures through its cross-frame attention mechanism. Furthermore, MediViSTA-SAM utilizes a novel U-shaped encoder and an adapted mask decoder to handle objects of various dimensions. MediViSTA-SAM was tested on echocardiography datasets from multiple vendors/institutions and achieved state-of-the-art performance in segmenting the left ventricle and left atrium from echocardiogram video data.
+					</p>
+		</div>			
+			
+		<div class="update">
+			<div class="update-date">September 22nd, 2023</div>
+					<p>Our research on fine-tuning LLM for radiation oncology, "RadOnc-GPT: A Large Language Model for Radiation Oncology", is now on <a target="_blank" href="https://arxiv.org/abs/2309.10160">arXiv</a>. RadOnc-GPT is fined-tuned using an extensive dataset encompassing radiation oncology patient records and clinical observations sourced from Mayo Clinic Arizona. Clinical implication of RadOnc-GPT is investigated on three tasks: generating radiotherapy treatment plans, determining optimal radiation modalities, and providing diagnostic descriptions/ICD codes based on patient diagnostic details. When benchmarked against general-domain large language models, RadOnc-GPT has superior performance, characterized by its enhanced clarity, specificity, and clinical relevance. This work underscores the revolutionary potential of domain-centric language models for healthcare practice that demands specialized expertise.
+					</p>
+		</div>			
+			
+		<div class="update">
+			<div class="update-date">September 22nd, 2023</div>
+					<p>Started working as the Affiliate Faculty Member at the <a target="_blank" href="https://www.harvard.edu/kempner-institute/">Kempner Institute for Natural and Artificial Intelligence</a> of Harvard University.
+					</p>
+		</div>			
+			
+		<div class="update">
+			<div class="update-date">September 16th, 2023</div>
+					<p>Our recent paper, "MA-SAM: Modality-agnostic SAM Adaptation for 3D Medical Image Segmentation", is now on <a target="_blank" href="https://arxiv.org/abs/2309.08842">arXiv</a>. While the Segment Anything Model (SAM) has showcased stellar results in general-domain image segmentation, it needs further adaptation to be working on medical images due to its limitation to 2-D images. Recognizing the importance of the third dimension, either volumetric or temporal, we developed MA-SAM, a modality-agnostic framework tailored for a wide variety of 3D medical imaging modalities, equipping our efficient parameter fine-tuning strategy and the 3D adapters design. We tested MA-SAM on ten diverse datasets spanning 3D CT, 3D MRI, and surgical videos. The model can achieve superior performance over major medical segmentation algorithms, including nnU-Net, by notable margins. The code of MA-SAM is accessible on <a target="_blank" href="https://github.com/cchen-cc/MA-SAM">GitHub</a>.
+					</p>
+		</div>	
+		
+		<div class="update">
+			<div class="update-date">September 10th, 2023</div>
+					<p>Our paper on analyzing ChatGPT-generated language data and its comparison to human-written language, "Differentiate ChatGPT-generated and Human-written Medical Texts", has been accepted by the <a target="_blank" href="mededu.jmir.org">JMIR Medical Education (JME)</a>. We analyzed the linguistic features of the ChatGPT-generated txt versus human-generated to uncover differences in vocabulary, part-of-speech, dependency, sentiment, perplexity, etc. We also developed A BERT-based model to detect medical texts generated by ChatGPT with high accuracy. Its arXiv version can be found <a target="_blank" href="https://arxiv.org/abs/2304.11567">—>here</a>.
+					</p>
 		</div>
+			
+		<div class="update">
+			<div class="update-date">August 29th, 2023</div>
+					<p>Our work on fine-tuning LLaMA2 for radiology, "Radiology-Llama2: Best-in-Class Large Language Model for Radiology", is now on <a target="_blank" href="https://arxiv.org/abs/2309.08842">arXiv</a>. Radiology-Llama2 is a large language model specialized for radiology by fine-tuning a large dataset of radiology reports, targeting at generating coherent and clinically useful impressions from radiological findings. Quantitative evaluations using ROUGE metrics on the MIMIC-CXR and OpenI datasets demonstrate that Radiology-Llama2 achieves state-of-the-art performance compared to other large language models. Additional assessments by radiology experts highlight the model's strengths in understandability, coherence, relevance, conciseness, and clinical utility. The work illustrates the potential of domain-specific language models designed and tuned for specialized fields in healthcare. When properly evaluated and deployed, such models can transform fields like radiology by automating tasks and providing clinical decision-making support.
+					</p>
+		</div>
+			
+		<div class="update">
+			<div class="update-date">August 18th, 2023</div>
+					<p>Our paper on the fine-tuning and adaptation of LLMs on radiology report data to develop foundation models for radiology, entitled "Tailoring Large Language Models to Radiology: A preliminary approach to LLM adaptation for a highly specialized domain", is accepted by <i>Machine Learning in Medical Imaging (MLMI 2023)</i> for oral presentation. In this work, we developed a domain-specific large language model (LLM) for radiology by fine-tuning LLaMA on the findings-impression pairs extracted from the radiology reports in the MIMIC dataset. The work demonstrated promising performance and show potential applications in radiological diagnosis, research, and communication, suggesting a promising direction for tailored medical language models with conversational abilities. Its arXiv version can be found <a target="_blank" href="https://arxiv.org/abs/2306.08666">—>here</a>.
+					</p>
+		</div>
+			
+		<div class="update">
+			<div class="update-date">August 18th, 2023</div>
+					<p>Our paper on view classification for echocardiogram ultrasound imaging, entitled "Multi-task Learning for Hierarchically-Structured Images: Study on Echocardiogram View Classification", has been accepted by the <i>MICCAI Workshop of Special Interest Group on Medical Ultrasound</i>. In this collaborative work with cardiologists and sonographers at Massachusetts General Hospital and Brigham and Women's Hospital, we developed a Multi-task Residual Neural Network (MTRNN) with a hierarchically structured output for echocardiogram view classification, showcasing superior performance. The design of this work can be extended to other data classification scenarios with hierarchical data labels as well. 
+					</p>
+		</div>		
+					
+		<div class="update">
+			<div class="update-date">August 8th, 2023</div>
+					<p>Our abstract on predicting the early discharge of patients after receiving Transcatheter Aortic Valve Replacement (TAVR), entitled "Machine Learning Model for the Prediction of Early Discharge of Patient Underwent Transcatheter Aortic Valve Replacement Using Electronic Medical Record", has been accepted to be presented at the <i>American Heart Association’s annual Scientific Sessions 2023 (AHA 2023)</i>. In this collaborative work with cardiologists at Massachusetts General Hospital and Brigham and Women's Hospital, we collected electronic health record (EHR) data from patients who underwent TAVR and trained a machine learning model to predict the early discharge (within two days) of patients, which has been critical for accelerating patient recovery and saving costs. 
+					</p>
+		</div>			
+			
+		<div class="update">
+			<div class="update-date">July 7th, 2023</div>
+					<p>Our abstract on differentiating people with Alzheimer's disease and normal aging by their speech audio and transcripts, entitled "Alzheimer's Disease Prediction through Patients Speech Transcript Using Pre-trained Language Models", has been accepted to the presented at the <i>American Medical Informatics Association (AMIA) 2023 Annual Symposium</i>. This study explores methods for detecting combineing pre-trained language models, Graph Neural Networks (GNN), text data augmentation by ChatGPT, and contrastive learning for text-audio data fusion. Its arXiv version can be found <a target="_blank" href="https://arxiv.org/abs/2307.02514">—>here</a>.
+					</p>
+		</div>			
+					
+		<div class="update">
+			<div class="update-date">June 1st, 2023</div>
+					<p>Joined the rank of Assistant Professor at Department of Radiology, Harvard Medical School and Massachusetts General Hospital.</p>
+		</div>
+			
+		<div class="update">
+			<div class="update-date">May 6th, 2023</div>
+					<p><a target="_blank" href="https://mmmi2023.github.io/">MMMI2023</a><br />
+					This year we will continue organizing the MICCAI workshop on Multiscale Multimodal Medical Imaging (MMMI 2023). If you work on related areas, we are looking forward to your paper submission. The submission deadline is <strike>July 14th</strike>July 31st, 2023.
+					<img src="./img/MMMI2023.png" width="600"/>
+					</p>
+		</div>
+			
+		<div class="update">
+			<div class="update-date">March 14th, 2023</div>
+					<p>Our paper on the open community bench-testing platform for reserach on neuron tracing, "BigNeuron: a resource to benchmark and predict performance of algorithms for automated tracing of neurons in light microscopy datasets" is accepted by <i>Nature Methods</i> and available at <a target="_blank" href="https://www.nature.com/articles/s41592-023-01848-5">—>here</a>. This work was initiated and devloped by the team led by <a target="_blank" href="http://penglab.com/">Dr. Hanchuan Peng</a>, who's a member of my Phd. committee.
+					</p>
+		</div>	
+			
+		<div class="update">
+			<div class="update-date">February 28th, 2023</div>
+					<p>Our absract on predicting the clinical outcomes (length-of-stay and readmission) of aortic stenosis patients after receiving Surgical Aortic Valve Replacement (SAVR)or Transcatheter Aortic Valve Replacement (TAVR), entitled "Machine Learning Model for Aortic Stenosis Patient Outcome Prediction", has been accepted to be presented at the <i>AMIA 2023 Clinical Informatics Conference 2023</i>. Risk stratification and patient outcome prediction are helpful for physicians in guiding clinical decision-making and the hospital’s resource allocation and patient management. In this work on preoperative aortic stenosis (AS) patient outcome prediction, we showed that by applying machine learning methods to a comprehensive list of the patient electronic health record (EHR) data, superior prediction performance could be achieved compared with the current regression-based risk score systems. 
+					</p>
+		</div>	
+			
+		<div class="update">
+			<div class="update-date">December 16th, 2022</div>
+					<p>Our first paper on the language processing in medical domain, "ClinicalRadioBERT: Knowledge-Infused Few Shot Learning for Clinical Notes Named Entity Recognition" is accepted by International Workshop on Machine Learning in Medical Imaging (MLMI 2022)and available at <a target="_blank" href="https://link.springer.com/chapter/10.1007/978-3-031-21014-3_28">—>here</a>. In this paper, we proposed the knowledge-infused few-shot learning (KI-FSL) approach to develop the ClinicalRadioBERT model for the task of radiotherapy clinical notes named entity recognition (NER)..
+					</p>
+		</div>
+		
+		<div class="update">
+			<div class="update-date">October 13th, 2022</div>
+					<p>Proceeding of MMMI 2022 as part of the MICCAI 2022 conference proceeding, published as Lecture Notes in Computer Science (LNCS) book series, is now available for free access via the MMMI 2022 official website at <a target="_blank" href="https://mmmi2022.github.io/">—>here</a>. Note that the full proceeding is only accessible directed from that website, and will be available for 4 weeks. Cover of this proceeding can be downloaded <a target="_blank" href="./pdf/2022_Bookmatter_MultiscaleMultimodalMedicalIma.pdf" id="pdf">—>here</a>.
+					</p>
+		</div>
+							
+		<div class="update">
+			<div class="update-date">July 1st, 2022</div>
+					<p>We have been awarded by the National Institutes of Health for 2-year support of our project, "Identification of Multi-modal Imaging Biomarkers for Early Prediction of MCI-AD Conversion via Multigraph Representation" (1R03AG078625-01). Alzheimer's disease (AD) will result in cognitive decline and dementia and is a leading cause of mortality in the growing elderly population. As a progressive disease, AD typically has an insidious onset with overlapping clinical features with the transitional state of Mild Cognitive Impairment (MCI). Analysis of the relationship between MCI and AD with a focus on the converting factors, by the co-modeling of a wide array of imaging methods, can help us in a deeper understanding of the disease mechanism, which can lead to more accurate early diagnosis and identification of better intervention techniques.
+					</p>
+		</div>    
+					
+		<div class="update">
+			<div class="update-date">April 5th, 2022</div>
+					<p><a target="_blank" href="https://mmmi2022.github.io/">MMMI2022</a><br />
+					This year we will continue organizing the MICCAI workshop on Multiscale Multimodal Medical Imaging (MMMI 2022). If you work on related areas, we are looking forward to your paper submission. The submission deadline is July 22nd, 2022.
+					<img src="./img/MMMI2022.png" width="600"/>
+					</p>
+		</div>	
+			
+		<div class="update">
+			<div class="update-date">March 15th, 2022</div>
+					<p>We have been awarded by the National Institutes of Health for a 4-year support of our project, "Deep Learning Based Phenotyping and Treatment Optimization of Heart Failure with Preserved Ejection Fraction" (1R01HL159183-01A1). Heart failure with preserved ejection fraction (HFpEF) is a major public health problem that is rising in prevalence with the aging population. By performing deep phenotyping of the patients from their Cardiac Magnetic Resonance images and Electronic Health Record simultaneously, we aim to provide phenotypic-specific, individualized treatment optimization based on the current massive amount of clinical data using deep learning.</p>
+		</div>	
+					
+		<div class="update">
+			<div class="update-date">February 4th, 2022</div>
+					<p>I have received the 2021 MGH Thrall Innovation Grants Award for funding my research of lung cancer screening by transformed chest X-ray imaging. The project is called "Chest Radiographs-based Lung Cancer Screening by the DeepProjection Technique" based on the DeepProjection technique previously developed by us which can generate near-real volumetric 3D CT image from a single 2D Chest Radiograph (CXR) image. By replacing CT scans with CXR-generated pseudo-CTs for lung cancer screening, we can reduce radiation doses, scan time and cost for the screening, as well as better availability for remote healthcare sites. News of this award can be found <a target="_blank" href="https://gordon.mgh.harvard.edu/gc/mgh-thrall-innovation-grants-awarded-to-two-gordon-center-faculty/">—>here</a>, and covered by the Rad Times over <a target="_blank" href="https://radhub.massgeneral.org/radtimes/2022/01/27/james-thrall-innovation-grant-award-recipients/">—>here</a>.</p>
+		</div>	
+			
+		<div class="update">
+			<div class="update-date">December 1st, 2021</div>
+					<p>Our paper "Artificial Intelligence and Machine Learning in Radiology: Opportunities, Challenges, Pitfalls, and Criteria for Success" is awarded the <a target="_blank" href="https://www.journals.elsevier.com/journal-of-the-american-college-of-radiology/most-cited-articles">"Most Cited Articles"</a> of <i>Journal of the American College of Radiology</i>.</p>
+					<p><img src="./img/JACR.png" width="600"/></p>
+		</div>
+					
+		<div class="update">
+			<div class="update-date">September 27th, 2021</div>
+					<p>We have the pleasure to host the research topic of "Multi-Dimensional Characterization of Neuropsychiatric Disorders" in <i>Frontiers in Neuroscience - Brain Imaging Methods</i>. Link to this research topic can be found <a target="_blank" href="https://www.frontiersin.org/research-topics/24953/multi-dimensional-characterization-of-neuropsychiatric-disorders">—>here</a>. All research related to the identification of multi-modal biomarkers for psychiatric disorders and multi-modal fusion methodologies are welcomed! Deadline for the intention-to-submit is <u>December 23rd, 2021</u>.</p>
+		</div>
+					
+		<div class="update">
+			<div class="update-date">August 13th, 2021</div>
+					<p>Our work on multi-hospital federated learning for combined analysis of chest X-ray images and electronic health records data towards the prediction of COVID-19 patient's risk in the emergency department has been accepted by <i>Nature Medicine</i>. Its link can be found <a target="_blank" href="https://www.nature.com/articles/s41591-021-01506-3">—>here</a> (open access). This work, led by Mass General Brigham and NVIDIA, shows how federated learning enables creation of robust AI models for healthcare and other industries constrained by confidential and sparse data. Coverage of this work by NVidia can be found <a target="_blank" href="https://blogs.nvidia.com/blog/2021/09/15/federated-learning-nature-medicine/">—>here</a>.</p>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/cOXVrtkv6FE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		<div class="update">
+			<div class="update-date">March 23rd, 2021</div>
+					<p>Our work on severe outcome prediction and a clinical risk score (CO-RISK score) system for COVID-19 patient triage at emergency department is now online at <a target="_blank" href="https://arxiv.org/abs/2103.11269" id="arxiv">arXiv</a>.</p>
+					<p>In this study we constructed the "MGB Cohort", a database covering all patients suspected of COVID-19 presented to the emergency department at the four hospital sites of the MGB system. A total of 11,060 patients were used in the model development and validation, according to our inclusion/exclusion criteria. A deep learning system based on the architecture of Deep and Cross network was developed to predict the patient's outcome in 24/72 hours based on the EHR and imaging (CXR) data up to the initial present to the emergency department. </p>
+		</div>
+	
 	</div>
-</div>
-<div id="footer">
-Last updated: July, 2023
-</div>
+  <a id="toggle-updates" href="javascript:void(0)">See more...</a>
+	
 
+
+
+    </section>
+
+    <hr/>
+
+    <!-- PUBLICATIONS -->
+    <section id="publications" class="publications">
+      <h2>Selected publications in the last 3 years</h2>
+	  <div id="publication-content" class="collapsible collapsed">
+      <div class="publication">
+        <p>
+          Bridging Medical Imaging and Reports: Learning Radiologist's Nuances via Fine-Grained Multi-Modal Alignment<br /><a target="_blank" href="https://www.researchsquare.com/article/rs-6002276/v1">—></a>
+        </p>
+        <p>
+          Enhancing Cognition and Explainability of Multimodal Foundation Models with Self-Synthesized Data<br />(<i>ICLR</i> 2025) <a target="_blank" href="https://openreview.net/forum?id=lHbLpwbEyt">—></a>
+        </p>
+        <p>
+          ECHOPulse: ECG controlled echocardio-grams video generation<br />(<i>ICLR</i> 2025) <a target="_blank" href="https://openreview.net/forum?id=i2r7LDjba3">—></a>
+        </p>        
+        <p>
+          MediViSTA: Medical Video Segmentation via Temporal Fusion SAM Adaptation for Echocardiography<br />(<i>IEEE JBHI</i> 2025) <a target="_blank" href="https://ieeexplore.ieee.org/document/10878483">—></a>
+        </p> 
+        <p>
+          Distribution-aware Fairness Learning in Medical Image Segmentation From A Control-Theoretic Perspective<br /><a target="_blank" href="https://arxiv.org/abs/2502.00619">—></a>
+        </p>
+        <p>
+          Large Language Models and Large Multimodal Models in Medical Imaging: A Primer for Physicians<br />(<i>JNM</i> 2025 CME Article) <a target="_blank" href="https://jnm.snmjournals.org/content/66/2/173.abstract">—></a>
+        </p>
+        <p>
+          Auggpt: Leveraging chatgpt for text data augmentation<br />(<i>IEEE Big Data</i> 2025) <a target="_blank" href="https://ieeexplore.ieee.org/abstract/document/10858342">—></a>
+        </p>        
+        <p>
+          Biomedical visual instruction tuning with clinician preference alignment<br />(<i>NeurIPS</i> 2024) <a target="_blank" href="https://proceedings.neurips.cc/paper_files/paper/2024/hash/aec33ab89b5986605cd7c331396e7e5c-Abstract-Datasets_and_Benchmarks_Track.html">—></a>
+        </p>
+        <p>
+          Eye-gaze guided multi-modal alignment for medical representation learning<br />(<i>NeurIPS</i> 2024) <a target="_blank" href="https://proceedings.neurips.cc/paper_files/paper/2024/hash/0b9536e186a77feff516893a5f393f7a-Abstract-Conference.html">—></a>
+        </p>
+        <p>
+          Artificial General Intelligence for Medical Imaging Analysis<br />(<i>IEEE Reviews in Biomedical Engineering</i> 2024) <a target="_blank" href="https://ieeexplore.ieee.org/abstract/document/10746601">—></a>
+        </p>
+        <p>
+          Conditional Score-Based Diffusion Model for Cortical Thickness Trajectory Prediction<br />(<i>MICCAI</i> 2024) <a target="_blank" href="https://link.springer.com/chapter/10.1007/978-3-031-72069-7_8">—></a>
+        </p>
+        <p>
+          Medical Image Synthesis via Fine-Grained Image-Text Alignment and Anatomy-Pathology Prompting<br />(<i>MICCAI</i> 2024) <a target="_blank" href="https://link.springer.com/chapter/10.1007/978-3-031-72390-2_23">—></a>
+        </p>
+        <p>
+          A generalist vision–language foundation model for diverse biomedical tasks<br />(<i>Nature Medicine</i> 2024) <a target="_blank" href="https://www.nature.com/articles/s41591-024-03185-2">—></a>
+        </p>
+        <p>
+          Fine-Grained Image-Text Alignment in Medical Imaging Enables Explainable Cyclic Image-Report Generation<br />(<i>ACL</i> 2024) <a target="_blank" href="https://aclanthology.org/2024.acl-long.514/">—></a>
+        </p>
+        <p>
+          Zero-Shot Novel View Synthesis of Wrist X-Rays Using Latent Diffusion Model<br />(<i>ISBI</i> 2024) <a target="_blank" href="https://ieeexplore.ieee.org/abstract/document/10635244">—></a>
+        </p>
+        <p>
+          High-Resolution 3d Ct Synthesis From Bidirectional X-Ray Images Using 3d Diffusion Model<br />(<i>ISBI</i> 2024) <a target="_blank" href="https://ieeexplore.ieee.org/abstract/document/10635648">—></a>
+        </p>
+        <p>
+          An iterative optimizing framework for radiology report summarization with ChatGPT<br />(<i>IEEE TAI</i> 2024) <a target="_blank" href="https://ieeexplore.ieee.org/abstract/document/10433180">—></a>
+        </p>
+        <p>
+          MKRAG: Medical Knowledge Retrieval Augmented Generation for Medical Question Answering<br />(<i>AMIA</i> 2024 Best Paper) <a target="_blank" href="https://github.com/sycny/MKRAG">—></a>
+        </p>
+        <p>
+          Zero-shot relation triplet extraction as Next-Sentence Prediction<br />(<i>Knowledge-Based Systems
+          </i> 2024) <a target="_blank" href="https://www.sciencedirect.com/science/article/abs/pii/S0950705124011419">—></a>
+        </p> 
+        <p>
+          Motion Correction and Super-Resolution for Multi-slice Cardiac Magnetic Resonance Imaging via an End-to-End Deep Learning Approach<br />(<i>Computerized Medical Imaging and Graphics</i> 2024) <a target="_blank" href="https://www.sciencedirect.com/science/article/abs/pii/S0895611124000661">—></a>
+        </p>         
+        <p>
+          Mask-guided BERT for few-shot text classification<br />(<i>Neurocomputing</i> 2024) <a target="_blank" href="https://www.sciencedirect.com/science/article/abs/pii/S092523122401347X">—></a>
+        </p>                                                                          
+        <p>
+          Coarse-to-fine Knowledge Graph Domain Adaptation based on Distantly-supervised Iterative Training<br />(<i>BIBM</i> 2023) <a target="_blank" href="https://ieeexplore.ieee.org/abstract/document/10385649">—></a>
+        </p>
+        <p>
+          Graph-Based Counterfactual Causal Inference Modeling for Neuroimaging Analysis<br />(<i>MICCAI Workshop</i> 2023) <a target="_blank" href="https://link.springer.com/chapter/10.1007/978-3-031-47425-5_19">—></a>
+        </p>
+        <p>
+          Tailoring Large Language Models to Radiology: A Preliminary Approach to LLM Adaptation for a Highly Specialized Domain<br />(<i>MICCAI Workshop</i> 2023) <a target="_blank" href="https://link.springer.com/chapter/10.1007/978-3-031-45673-2_46">—></a>
+        </p>        
+      </div>
+      
+	  
+	</div>
+  <a id="toggle-publication" href="javascript:void(0)">See more...</a>
+      <!-- More publications as needed -->
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="contact">
+      <h3>Contact me at 399 Revolution Dr. 11th Floor, Somervile, MA 02145,<br />Email: xiangli.shaun[at]gmail.com</h3>
+      <p>
+        <a target="_blank" href="https://researchers.mgh.harvard.edu/profile?profile_id=15451263">MGH Researcher</a> |
+        <a target="_blank" href="https://dblp.org/pid/40/1491-1.html">DBLP</a> |
+        <a target="_blank" href="https://www.scopus.com/authid/detail.uri?authorId=27168120000">Scopus</a> |
+        <a target="_blank" href="https://orcid.org/0000-0002-9851-6376">ORCID</a> |
+        <a target="_blank" href="https://camca.mgh.harvard.edu/">CAMCA</a> |
+        <a target="_blank" href="https://mastodon.social/@xiangli_shaun">Mastodon</a>
+      </p>
+      <p>
+        Last updated: April 2nd, 2025
+      </p>
+    </footer>
+  </div>
+  <script>
+	document.getElementById('toggle-updates').addEventListener('click', function () {
+	  const content = document.getElementById('updates-content');
+	  const isCollapsed = content.classList.contains('collapsed');
+	  
+	  content.classList.toggle('collapsed');
+	  content.classList.toggle('expanded');
+	  this.textContent = isCollapsed ? 'See less...' : 'See more...';
+	});
+	document.getElementById('toggle-publication').addEventListener('click', function () {
+	  const content = document.getElementById('publication-content');
+	  const isCollapsed = content.classList.contains('collapsed');
+	  
+	  content.classList.toggle('collapsed');
+	  content.classList.toggle('expanded');
+	  this.textContent = isCollapsed ? 'See less...' : 'See more...';
+	});
+  </script>
 </body>
 </html>
