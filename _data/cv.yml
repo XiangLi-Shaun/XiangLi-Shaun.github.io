@@ -4,9 +4,8 @@ cv:
   email: xiangli.shaun@gmail.com
   location: Boston, MA
   image: ''
-  summary: Assistant Professor in the Department of Radiology at Massachusetts General Hospital and Harvard
-    Medical School, and Affiliate Faculty at the Harvard Kempner Institute. Research spans medical foundation
-    models, generative AI, expert-machine alignment, medical informatics, and counterfactual causal inference.
+  summary: Assistant Professor in the Department of Radiology at Massachusetts General Hospital and Harvard Medical School, and Affiliate Faculty at the Harvard Kempner Institute. Research spans medical
+    foundation models, generative AI, expert-machine alignment, medical informatics, and counterfactual causal inference.
   social_networks:
   - network: GitHub
     username: XiangLi-Shaun
@@ -22,7 +21,7 @@ cv:
     countryCode: US
   sections:
     Education:
-    - institution: University of Georgia
+    - institution: <img src="https://www.uga.edu/favicon.ico" alt="" style="height:1.15em;width:auto;vertical-align:-0.18em;margin-right:0.45em;border-radius:2px">University of Georgia
       location: Athens, GA, USA
       url: https://www.uga.edu/
       area: Computer Science
@@ -32,7 +31,7 @@ cv:
       highlights:
       - 'Advisor: Distinguished Professor Tianming Liu (AIMBE Fellow).'
       - Outstanding Graduate Dissertation/Thesis, University of Georgia, 2016.
-    - institution: Shanghai Jiao Tong University
+    - institution: <img src="https://en.sjtu.edu.cn/favicon.ico" alt="" style="height:1.15em;width:auto;vertical-align:-0.18em;margin-right:0.45em;border-radius:2px">Shanghai Jiao Tong University
       location: Shanghai, China
       url: https://en.sjtu.edu.cn/
       area: Automation
@@ -93,8 +92,7 @@ cv:
     - title: Editor's Choice Article
       awarder: Medical Physics
       date: 2025
-      summary: Fine-tuning open-source large language models to improve their performance on radiation
-        oncology tasks.
+      summary: Fine-tuning open-source large language models to improve their performance on radiation oncology tasks.
     - title: Featured Article
       awarder: IEEE Reviews in Biomedical Engineering
       date: 2025
@@ -106,8 +104,7 @@ cv:
     - title: Research Scholar Program Award
       awarder: Google Inc.
       date: 2024
-      summary: Tailoring Large Language Models for the Diagnosis and Management of Late-life Depression
-        Patients.
+      summary: Tailoring Large Language Models for the Diagnosis and Management of Late-life Depression Patients.
     - title: Best Paper Award
       awarder: IEEE Transactions on Radiation and Plasma Medical Sciences
       date: 2022
@@ -123,8 +120,7 @@ cv:
     - title: Most Cited Article
       awarder: Journal of the American College of Radiology
       date: 2018
-      summary: 'Artificial Intelligence and Machine Learning in Radiology: Opportunities, Challenges,
-        Pitfalls.'
+      summary: 'Artificial Intelligence and Machine Learning in Radiology: Opportunities, Challenges, Pitfalls.'
     - title: Outstanding Graduate Dissertation/Thesis
       awarder: University of Georgia
       date: 2016
@@ -190,11 +186,8 @@ cv:
     Patents:
     - title: System and Method for Tokenization of Anatomical Structures for Medical Imaging
       summary: Anatomy-aware tokenization of 2D and 3D medical images as semantic disentangled token groups.
-    - title: System and Method for Synthesizing 3D Volumetric Medical Images Using a Probabilistic-Based
-        Machine Learning Model
-      summary: Pose-conditioned diffusion models synthesising high-resolution 3D CT-like volumes from
-        standard 2D radiographs.
+    - title: System and Method for Synthesizing 3D Volumetric Medical Images Using a Probabilistic-Based Machine Learning Model
+      summary: Pose-conditioned diffusion models synthesising high-resolution 3D CT-like volumes from standard 2D radiographs.
     - title: Automated Detection and Management of Valvular Heart Disease Using Machine Learning
       date: '2024'
-      summary: Aortic Stenosis Ensemble Risk Prediction (AS-ERP) model predicting length of stay and readmission
-        from EMR data.
+      summary: Aortic Stenosis Ensemble Risk Prediction (AS-ERP) model predicting length of stay and readmission from EMR data.
