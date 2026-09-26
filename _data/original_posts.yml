@@ -1,0 +1,74 @@
+# Canonical registry of the Chinese originals (WeChat), newest first.
+#
+# Purpose: keep one agreed English title per piece, so cross-references between
+# translated posts stay consistent. When a piece is translated, fill in `post:`
+# with the local post slug; until then, cross-references use `title_en` in italics.
+#
+# `title_en` marked `confirmed: false` is my proposal, not yet approved.
+# `url:` is blank where the WeChat link has not been supplied.
+
+- date: 2026-07-07
+  title_zh: 六千亿美元问题，答案不在价格里
+  title_en: "The Six-Hundred-Billion-Dollar Question: The Answer Is Not in the Price"
+  confirmed: true
+  post: 2026-07-07-the-six-hundred-billion-dollar-question
+  url: https://mp.weixin.qq.com/s/YcHE_AX1vSjriCkwluatqw
+
+- date: 2026-07-02
+  title_zh: 当代码开始自己写自己
+  title_en: When Code Begins to Write Itself
+  confirmed: false
+  post:
+  url:
+
+- date: 2026-05-23
+  title_zh: 从《青春无悔》到《想把我唱给你听》
+  title_en: "From 'No Regrets for Youth' to 'I Want to Sing You My Song'"
+  confirmed: false # two song titles — you may prefer to leave them untranslated
+  post:
+  url:
+
+- date: 2026-05-21
+  title_zh: 关于 AI 炒股，非金融中登要说几句
+  title_en: "On AI Stock Picking: A Few Words from a Non-Finance Nobody"
+  confirmed: false # 中登 is slang; needs your call on register
+  post:
+  url:
+
+- date: 2026-05-18
+  title_zh: 无限游戏与终极指令
+  title_en: The Infinite Game and The Last Instruction
+  confirmed: true # your own English title, from the Medium version
+  post: 2026-05-19-the-infinite-game-and-the-last-instruction
+  url: https://medium.com/@xiangli.shaun/the-infinite-game-and-the-last-instruction-5c25bb1197e3
+  note: >-
+    WeChat 2026-05-18, Medium 2026-05-19. The site post carries the Medium date,
+    since the English text is the Medium version.
+
+- date: 2026-05-17
+  title_zh: 怎么什么都这么贵
+  title_en: Why Is Everything So Expensive?
+  confirmed: false
+  post:
+  url:
+
+- date: 2026-05-11
+  title_zh: 温柔（的）问题 Gentle Problems
+  title_en: Gentle Problems
+  confirmed: true # English title already in the original
+  post:
+  url:
+
+- date: 2026-05-07
+  title_zh: 边界上的人工智能：AI 真正干不了的，恰恰还在电脑上
+  title_en: "AI at the Boundary: What AI Truly Cannot Do Is Precisely What Lives on the Computer"
+  confirmed: false
+  post:
+  url:
+
+- date: 2026-04-18
+  title_zh: 两个人，用AI赚了120亿？
+  title_en: "Two People Made 12 Billion with AI?"
+  confirmed: false # currency unstated in the original — RMB or USD?
+  post:
+  url:

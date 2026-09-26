@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The Six-Hundred-Billion-Dollar Question: The Answer Is Not in the Price"
-date: 2026-09-26
+date: 2026-07-07
 description: The price of a token is collapsing and the value of AI is waiting. Both are true at once, and the reason is that metis accumulates on institutional time, not technical time.
 tags: ai-economics ai-strategy metis essay
 categories: essays
@@ -40,7 +40,7 @@ a16z's early-2026 analysis places its bet on what it calls the *thick app*: not 
 
 But why have so many projects failed? Why did McKinsey find that the decisive factor was not technology but workflow redesign? **Because what the overwhelming majority of domain AI projects are doing is not solving a technical problem. They are attempting to force a form of knowledge that cannot be formalized into formal shape.**
 
-In an earlier piece — *What AI Cannot Do Is Precisely What Lives on the Computer* — I proposed a frame: the Greeks distinguished *techne*, knowledge that can be encoded and taught, from *metis*, the practical, situated, relational wisdom that resists codification. **AI is, in essence, a *techne* machine.** It performs astonishingly on tasks high in *techne*, and it fails systematically on tasks high in *metis*.
+In an earlier piece — *AI at the Boundary: What AI Truly Cannot Do Is Precisely What Lives on the Computer* — I proposed a frame: the Greeks distinguished *techne*, knowledge that can be encoded and taught, from *metis*, the practical, situated, relational wisdom that resists codification. **AI is, in essence, a *techne* machine.** It performs astonishingly on tasks high in *techne*, and it fails systematically on tasks high in *metis*.
 
 That piece listed five structural features for judging the *metis* content of a task: irreversibility of consequence, irreducibility of relationship, open-ended normative structure, adversarial co-evolution, and non-delegable responsibility. Look again at the enterprise AI failures and the pattern maps almost one to one.
 
