@@ -91,10 +91,29 @@ git push --force origin master
 `--force` is required and safe here: the old history is preserved under the
 `pre-al-folio` tag from Phase 0.
 
-**If the push asks for a password:** GitHub removed password auth. Either use the `gh`
-CLI (`brew install gh && gh auth login`, then push again), or switch to SSH:
+**`origin` uses SSH**, because this repo contains `.github/workflows/deploy.yml` and
+GitHub refuses a workflow file pushed over HTTPS unless the token carries the
+`workflow` scope. `gh auth login` does not grant that scope by default, so an HTTPS
+push fails with:
+
+> `refusing to allow a Personal Access Token to create or update workflow`
+> `.github/workflows/deploy.yml without 'workflow' scope`
+
+SSH keys aren't scoped, so they sidestep this. If you ever want HTTPS instead:
+
 ```bash
-git remote set-url origin git@github.com/XiangLi-Shaun/XiangLi-Shaun.github.io.git
+gh auth refresh -h github.com -s workflow    # adds the missing scope
+git remote set-url origin https://github.com/XiangLi-Shaun/XiangLi-Shaun.github.io.git
+```
+
+**If SSH times out** (port 22 is blocked on many hospital and corporate networks),
+route it over 443 by adding this to `~/.ssh/config`:
+
+```
+Host github.com
+  HostName ssh.github.com
+  Port 443
+  User git
 ```
 
 ## Phase 3 — Watch the Action (3-6 min)
