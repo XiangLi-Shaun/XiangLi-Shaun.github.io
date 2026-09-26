@@ -164,7 +164,7 @@ giscus:
   lang: en
 
 # Disqus comments (DEPRECATED)
-disqus_shortname: al-folio # put your disqus shortname
+disqus_shortname: # blank = Disqus off. Was 'al-folio' (the theme author's account).
 # https://help.disqus.com/en/articles/1717111-what-s-a-shortname
 
 # External sources.
