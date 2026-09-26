@@ -1,0 +1,19 @@
+# Social / profile links shown under the about page and in the footer.
+# Plugin docs: https://github.com/george-gca/jekyll-socials
+
+email: xiangli.shaun@gmail.com
+cv_pdf: CV_xiang.pdf # file lives in assets/pdf/
+rss_icon: false
+
+github_username: xiangli-shaun
+linkedin_username: xiang-li-11b2b99
+scholar_userid: MjkwwiQAAAAJ
+orcid_id: 0000-0002-9851-6376
+semanticscholar_id: 2324811229
+dblp_url: https://dblp.org/pid/40/1491-1.html
+mastodon_username: xiangli_shaun@mastodon.social
+
+mgh_profile:
+  logo: https://www.massgeneral.org/favicon.ico
+  title: MGH Researcher Profile
+  url: https://researchers.mgh.harvard.edu/profile?profile_id=15451263
