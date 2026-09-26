@@ -41,7 +41,6 @@ Distinguished Professor Tianming Liu (AIMBE Fellow), and completed postdoctoral
 training at MGH/HMS with Associate Prof. Quanzheng Li and Distinguished Professor
 James H. Thrall.
 
-I have published over 150 peer-reviewed papers with more than 12,000 citations
-(h-index 50). I serve as Associate Editor for *IEEE Transactions on Medical Imaging*
+I have published over 250 papers with more than 17,000 citations and an h-index of 60. I serve as Associate Editor for *IEEE Transactions on Medical Imaging*
 and *Data Intelligence*, as founding chair of MICCAI and NeurIPS workshops on medical
 foundation models, and as Area Chair for NeurIPS, KDD, AAAI, ACM MM, and MICCAI.
