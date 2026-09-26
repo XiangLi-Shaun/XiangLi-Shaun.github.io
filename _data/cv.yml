@@ -21,7 +21,7 @@ cv:
     countryCode: US
   sections:
     Education:
-    - institution: <img src="https://www.uga.edu/favicon.ico" alt="" style="height:1.15em;width:auto;vertical-align:-0.18em;margin-right:0.45em;border-radius:2px">University of Georgia
+    - institution: <img src="/assets/img/logos/uga.png" alt="" style="height:1.3em;width:auto;vertical-align:-0.25em;margin-right:0.45em">University of Georgia
       location: Athens, GA, USA
       url: https://www.uga.edu/
       area: Computer Science
@@ -31,7 +31,7 @@ cv:
       highlights:
       - 'Advisor: Distinguished Professor Tianming Liu (AIMBE Fellow).'
       - Outstanding Graduate Dissertation/Thesis, University of Georgia, 2016.
-    - institution: <img src="https://en.sjtu.edu.cn/favicon.ico" alt="" style="height:1.15em;width:auto;vertical-align:-0.18em;margin-right:0.45em;border-radius:2px">Shanghai Jiao Tong University
+    - institution: <img src="/assets/img/logos/sjtu.png" alt="" style="height:1.3em;width:auto;vertical-align:-0.25em;margin-right:0.45em">Shanghai Jiao Tong University
       location: Shanghai, China
       url: https://en.sjtu.edu.cn/
       area: Automation
