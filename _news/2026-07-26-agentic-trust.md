@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-**Agentic AI Enhances Physician Trust in Clinical Decision Making** is accepted by KDD. This work finds that physicians trusted the system's clinical reasoning in 89.57% of treatment-planning cases.
+**Agentic AI Enhances Physician Trust in Clinical Decision Making** is accepted by AMIA. This work finds that physicians trusted the system's clinical reasoning in 89.57% of treatment-planning cases.
