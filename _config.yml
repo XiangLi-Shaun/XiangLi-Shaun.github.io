@@ -135,7 +135,7 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # -----------------------------------------------------------------------------
 
 blog_name: my blogs
-blog_description: Notes on medical AI, foundation models, and research practice.
+blog_description: Thoughts on AI, humanity, and the link in-between
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 
