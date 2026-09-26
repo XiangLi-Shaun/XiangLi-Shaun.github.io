@@ -131,7 +131,7 @@ homepage. Copy an existing file in `_news/` rather than typing this from scratch
 |---|---|
 | Change doesn't appear locally | It was a `_config.yml` edit — restart the server |
 | A paper vanished from the list | Malformed BibTeX; check for an unbalanced `{` |
-| "Liquid Exception" on build | Usually a stray `{{` or `{%` in Markdown text |
+| "Liquid Exception" on build | Usually a stray Liquid delimiter in Markdown text |
 | Local looks fine, live site doesn't update | Check the repo's **Actions** tab for a failed run |
 | Everything is broken | `git diff` to see what changed, or `git checkout -- <file>` to revert it |
 

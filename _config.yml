@@ -248,6 +248,9 @@ exclude:
   - _pages/about_einstein.md
   - purgecss.config.js
   - README.md
+  - SETUP.md
+  - MIGRATION.md
+  - WORKFLOW.md
   - readme_preview/
   - gems/
   - migrations/
