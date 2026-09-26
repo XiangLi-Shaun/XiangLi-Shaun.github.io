@@ -11,10 +11,7 @@ contact_note: >
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Assistant Professor at Massachusetts General Hospital and Harvard Medical School.
   Medical foundation models, generative AI, and expert-machine alignment.
-footer_text: >
-  Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
-  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-  Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
+footer_text: "" # empty -> no "Powered by / Hosted by / Photos from" line
 keywords: medical AI, foundation models, generative AI, medical imaging, radiology, Harvard, MGH
 lang: en
 icon: 🧠 # favicon emoji
@@ -97,7 +94,7 @@ al_folio:
 # -----------------------------------------------------------------------------
 
 navbar_fixed: true
-footer_fixed: true
+footer_fixed: false # footer removed; no fixed bar to reserve space for
 search_enabled: true
 socials_in_search: true
 posts_in_search: true
