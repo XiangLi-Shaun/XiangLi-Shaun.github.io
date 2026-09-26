@@ -9,7 +9,7 @@ subtitle: >
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: xiang.jpg
   image_circular: false
   more_info: >
     <p>399 Revolution Dr., 11th Floor</p>

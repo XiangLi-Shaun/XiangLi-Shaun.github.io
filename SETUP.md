@@ -55,8 +55,8 @@ present but hidden (`nav: false`) — flip them on when you want them.
 - [ ] **Replace `_bibliography/papers.bib`.** Author lists in it are placeholders.
       Google Scholar → your profile → select all → Export → BibTeX → paste over the file.
       Keep the `selected={true}` lines on whichever papers you want on the homepage.
-- [ ] **`assets/img/prof_pic.jpg`** is still the al-folio demo photo. Drop yours in at
-      that exact path (square crop, ~800x800).
+- [x] ~~Profile photo~~ — done: `assets/img/xiang.jpg` (378x378, EXIF stripped).
+      Replace with a ~800x800 version when you have one; 378px looks soft on retina screens.
 - [ ] **`assets/pdf/CV_xiang.pdf`** is referenced in `_data/socials.yml` but the folder
       is empty — copy your CV PDF in under that name (the sandbox couldn't reach
       github.io to fetch it).
