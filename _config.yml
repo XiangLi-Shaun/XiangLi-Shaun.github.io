@@ -255,6 +255,8 @@ exclude:
 keep_files:
   - CNAME
   - .nojekyll
+  - pdf      # legacy paper PDFs from the old site; stops Jekyll re-copying 237MB every rebuild
+  - img      # legacy images from the old site
 
 # Use al_folio_core as the theme runtime; local files can still override theme files.
 theme: al_folio_core
