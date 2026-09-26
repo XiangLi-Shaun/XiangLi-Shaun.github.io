@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<work:work xmlns:address="http://www.orcid.org/ns/address" xmlns:email="http://www.orcid.org/ns/email" xmlns:history="http://www.orcid.org/ns/history" xmlns:employment="http://www.orcid.org/ns/employment" xmlns:education="http://www.orcid.org/ns/education" xmlns:other-name="http://www.orcid.org/ns/other-name" xmlns:deprecated="http://www.orcid.org/ns/deprecated" xmlns:funding="http://www.orcid.org/ns/funding" xmlns:research-resource="http://www.orcid.org/ns/research-resource" xmlns:service="http://www.orcid.org/ns/service" xmlns:researcher-url="http://www.orcid.org/ns/researcher-url" xmlns:distinction="http://www.orcid.org/ns/distinction" xmlns:internal="http://www.orcid.org/ns/internal" xmlns:membership="http://www.orcid.org/ns/membership" xmlns:person="http://www.orcid.org/ns/person" xmlns:personal-details="http://www.orcid.org/ns/personal-details" xmlns:bulk="http://www.orcid.org/ns/bulk" xmlns:common="http://www.orcid.org/ns/common" xmlns:record="http://www.orcid.org/ns/record" xmlns:keyword="http://www.orcid.org/ns/keyword" xmlns:activities="http://www.orcid.org/ns/activities" xmlns:qualification="http://www.orcid.org/ns/qualification" xmlns:external-identifier="http://www.orcid.org/ns/external-identifier" xmlns:error="http://www.orcid.org/ns/error" xmlns:preferences="http://www.orcid.org/ns/preferences" xmlns:invited-position="http://www.orcid.org/ns/invited-position" xmlns:work="http://www.orcid.org/ns/work" xmlns:peer-review="http://www.orcid.org/ns/peer-review" put-code="101951379" visibility="public">
+    <common:created-date>2021-10-24T03:50:41.252Z</common:created-date>
+    <common:last-modified-date>2021-10-24T03:50:41.252Z</common:last-modified-date>
+    <common:source>
+        <common:source-orcid>
+            <common:uri>https://orcid.org/0000-0002-9851-6376</common:uri>
+            <common:path>0000-0002-9851-6376</common:path>
+            <common:host>orcid.org</common:host>
+        </common:source-orcid>
+        <common:source-name>Xiang Li</common:source-name>
+    </common:source>
+    <work:title>
+        <common:title>Estimation of the concentrations of primary and secondary organic carbon in ambient particulate matter: Application of the CMB-Iteration method</common:title>
+    </work:title>
+    <work:journal-title>Atmospheric Environment</work:journal-title>
+    <work:citation>
+        <work:citation-type>bibtex</work:citation-type>
+        <work:citation-value>@article{2011,	doi = {10.1016/j.atmosenv.2011.07.031},	url = {https://doi.org/10.1016%2Fj.atmosenv.2011.07.031},	year = 2011,	month = {oct},	publisher = {Elsevier {BV}},	volume = {45},	number = {32},	pages = {5692--5698},	author = {Guo-Liang Shi and Ying-Ze Tian and Yu-Fen Zhang and Wen-Yuan Ye and Xiang Li and Xue-Xi Tie and Yin-Chang Feng and Tan Zhu},	title = {Estimation of the concentrations of primary and secondary organic carbon in ambient particulate matter: Application of the {CMB}-Iteration method}}</work:citation-value>
+    </work:citation>
+    <work:type>journal-article</work:type>
+    <common:publication-date>
+        <common:year>2011</common:year>
+        <common:month>10</common:month>
+    </common:publication-date>
+    <common:external-ids>
+        <common:external-id>
+            <common:external-id-type>doi</common:external-id-type>
+            <common:external-id-value>10.1016/j.atmosenv.2011.07.031</common:external-id-value>
+            <common:external-id-normalized transient="true">10.1016/j.atmosenv.2011.07.031</common:external-id-normalized>
+            <common:external-id-url>https://doi.org/10.1016/j.atmosenv.2011.07.031</common:external-id-url>
+            <common:external-id-relationship>self</common:external-id-relationship>
+        </common:external-id>
+        <common:external-id>
+            <common:external-id-type>issn</common:external-id-type>
+            <common:external-id-value>1352-2310</common:external-id-value>
+            <common:external-id-normalized transient="true">1352-2310</common:external-id-normalized>
+            <common:external-id-url>https://portal.issn.org/resource/ISSN/1352-2310</common:external-id-url>
+            <common:external-id-relationship>part-of</common:external-id-relationship>
+        </common:external-id>
+    </common:external-ids>
+    <common:url>http://dx.doi.org/10.1016/j.atmosenv.2011.07.031</common:url>
+    <work:contributors/>
+    <common:language-code>en</common:language-code>
+</work:work>

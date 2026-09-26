@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<funding:funding xmlns:address="http://www.orcid.org/ns/address" xmlns:email="http://www.orcid.org/ns/email" xmlns:history="http://www.orcid.org/ns/history" xmlns:employment="http://www.orcid.org/ns/employment" xmlns:education="http://www.orcid.org/ns/education" xmlns:other-name="http://www.orcid.org/ns/other-name" xmlns:deprecated="http://www.orcid.org/ns/deprecated" xmlns:funding="http://www.orcid.org/ns/funding" xmlns:research-resource="http://www.orcid.org/ns/research-resource" xmlns:service="http://www.orcid.org/ns/service" xmlns:researcher-url="http://www.orcid.org/ns/researcher-url" xmlns:distinction="http://www.orcid.org/ns/distinction" xmlns:internal="http://www.orcid.org/ns/internal" xmlns:membership="http://www.orcid.org/ns/membership" xmlns:person="http://www.orcid.org/ns/person" xmlns:personal-details="http://www.orcid.org/ns/personal-details" xmlns:bulk="http://www.orcid.org/ns/bulk" xmlns:common="http://www.orcid.org/ns/common" xmlns:record="http://www.orcid.org/ns/record" xmlns:keyword="http://www.orcid.org/ns/keyword" xmlns:activities="http://www.orcid.org/ns/activities" xmlns:qualification="http://www.orcid.org/ns/qualification" xmlns:external-identifier="http://www.orcid.org/ns/external-identifier" xmlns:error="http://www.orcid.org/ns/error" xmlns:preferences="http://www.orcid.org/ns/preferences" xmlns:invited-position="http://www.orcid.org/ns/invited-position" xmlns:work="http://www.orcid.org/ns/work" xmlns:peer-review="http://www.orcid.org/ns/peer-review" put-code="1410289" visibility="public">
+    <common:created-date>2022-09-05T09:06:14.922Z</common:created-date>
+    <common:last-modified-date>2022-09-05T09:06:14.922Z</common:last-modified-date>
+    <common:source>
+        <common:source-client-id>
+            <common:uri>https://orcid.org/client/0000-0003-2174-0924</common:uri>
+            <common:path>0000-0003-2174-0924</common:path>
+            <common:host>orcid.org</common:host>
+        </common:source-client-id>
+        <common:source-name>DimensionsWizard</common:source-name>
+        <common:assertion-origin-orcid>
+            <common:uri>https://orcid.org/0000-0002-9851-6376</common:uri>
+            <common:path>0000-0002-9851-6376</common:path>
+            <common:host>orcid.org</common:host>
+        </common:assertion-origin-orcid>
+        <common:assertion-origin-name>Xiang Li</common:assertion-origin-name>
+    </common:source>
+    <funding:type>grant</funding:type>
+    <funding:organization-defined-type>Funding sub-type</funding:organization-defined-type>
+    <funding:title>
+        <common:title>Study of Brain Spreading Pathways of Tau and Amyloid-Beta in (pre)clinical AD</common:title>
+        <common:translated-title language-code="en">Study of Brain Spreading Pathways of Tau and Amyloid-Beta in (pre)clinical AD</common:translated-title>
+    </funding:title>
+    <funding:short-description>Neurodegenerative dementias are devastating neurological illnesses. Estimations point to more than 24 million people worldwide affected by dementia. Dementia ranks as one of the top causes of disability in elderly people, and the estimated annual cost of caring for dementia patients is around $175 billion in the United States. During the last two decades, research has particularly focused in describing the early stages of the disease with the hope of implementing preventative treatments with disease modifying agents. However, the recent expansion of our understanding of aging and preclinical Alzheimer’s disease (AD) through the development of molecular imaging biomarkers of amyloid-beta (Aβ), and, more recently, Tau using Positron Emission Tomography (PET) has revolutionized the field and shifted interest to earlier pathophysiologic events. AD neurodegeneration follows specific neuronal circuits of the brain. However, it is still unknown how Tau and Aβ accumulation progresses along those large-scale brain systems, and how this may produce the structural/functional breakdown associated with symptomatic AD phases. The network nature of AD-related pathology has been recently proven by our group. Our findings have supported that Aβ accumulates following specific routes of the brain connectome. Moreover, our preliminary results have shown that both Tau and Aβ networks interact in temporal and cingulate areas at the early stages of AD pathology. In this proposal, we therefore hypothesize that AD propagates along connectivity networks between the medial temporal and cortical areas, leading to clinical conversion to cognitive impairment or AD. In this R01 effort, we will develop, optimize and validate imaging and network analysis and apply them to the existing data in the Harvard Aging Brain Study (HABS) to test this hypothesis. We will first develop methods to efficiently and accurately estimate the covariance of distribution volume ratio (DVR) image and then de-couple the covariance of DVR estimation from the physiological correlation. We will then use graph regression model algorithms to build the high-resolution brain pathological networks, and apply Cortical Hubs, Interconnectors and Stepwise Connectivity analyses to study the properties of these networks. We will also analyze the longitudinal data in HABS using Dynamic Bayesian Network and study the origin and pathways of the propagation of AD pathology, particularly focused on the relationship between the medial temporal lobe and the cingulate cortex. Finally, we will develop a graph theory tool to evaluate an individual subject’s risk to AD based on a matched subspace approach.</funding:short-description>
+    <funding:amount currency-code="USD">1438308.0</funding:amount>
+    <common:url>https://app.dimensions.ai/details/grant/grant.7172405</common:url>
+    <common:start-date>
+        <common:year>2017</common:year>
+        <common:month>08</common:month>
+        <common:day>15</common:day>
+    </common:start-date>
+    <common:end-date>
+        <common:year>2021</common:year>
+        <common:month>06</common:month>
+        <common:day>30</common:day>
+    </common:end-date>
+    <common:external-ids>
+        <common:external-id>
+            <common:external-id-type>grant_number</common:external-id-type>
+            <common:external-id-value>RF1AG052653</common:external-id-value>
+            <common:external-id-url>http://projectreporter.nih.gov/project_info_description.cfm?aid=9237817</common:external-id-url>
+            <common:external-id-relationship>self</common:external-id-relationship>
+        </common:external-id>
+    </common:external-ids>
+    <common:organization>
+        <common:name>National Institute on Aging</common:name>
+        <common:address>
+            <common:city>Baltimore</common:city>
+            <common:country>US</common:country>
+        </common:address>
+        <common:disambiguated-organization>
+            <common:disambiguated-organization-identifier>http://dx.doi.org/10.13039/100000049</common:disambiguated-organization-identifier>
+            <common:disambiguation-source>FUNDREF</common:disambiguation-source>
+        </common:disambiguated-organization>
+    </common:organization>
+</funding:funding>

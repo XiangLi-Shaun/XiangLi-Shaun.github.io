@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<work:work xmlns:address="http://www.orcid.org/ns/address" xmlns:email="http://www.orcid.org/ns/email" xmlns:history="http://www.orcid.org/ns/history" xmlns:employment="http://www.orcid.org/ns/employment" xmlns:education="http://www.orcid.org/ns/education" xmlns:other-name="http://www.orcid.org/ns/other-name" xmlns:deprecated="http://www.orcid.org/ns/deprecated" xmlns:funding="http://www.orcid.org/ns/funding" xmlns:research-resource="http://www.orcid.org/ns/research-resource" xmlns:service="http://www.orcid.org/ns/service" xmlns:researcher-url="http://www.orcid.org/ns/researcher-url" xmlns:distinction="http://www.orcid.org/ns/distinction" xmlns:internal="http://www.orcid.org/ns/internal" xmlns:membership="http://www.orcid.org/ns/membership" xmlns:person="http://www.orcid.org/ns/person" xmlns:personal-details="http://www.orcid.org/ns/personal-details" xmlns:bulk="http://www.orcid.org/ns/bulk" xmlns:common="http://www.orcid.org/ns/common" xmlns:record="http://www.orcid.org/ns/record" xmlns:keyword="http://www.orcid.org/ns/keyword" xmlns:activities="http://www.orcid.org/ns/activities" xmlns:qualification="http://www.orcid.org/ns/qualification" xmlns:external-identifier="http://www.orcid.org/ns/external-identifier" xmlns:error="http://www.orcid.org/ns/error" xmlns:preferences="http://www.orcid.org/ns/preferences" xmlns:invited-position="http://www.orcid.org/ns/invited-position" xmlns:work="http://www.orcid.org/ns/work" xmlns:peer-review="http://www.orcid.org/ns/peer-review" put-code="57414430" visibility="public">
+    <common:created-date>2019-05-14T18:43:05.176Z</common:created-date>
+    <common:last-modified-date>2025-12-20T01:56:21.554Z</common:last-modified-date>
+    <common:source>
+        <common:source-orcid>
+            <common:uri>https://orcid.org/0000-0002-9851-6376</common:uri>
+            <common:path>0000-0002-9851-6376</common:path>
+            <common:host>orcid.org</common:host>
+        </common:source-orcid>
+        <common:source-name>Xiang Li</common:source-name>
+    </common:source>
+    <work:title>
+        <common:title>Learning the Sparse and Low Rank PARAFAC Decomposition via the Elastic Net</common:title>
+    </work:title>
+    <work:short-description>In this article, we derive a Bayesian model to learning the sparse and low rank PARAFAC decomposition for the observed tensor with missing values via the elastic net, with property to find the true rank and sparse factor matrix which is robust to the noise. We formulate efficient block coordinate descent algorithm and admax stochastic block coordinate descent algorithm to solve it, which can be used to solve the large scale problem. To choose the appropriate rank and sparsity in PARAFAC decomposition, we will give a solution path by gradually increasing the regularization to increase the sparsity and decrease the rank. When we find the sparse structure of the factor matrix, we can fixed the sparse structure, using a small to regularization to decreasing the recovery error, and one can choose the proper decomposition from the solution path with sufficient sparse factor matrix with low recovery error. We test the power of our algorithm on the simulation data and real data, which show it is powerful.</work:short-description>
+    <work:type>preprint</work:type>
+    <common:publication-date>
+        <common:year>2017</common:year>
+        <common:month>05</common:month>
+        <common:day>29</common:day>
+    </common:publication-date>
+    <common:external-ids>
+        <common:external-id>
+            <common:external-id-type>arxiv</common:external-id-type>
+            <common:external-id-value>arXiv:1705.10015v1</common:external-id-value>
+            <common:external-id-normalized transient="true">arXiv:1705.10015v1</common:external-id-normalized>
+            <common:external-id-url>http://arxiv.org/abs/1705.10015v1</common:external-id-url>
+            <common:external-id-relationship>self</common:external-id-relationship>
+        </common:external-id>
+        <common:external-id>
+            <common:external-id-type>doi</common:external-id-type>
+            <common:external-id-value>10.48550/arxiv.1705.10015</common:external-id-value>
+            <common:external-id-normalized transient="true">10.48550/arxiv.1705.10015</common:external-id-normalized>
+            <common:external-id-relationship>self</common:external-id-relationship>
+        </common:external-id>
+        <common:external-id>
+            <common:external-id-type>eid</common:external-id-type>
+            <common:external-id-value>2-s2.0-85170312425</common:external-id-value>
+            <common:external-id-normalized transient="true">2-s2.0-85170312425</common:external-id-normalized>
+            <common:external-id-relationship>self</common:external-id-relationship>
+        </common:external-id>
+        <common:external-id>
+            <common:external-id-type>issn</common:external-id-type>
+            <common:external-id-value>23318422</common:external-id-value>
+            <common:external-id-normalized transient="true">2331-8422</common:external-id-normalized>
+            <common:external-id-relationship>part-of</common:external-id-relationship>
+        </common:external-id>
+    </common:external-ids>
+    <work:contributors/>
+</work:work>

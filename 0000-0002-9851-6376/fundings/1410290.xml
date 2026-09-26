@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<funding:funding xmlns:address="http://www.orcid.org/ns/address" xmlns:email="http://www.orcid.org/ns/email" xmlns:history="http://www.orcid.org/ns/history" xmlns:employment="http://www.orcid.org/ns/employment" xmlns:education="http://www.orcid.org/ns/education" xmlns:other-name="http://www.orcid.org/ns/other-name" xmlns:deprecated="http://www.orcid.org/ns/deprecated" xmlns:funding="http://www.orcid.org/ns/funding" xmlns:research-resource="http://www.orcid.org/ns/research-resource" xmlns:service="http://www.orcid.org/ns/service" xmlns:researcher-url="http://www.orcid.org/ns/researcher-url" xmlns:distinction="http://www.orcid.org/ns/distinction" xmlns:internal="http://www.orcid.org/ns/internal" xmlns:membership="http://www.orcid.org/ns/membership" xmlns:person="http://www.orcid.org/ns/person" xmlns:personal-details="http://www.orcid.org/ns/personal-details" xmlns:bulk="http://www.orcid.org/ns/bulk" xmlns:common="http://www.orcid.org/ns/common" xmlns:record="http://www.orcid.org/ns/record" xmlns:keyword="http://www.orcid.org/ns/keyword" xmlns:activities="http://www.orcid.org/ns/activities" xmlns:qualification="http://www.orcid.org/ns/qualification" xmlns:external-identifier="http://www.orcid.org/ns/external-identifier" xmlns:error="http://www.orcid.org/ns/error" xmlns:preferences="http://www.orcid.org/ns/preferences" xmlns:invited-position="http://www.orcid.org/ns/invited-position" xmlns:work="http://www.orcid.org/ns/work" xmlns:peer-review="http://www.orcid.org/ns/peer-review" put-code="1410290" visibility="public">
+    <common:created-date>2022-09-05T09:07:27.251Z</common:created-date>
+    <common:last-modified-date>2022-09-05T09:07:27.251Z</common:last-modified-date>
+    <common:source>
+        <common:source-client-id>
+            <common:uri>https://orcid.org/client/0000-0003-2174-0924</common:uri>
+            <common:path>0000-0003-2174-0924</common:path>
+            <common:host>orcid.org</common:host>
+        </common:source-client-id>
+        <common:source-name>DimensionsWizard</common:source-name>
+        <common:assertion-origin-orcid>
+            <common:uri>https://orcid.org/0000-0002-9851-6376</common:uri>
+            <common:path>0000-0002-9851-6376</common:path>
+            <common:host>orcid.org</common:host>
+        </common:assertion-origin-orcid>
+        <common:assertion-origin-name>Xiang Li</common:assertion-origin-name>
+    </common:source>
+    <funding:type>grant</funding:type>
+    <funding:organization-defined-type>Funding sub-type</funding:organization-defined-type>
+    <funding:title>
+        <common:title>Deep learning Based Phenotyping and Treatment Optimization for Heart Failure with Preserved Ejection Fraction</common:title>
+        <common:translated-title language-code="en">Deep learning Based Phenotyping and Treatment Optimization for Heart Failure with Preserved Ejection Fraction</common:translated-title>
+    </funding:title>
+    <funding:short-description>Heart failure with preserved ejection fraction (HFpEF) is a major public health problem that is rising in prevalence with the aging population and the epidemics of obesity, diabetes, and hypertension. HFpEF accounts for around 50% of all heart failure (HF) cases with a prevalence of at least 3 million in the U.S. HFpEF is associated with high morbidity and mortality. After HF hospitalization, the 5-year survival of HFpEF is a dismal 35%, which is worse than most cancers. In addition, quality of life in HFpEF is as poor or worse than HF with reduced ejection fraction (HFrEF). A series of large-scale clinical trials has been conducted, but most of them only provided neutral result and failed to prove the efficacy of treatments. The alarming trend of HFpEF with lack of effective therapies for patients constitutes a major public health problem. Recent studies have attributed this failure to distinct systemic nature of HFpEF syndrome and proposing sub-phenotypes within the heterogeneous HFpEF syndrome, which highlighted the increasing need for better-targeted therapies to specific HFpEF subtypes. The seemingly disparate but complex interrelated phenotypes, along with comorbidities, lifestyle and environmental factors, make the multi-organ syndrome best beneficial from a big data approach. However, conventional studies usually only included limited cross-sectional clinical symptoms, lab results and/or gross measurements on cardiac imaging to investigate HFpEF, overlooking the rich temporal information from electronic health record (EHR) and detailed spatial information reserved in imaging. In this proposal, we will introduce advance shape analysis method to extract novel image features and biomarker from CMR images and validate at population level (Aim 1). We will then combine image information with multi-dimensional temporal EHR data to jointly identify clinically significant HFpEF subclasses (i.e. phenotyping) using state-of-art machine learning technique (Aim 2). Towards therapeutic goals based on phenotyping, we will further investigate optimal treatment strategies with current available agents using deep reinforcement learning (RL) based on massive EHR data to meet the pressing need before ongoing trials provide sufficient evidence on new drugs with proved clinical efficacy (Aim 3). Furthermore, we will develop an online, open- access platform to facilitating the sharing of code, data and knowledge of this study (Aim 4). We believe this research can improve our understanding, phenotyping and management of HFpEF, which might positively ease the clinical and economic burdens in turn both in U.S. and worldwide.</funding:short-description>
+    <funding:amount currency-code="USD">571710.0</funding:amount>
+    <common:url>https://app.dimensions.ai/details/grant/grant.10031167</common:url>
+    <common:start-date>
+        <common:year>2022</common:year>
+        <common:month>03</common:month>
+        <common:day>15</common:day>
+    </common:start-date>
+    <common:end-date>
+        <common:year>2026</common:year>
+        <common:month>02</common:month>
+        <common:day>28</common:day>
+    </common:end-date>
+    <common:external-ids>
+        <common:external-id>
+            <common:external-id-type>grant_number</common:external-id-type>
+            <common:external-id-value>R01HL159183</common:external-id-value>
+            <common:external-id-url>http://projectreporter.nih.gov/project_info_description.cfm?aid=10444412</common:external-id-url>
+            <common:external-id-relationship>self</common:external-id-relationship>
+        </common:external-id>
+    </common:external-ids>
+    <common:organization>
+        <common:name>National Heart Lung and Blood Institute</common:name>
+        <common:address>
+            <common:city>Bethesda</common:city>
+            <common:country>US</common:country>
+        </common:address>
+        <common:disambiguated-organization>
+            <common:disambiguated-organization-identifier>http://dx.doi.org/10.13039/100000050</common:disambiguated-organization-identifier>
+            <common:disambiguation-source>FUNDREF</common:disambiguation-source>
+        </common:disambiguated-organization>
+    </common:organization>
+</funding:funding>
