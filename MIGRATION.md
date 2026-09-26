@@ -1,6 +1,6 @@
 # Swapping xiangli-shaun.github.io over to al-folio
 
-Your repo `xiangli-shaun/xiangli-shaun.github.io` currently serves plain HTML from the
+Your repo `XiangLi-Shaun/XiangLi-Shaun.github.io` currently serves plain HTML from the
 root of `master`. al-folio works differently: `master` holds Jekyll **source**, a GitHub
 Action builds it, and the generated HTML lands on a **`gh-pages`** branch that Pages
 serves. So this is not a file swap — the serving model changes too.
@@ -16,24 +16,32 @@ Total time: ~20 minutes, most of it waiting on a build.
 - [x] `img/` (41 files) copied in for the same reason
 - [x] `CV_xiang.pdf` also placed at `assets/pdf/` so the CV icon works
 - [x] `keep_files: [pdf, img]` set, so Jekyll doesn't recopy 278 MB on every rebuild
-- [x] `origin` set to `https://github.com/xiangli-shaun/xiangli-shaun.github.io.git`
+- [x] `origin` set to `https://github.com/XiangLi-Shaun/XiangLi-Shaun.github.io.git`
 - [x] Local branch is `master`, matching the remote
 
 ---
 
-## Phase 0 — Back up the live site (2 min)
+> **Note on capitalization.** Your GitHub account is `XiangLi-Shaun`. The lowercase
+> form still works via GitHub's redirect (that's the "This repository moved" warning),
+> but `origin` now uses the canonical case. Your *site* URL stays lowercase —
+> `https://xiangli-shaun.github.io` — because Pages serves hostnames in lowercase
+> regardless of username case. So `_config.yml`'s `url:` is correct as-is; don't
+> "fix" it to match the username.
 
-**Do not skip this.** It makes the whole migration one command to undo.
+## Phase 0 — Back up the live site (2 min)  ✅ DONE
+
+**Done** — tag `pre-al-folio` is on the remote at commit `a37c94a8`, the same commit
+as `master`. Your old site is recoverable. The commands below are kept for reference.
 
 ```bash
 cd /tmp
-git clone --depth 1 https://github.com/xiangli-shaun/xiangli-shaun.github.io.git backup-old
+git clone --depth 1 https://github.com/XiangLi-Shaun/XiangLi-Shaun.github.io.git backup-old
 cd backup-old
 git tag pre-al-folio
 git push origin pre-al-folio
 ```
 
-Confirm at `https://github.com/xiangli-shaun/xiangli-shaun.github.io/tags` that
+Confirm at `https://github.com/XiangLi-Shaun/XiangLi-Shaun.github.io/tags` that
 `pre-al-folio` is listed. Your entire old site is now permanently recoverable.
 
 Also grab a local copy you can't lose:
@@ -86,7 +94,7 @@ git push --force origin master
 **If the push asks for a password:** GitHub removed password auth. Either use the `gh`
 CLI (`brew install gh && gh auth login`, then push again), or switch to SSH:
 ```bash
-git remote set-url origin git@github.com:xiangli-shaun/xiangli-shaun.github.io.git
+git remote set-url origin git@github.com/XiangLi-Shaun/XiangLi-Shaun.github.io.git
 ```
 
 ## Phase 3 — Watch the Action (3-6 min)
@@ -143,7 +151,7 @@ You're back to exactly what was live before. Nothing is lost.
 
 If you'd rather not point the real URL at this until you've seen it work end to end:
 
-1. Create a new empty repo `xiangli-shaun/al-folio-test`
+1. Create a new empty repo `XiangLi-Shaun/al-folio-test`
 2. In `_config.yml` set `baseurl: "/al-folio-test"`
 3. Push there, run Phases 3-5 against it
 4. Confirm `https://xiangli-shaun.github.io/al-folio-test` renders

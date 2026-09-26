@@ -67,12 +67,12 @@ present but hidden (`nav: false`) — flip them on when you want them.
 
 ## 4. Deploy to GitHub Pages
 
-Your existing site lives at `xiangli-shaun/xiangli-shaun.github.io`. **Branch the old
+Your existing site lives at `XiangLi-Shaun/XiangLi-Shaun.github.io`. **Branch the old
 one first** so you can roll back.
 
 ```bash
 cd ~/Desktop/al-folio-site
-git remote add origin git@github.com:xiangli-shaun/xiangli-shaun.github.io.git
+git remote add origin git@github.com/XiangLi-Shaun/XiangLi-Shaun.github.io.git
 git push -u origin main --force        # only once you're happy with localhost:4000
 ```
 
