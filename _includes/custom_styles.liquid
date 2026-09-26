@@ -22,4 +22,9 @@ Included from _pages/about.md and _pages/publications.md.
     border-bottom: none;
     text-decoration: none;
   }
+
+  /* The venue-badge column is now always empty (all `abbr` fields removed),
+     so collapse it and let the entry run full width. */
+  .bibliography .abbr { display: none; }
+  .bibliography > li .col-sm-8 { flex: 0 0 100%; max-width: 100%; }
 </style>
