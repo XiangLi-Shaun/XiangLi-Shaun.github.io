@@ -1,0 +1,216 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> When Code Begins to Write Itself | Xiang Li </title> <meta name="author" content="Xiang Li"> <meta name="description" content="Vibe coding kept the human in the loop. Loop coding takes the human out of it. What follows is not worse code but a break in comprehension — and a failure mode that looks exactly like success."> <meta name="keywords" content="medical AI, foundation models, generative AI, medical imaging, radiology, Harvard, MGH"> <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; media-src 'self' https:; frame-src 'self' https:; connect-src 'self' https:;"> <style>
+  :root {
+    --max-content-width: 930px;
+  }
+</style> <link rel="stylesheet" href="/assets/css/tailwind.css?v=50c64c15cbb9fd1ce6056fdb8bcb4b62"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" integrity="sha256-MVopmdyC2tYTiJ8wlktf0uh0v4NgT+vNdyVFepi7Q0c=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.5/css/academicons.min.css" integrity="sha256-SzrCOBJbGVFMahewkgjwnApaV2+av1DwMAA+/QGLyZw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/scholar-icons@1.0.3/css/scholar-icons.css" integrity="sha256-VY3hHVj/hNX3fYG6wtbA6TcKJQl7+FthzGSyIB64klY=" crossorigin="anonymous"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%F0%9F%A7%A0&lt;/text&gt;&lt;/svg&gt;"> <link rel="stylesheet" href="/assets/css/main.css?v=3116ba77db9ee1581d05bb3e86fbf7f1"> <link rel="canonical" href="https://xiangli-shaun.github.io/blog/2026/when-code-begins-to-write-itself/"> <script src="/assets/js/theme.js?v=5286c3e4c334d0ecb8fc0c40ff4fa7ec"></script> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?v=5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
+    initTheme();
+  </script> </head> <body class="fixed-top-nav sticky-bottom-footer"> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> <span class="font-weight-bold">Xiang</span> Li </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">about </a> </li> <li class="nav-item "> <a class="nav-link" href="/news/">news </a> </li> <li class="nav-item "> <a class="nav-link" href="/publications/">publications </a> </li> <li class="nav-item active"> <a class="nav-link" href="/blog/">my blogs </a> </li> <li class="nav-item "> <a class="nav-link" href="/cv/">cv </a> </li> <li class="nav-item "> <a class="nav-link" href="/repositories/">repositories </a> </li> <li class="nav-item"> <button id="search-toggle" type="button" title="Search" aria-label="Open search"> <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">When Code Begins to Write Itself</h1> <p class="post-meta"> Created on July 02, 2026 </p> <p class="post-tags"> <a href="/blog/2026"> <i class="fa-solid fa-calendar fa-sm"></i> 2026 </a>   ·   <a href="/blog/tag/ai-coding"> <i class="fa-solid fa-hashtag fa-sm"></i> ai-coding</a>   <a href="/blog/tag/ai-safety"> <i class="fa-solid fa-hashtag fa-sm"></i> ai-safety</a>   <a href="/blog/tag/software-engineering"> <i class="fa-solid fa-hashtag fa-sm"></i> software-engineering</a>   <a href="/blog/tag/metis"> <i class="fa-solid fa-hashtag fa-sm"></i> metis</a>   <a href="/blog/tag/essay"> <i class="fa-solid fa-hashtag fa-sm"></i> essay</a>   ·   <a href="/blog/category/essays"> <i class="fa-solid fa-tag fa-sm"></i> essays</a> </p> </header> <article class="post-content"> <div id="markdown-content"> <blockquote> <p>This blog post is machine-translated from the original Chinese version. Link: <a href="https://mp.weixin.qq.com/s/BBg8rxH9EwfmFkKkZYJVhA" rel="external nofollow noopener" target="_blank">https://mp.weixin.qq.com/s/BBg8rxH9EwfmFkKkZYJVhA</a></p> </blockquote> <p>In early 2025 Andrej Karpathy coined a term: <em>vibe coding</em>. You tell the AI in natural language what you want, the AI generates code, and you do not read it carefully — if it looks about right, you accept it. Give in to the vibes. The phrase caught on to the point that Collins Dictionary named it word of the year for 2025. A year later, it is already obsolete.</p> <p>What has replaced it is <em>loop coding</em>, or more precisely <em>loop engineering</em>. Where is the difference? In vibe coding the human is still inside the loop: he has stopped writing code, but he is still looking, still feeling, still nodding and shaking his head. In loop coding the human factor withdraws from the loop itself. You first design an autonomous loop; the AI agent takes the task and runs on its own — writes code, runs tests, reads the errors, edits the code, runs the tests again, and continues until a preset termination condition is met. The human role retreats from <em>judging inside the loop whether this is right</em> to <em>designing the loop’s structure and its stopping condition</em>. Claude Code, Devin, OpenAI Codex Agent — the core working mode of every mainstream AI coding tool now is this.</p> <p>Discussing ChatGPT 5.5 Pro on mathematics problems, Gowers remarked that very good coders are better at vibe coding than not such good coders. Placed in the context of loop coding, the observation needs updating. In vibe coding a good programmer’s advantage is intuition: he can feel where the generated code is wrong. In loop coding his advantage is architecture: he can design a loop framework the AI will find it hard to wander out of. The first is a wine taster; the second is the food engineer at the winery. But the two share something: <strong>if you do not understand the thing yourself, you can neither sense the problem nor design the loop well.</strong></p> <p>Loop coding is genuinely fast. A good framework can generate, test and repair dozens of files in minutes. A feature module that traditionally took a junior engineer a week, a loop agent will deliver in an afternoon — along with a great many burned tokens — in a version that <em>runs</em>. This speed is itself changing the economics of the software industry.</p> <p>But the first consequence of that speed is not a decline in code quality. It is a break in comprehension. Addy Osmani at Google gave the phenomenon a name, <em>comprehension debt</em> — he credits the term to Jeremy Twei. When code is produced faster than humans can read it, you are borrowing from the future, and what you are borrowing is your own future capacity to maintain the system. Traditional technical debt is knowing the code is bad and having no time to fix it. <strong>Comprehension debt is not knowing whether the code is good, because no one has read it.</strong> This is not a metaphor. GitClear’s 2026 data shows that on teams making heavy use of AI coding, code churn — the proportion of code that must be revised or deleted after being written — rose by 39%. Seventy-five percent of engineering leads expect to accumulate moderate to severe technical debt from AI-assisted development within twelve months. There is more code and less understanding.</p> <p>This leads to a deeper problem. When people cannot finish reading what the AI has written, they naturally fall back on proxy indicators: did the tests pass? Is CI green? Did lint stay quiet? These tools worked well at the speed a human writes code, because human output rate was itself a form of implicit quality control. But once a loop agent raises output by an order of magnitude, those proxies are forced to carry far more weight than they were designed for. <em>Tests passed</em> does not mean <em>the code is correct</em>; it means only <em>the code satisfies the conditions the tests happen to cover</em>. The difference lies in what the tests do not cover — and AI-written tests and AI-written code tend to share the same blind spots.</p> <p>This is where things start to get strange. When a loop agent meets, inside the loop, something it does not know how to resolve — an API returning a format it has not seen, a library behaving differently from the version in its training data — it does not stop and say <em>I don’t know</em>. We have now observed, in many settings, that it will sometimes invent a solution that looks entirely reasonable: assume an API endpoint that does not exist, define a data format that does not conform to the specification, or write a comment saying <em>according to the documentation, the default value of this parameter is X</em> when the documentation contains no such sentence. <strong>This is not a bug in the traditional sense.</strong> A bug is code that fails to work as expected; here the code works perfectly against an expectation the AI invented for itself. The loop framework becomes a closed, self-validating system of fiction, wholly consistent on the inside. The problem surfaces only on contact with the real world: a user sees data that <em>should not</em> appear, a third-party service returns a format that <em>should not</em> exist. And by that point what we face is not a bug but a virtual building raised on a fictional foundation, with virtual light showing through one of its virtual windows.</p> <p>In medical imaging we have found that mainstream vision-language models will still produce a fluent, confident diagnosis when the evidence does not support one. We call this <em>silent failure</em>. What happens in loop coding is the code version of the same failure mode: <strong>the model does not know that it does not know, and its confidence disables every verification mechanism downstream.</strong> In imaging the consequence is a potentially absurd misdiagnosis. In code it is a system that looks entirely normal, passes every test, and then breaks three months after launch under some particular condition — and once repaired, breaks under another.</p> <p>The process also accelerates itself, because every round of a loop agent’s output becomes the input to the next round. If a false assumption enters at round three, round four will not correct it; round four will treat it as established fact and build new code on top. By round ten, that small original fiction has been buried under layer upon layer of logic. The heap of terrible code a human programmer leaves behind at least has a human being’s thinking buried inside it: you can curse him, follow his logic, and roughly reconstruct what he was thinking and how he went wrong. <strong>The heap an AI leaves behind has no thinking in it at all.</strong> It is a stack of locally optimal solutions, each layer solving a problem created by the layer beneath it.</p> <p>I wrote recently about artificial intelligence in <a href="/blog/2026/the-infinite-game-and-the-last-instruction/">The Infinite Game and The Last Instruction</a>, breaking learning into three motions: the <em>problem raiser</em> (what to learn from), the <em>problem solver</em> (how to learn), and the <em>problem judger</em> (whether the learning objective has any value at all). Loop coding is a nearly perfect instance of a raiser–solver loop: the agent continually discovers problems (a test failed) and solves them (edit the code), the loop drives itself, and no human intervention is required. It can even run with no explicit judger, using the test cases as referee — passing means right, failing means keep editing.</p> <p>But I also wrote this in that piece: as the raiser–solver becomes more autonomous, the inherited <em>lossy proxies</em> are forced to bear far more normative weight than they were ever designed to carry, and capability that has not been examined is what people call danger. What loop coding is staging now is the concrete version of that abstract argument. <strong>A test case is a lossy proxy.</strong> It can judge whether code satisfies some set of preset conditions. It cannot judge whether that set of conditions is complete, and still less whether this code should have been written at all.</p> <p>Code has begun to write itself. It writes quickly, it writes confidently, and all the tests pass. But the question of whether it <em>should</em> be written still has to be answered by a person — assuming there is still a person watching.</p> </div> </article> </div> </div> <script>
+  window.alFolio = {
+    compatBootstrap: false
+  };
+</script> <script src="/assets/js/nav-toggle.js?v=141bd79a73ebc0f0b6ea58e440ae79fc"></script> <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script> <script defer src="/assets/js/masonry.js?v=e49affc7bd2646f6acdad1dbe02c2359" type="text/javascript"></script> <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI=" crossorigin="anonymous"></script> <script src="/assets/al_math/js/mathjax-setup.js"></script> <script src="/assets/js/tooltips-setup.js?v=fe487e99db6c43751e6e7bdb2d6a0611"></script> <script src="/assets/js/no_defer.js?v=53b1b1a645525975c963ce8bf8bfefcf"></script> <script defer src="/assets/js/common.js?v=87baac90f765f2f3362dcf6aaf312a8a"></script> <script defer src="/assets/js/copy_code.js?v=c8a01c11a92744d44b093fc3bda915df" type="text/javascript"></script> <script defer src="/assets/js/jupyter_new_tab.js?v=896d254890d9b47f0281f63bfccf0dee"></script> <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script> <script async src="https://badge.dimensions.ai/badge.js"></script> <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script> <script defer src="/assets/al_img_tools/js/zoom.js"></script> <script defer src="/assets/js/progress-bar.js?v=499464c5c63ced6cf7ad62509f1e2610" type="text/javascript"></script> <script src="https://cdn.jsdelivr.net/npm/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js" integrity="sha256-uMJJ3EoTyfRBoTbR+lrfu1uRQ87RZG8AR3cVNuQVeFg=" crossorigin="anonymous"></script> <script>
+    addBackToTop();
+  </script> <script type="module" src="/assets/al_search/js/search/ninja-keys.min.js"></script> <ninja-keys hidebreadcrumbs noautoloadmdicons placeholder="Type to start searching"></ninja-keys> <script src="/assets/al_search/js/search-setup.js"></script> <script>
+// get the ninja-keys element
+const ninja = document.querySelector('ninja-keys');
+
+// add the home and posts menu items
+ninja.data = [{
+    id: "nav-about",
+    title: "about",
+    section: "Navigation",
+    handler: () => {
+      window.location.href = "/";
+    },
+  },{id: "nav-news",
+          title: "news",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/news/";
+          },
+        },{id: "nav-publications",
+          title: "publications",
+          description: "publications by categories in reversed chronological order. generated by jekyll-scholar.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/publications/";
+          },
+        },{id: "nav-my-blogs",
+          title: "my blogs",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/blog/";
+          },
+        },{id: "nav-cv",
+          title: "cv",
+          description: "Education, appointments, funding, honors, editorial service, and patents. The full Harvard-format CV is available as a PDF above.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/cv/";
+          },
+        },{id: "nav-repositories",
+          title: "repositories",
+          description: "Open-source code and benchmarks from my group and collaborators.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/repositories/";
+          },
+        },{id: "post-the-six-hundred-billion-dollar-question-the-answer-is-not-in-the-price",
+        
+          title: "The Six-Hundred-Billion-Dollar Question: The Answer Is Not in the Price",
+        
+        description: "The price of a token is collapsing and the value of AI is waiting. Both are true at once, and the reason is that metis accumulates on institutional time, not technical time.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/the-six-hundred-billion-dollar-question/";
+          
+        },
+      },{id: "post-when-code-begins-to-write-itself",
+        
+          title: "When Code Begins to Write Itself",
+        
+        description: "Vibe coding kept the human in the loop. Loop coding takes the human out of it. What follows is not worse code but a break in comprehension — and a failure mode that looks exactly like success.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/when-code-begins-to-write-itself/";
+          
+        },
+      },{id: "post-the-infinite-game-and-the-last-instruction",
+        
+          title: "The Infinite Game and The Last Instruction",
+        
+        description: "Learning of the machine moves in three recurring motions — raising problems, solving them, and judging whether the objective is worth pursuing. We have built the first two into an engine that does not stop. The third we have barely begun.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/the-infinite-game-and-the-last-instruction/";
+          
+        },
+      },{id: "news-two-papers-accepted-at-iclr-2025",
+          title: 'Two papers accepted at **ICLR 2025**.',
+          description: "",
+          section: "News",},{id: "news-released-medreason-a-medical-reasoning-dataset-with-33k-examples",
+          title: 'Released **MedReason**, a medical reasoning dataset with 33K examples.',
+          description: "",
+          section: "News",},{id: "news-our-fairness-in-segmentation-paper-was-accepted-as-a-spotlight-poster-at-icml-2025",
+          title: 'Our fairness-in-segmentation paper was accepted as a **Spotlight Poster at ICML 2025**.',
+          description: "",
+          section: "News",},{id: "news-three-papers-accepted-at-miccai-2025",
+          title: 'Three papers accepted at **MICCAI 2025**.',
+          description: "",
+          section: "News",},{id: "news-our-paper-was-selected-as-an-editor-39-s-choice-in-medical-physics",
+          title: 'Our paper was selected as an **Editor&amp;#39;s Choice** in *Medical Physics*.',
+          description: "",
+          section: "News",},{id: "news-our-student-received-a-mentorship-award-for-work-on-agentic-ai-for-clinical-workflows",
+          title: 'Our student received a mentorship award for work on **agentic AI** for clinical...',
+          description: "",
+          section: "News",},{
+        id: 'social-email',
+        title: 'email',
+        section: 'Socials',
+        handler: () => {
+          window.open("mailto:%78%69%61%6E%67%6C%69.%73%68%61%75%6E@%67%6D%61%69%6C.%63%6F%6D", "_blank");
+        },
+      },{
+        id: 'social-cv',
+        title: 'CV',
+        section: 'Socials',
+        handler: () => {
+          window.open("/CV_xiang.pdf", "_blank");
+        },
+      },{
+        id: 'social-rss',
+        title: 'RSS Feed',
+        section: 'Socials',
+        handler: () => {
+          window.open("/feed.xml", "_blank");
+        },
+      },{
+        id: 'social-github',
+        title: 'GitHub',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://github.com/XiangLi-Shaun", "_blank");
+        },
+      },{
+        id: 'social-linkedin',
+        title: 'LinkedIn',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://www.linkedin.com/in/xiang-li-11b2b99", "_blank");
+        },
+      },{
+        id: 'social-scholar',
+        title: 'Google Scholar',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://scholar.google.com/citations?user=MjkwwiQAAAAJ", "_blank");
+        },
+      },{
+        id: 'social-orcid',
+        title: 'ORCID',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://orcid.org/0000-0002-9851-6376", "_blank");
+        },
+      },{
+        id: 'social-semanticscholar',
+        title: 'Semantic Scholar',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://www.semanticscholar.org/author/2324811229", "_blank");
+        },
+      },{
+        id: 'social-dblp',
+        title: 'DBLP',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://dblp.org/pid/40/1491-1.html", "_blank");
+        },
+      },{
+        id: 'social-mastodon',
+        title: 'Mastodon',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://xiangli_shaun@mastodon.social", "_blank");
+        },
+      },{
+        id: 'social-mgh_profile',
+        title: 'Mgh_profile',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://researchers.mgh.harvard.edu/profile?profile_id=15451263", "_blank");
+        },
+      },{
+      id: 'light-theme',
+      title: 'Change theme to light',
+      description: 'Change the theme of the site to Light',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("light");
+      },
+    },
+    {
+      id: 'dark-theme',
+      title: 'Change theme to dark',
+      description: 'Change the theme of the site to Dark',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("dark");
+      },
+    },
+    {
+      id: 'system-theme',
+      title: 'Use system default theme',
+      description: 'Change the theme of the site to System Default',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("system");
+      },
+    },];
+
+</script> <script src="/assets/al_search/js/shortcut-key.js"></script> </body> </html>
