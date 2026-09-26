@@ -70,7 +70,7 @@ al_folio:
     allow_remote_loader: false
   features:
     cv:
-      enabled: false # was publishing Albert Einstein's demo CV at /cv/
+      enabled: true
     distill:
       enabled: true
   compat:
@@ -134,8 +134,8 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: al-folio # blog_name will be displayed in your blog page
-blog_description: a simple whitespace theme for academics
+blog_name: My Blogs
+blog_description: Notes on medical AI, foundation models, and research practice.
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 

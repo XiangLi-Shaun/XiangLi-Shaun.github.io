@@ -1,9 +1,8 @@
-# GitHub profiles/repos shown on the (currently hidden) /repositories/ page.
-# Was seeded with al-folio's demo list: torvalds, alshedivat, jekyll, bootstrap...
 github_users:
   - XiangLi-Shaun
 
 repo_description_lines_max: 2
 
-# Add your own repos here, e.g. - XiangLi-Shaun/some-project
-github_repos: []
+github_repos:
+  - CUHK-AIM-Group/NeuroSTORM
+  - ZhilingYan/LiveMedBench

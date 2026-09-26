@@ -1,0 +1,279 @@
+cv:
+  name: Xiang Li
+  label: Assistant Professor of Radiology, Harvard Medical School
+  email: xiangli.shaun@gmail.com
+  location: Boston, MA
+  image: ""
+  summary: >-
+    Assistant Professor in the Department of Radiology at Massachusetts General Hospital and
+    Harvard Medical School, and Affiliate Faculty at the Harvard Kempner Institute. Research
+    spans medical foundation models, generative AI, expert-machine alignment, medical
+    informatics, and counterfactual causal inference.
+
+  social_networks:
+    - network: GitHub
+      username: XiangLi-Shaun
+    - network: LinkedIn
+      username: xiang-li-11b2b99
+    - network: Mastodon
+      username: "@xiangli_shaun@mastodon.social"
+
+  address:
+    street: 399 Revolution Dr., 11th Floor
+    city: Somerville
+    region: Massachusetts
+    postalCode: MA 02145
+    countryCode: US
+
+  sections:
+    Education:
+      - institution: University of Georgia
+        location: Athens, GA, USA
+        url: https://www.uga.edu/
+        area: Computer Science
+        studyType: PhD
+        start_date: 2009
+        end_date: 2016
+        highlights:
+          - "Advisor: Distinguished Professor Tianming Liu (AIMBE Fellow)."
+          - Outstanding Graduate Dissertation/Thesis, University of Georgia, 2016.
+
+      - institution: Shanghai Jiao Tong University
+        location: Shanghai, China
+        url: https://en.sjtu.edu.cn/
+        area: Automation
+        studyType: B.E.
+        start_date: 2002
+        end_date: 2006
+
+    Experience:
+      - company: Harvard Medical School
+        position: Assistant Professor, Department of Radiology
+        location: Boston, MA
+        start_date: 2023-06
+        end_date: present
+
+      - company: Harvard University — Kempner Institute for Natural and Artificial Intelligence
+        position: Affiliate Faculty Member
+        location: Cambridge, MA
+        start_date: 2023-09
+        end_date: present
+
+      - company: Massachusetts General Hospital
+        position: Research Staff, Department of Radiology
+        location: Boston, MA
+        start_date: 2019-08
+        end_date: present
+
+      - company: Harvard Medical School
+        position: Instructor, Department of Radiology
+        location: Boston, MA
+        start_date: 2019-08
+        end_date: 2023-05
+
+      - company: Harvard Medical School and Massachusetts General Hospital
+        position: Research Fellow, Radiology
+        location: Boston, MA
+        start_date: 2016-08
+        end_date: 2019-07
+        highlights:
+          - "Mentors: Associate Prof. Quanzheng Li and Distinguished Prof. James H. Thrall."
+
+      - company: Nankai University
+        position: Research Assistant, College of Environmental Science and Engineering
+        location: Tianjin, China
+        start_date: 2007-01
+        end_date: 2009-06
+
+    Current Research Funding:
+      - name: 360° Collaborative Hub for AI in TMD Research (360° Chat-TMD)
+        start_date: 2026
+        end_date: 2030
+        summary: "NIH U54, 1U54DE035412-01 — Co-Investigator. Direct cost: $5,584,812 over 5 years."
+        highlights:
+          - Establish a Center of Excellence in TMD research, training and outreach.
+
+      - name: "UniBrain: An End-to-End Unified Toolkit for Comprehensive Neuroimaging Analysis"
+        start_date: 2026
+        end_date: 2029
+        summary: "NIH R01, 1R01EB038264-01A1 — Multiple PI. Direct cost: $2,525,515 over 4 years."
+        highlights:
+          - Develop AI-empowered technologies and solutions for neuroimaging analysis.
+
+      - name: Automated PET Report Generation with Visual Grounding
+        start_date: 2026
+        end_date: 2029
+        summary: "NIH R01, 1R01EB038426-01 — Subcontract PI (MGH). Direct cost: $2,304,244 over 4 years."
+        highlights:
+          - Visually grounded PET report generation using federated learning.
+
+    Honors and Awards:
+      - title: Editor's Choice Article
+        awarder: Medical Physics
+        date: 2025
+        summary: Fine-tuning open-source large language models to improve their performance on radiation oncology tasks.
+
+      - title: Featured Article
+        awarder: IEEE Reviews in Biomedical Engineering
+        date: 2025
+        summary: Artificial General Intelligence for Medical Imaging Analysis.
+
+      - title: Distinguished Paper Award
+        awarder: American Medical Informatics Association (AMIA)
+        date: 2024
+        summary: "MKRAG: Medical Knowledge Retrieval Augmented Generation for Medical Question Answering."
+
+      - title: Research Scholar Program Award
+        awarder: Google Inc.
+        date: 2024
+        summary: Tailoring Large Language Models for the Diagnosis and Management of Late-life Depression Patients.
+
+      - title: Best Paper Award
+        awarder: IEEE Transactions on Radiation and Plasma Medical Sciences
+        date: 2022
+        summary: Deep Learning-Based Image Segmentation on Multimodal Medical Imaging.
+
+      - title: MGH Thrall Innovation Grants Award
+        awarder: Massachusetts General Hospital
+        date: 2021
+        summary: Chest Radiographs-based Lung Cancer Screening by the DeepProjection Technique.
+
+      - title: Best Paper Award
+        awarder: IEEE International Symposium on Biomedical Imaging (ISBI)
+        date: 2020
+        summary: "ASCNet: Adaptive-Scale Convolutional Neural Networks for Multi-Scale Feature Learning."
+
+      - title: Most Cited Article
+        awarder: Journal of the American College of Radiology
+        date: 2018
+        summary: "Artificial Intelligence and Machine Learning in Radiology: Opportunities, Challenges, Pitfalls."
+
+      - title: Outstanding Graduate Dissertation/Thesis
+        awarder: University of Georgia
+        date: 2016
+
+      - title: Cover and Feature Paper
+        awarder: IEEE Transactions on Biomedical Engineering
+        date: 2015
+        summary: Holistic atlases of functional networks and interactions.
+
+      - title: Best Student Paper Award
+        awarder: IEEE International Symposium on Biomedical Imaging (ISBI)
+        date: 2013
+        summary: Discovering Common Functional Connectomics Signatures.
+
+      - title: Best Student Paper Award
+        awarder: IEEE International Symposium on Biomedical Imaging (ISBI)
+        date: 2011
+        summary: Brain State Change Detection via Fiber-centered Functional Connectivity Analysis.
+
+    Editorial Activities:
+      - name: IEEE Transactions on Medical Imaging — Guest Associate Editor
+        date: 2025-
+        issuer: IEEE
+      - name: Proceedings of the National Academy of Sciences (PNAS) — Ad-hoc Editor
+        date: 2025
+        issuer: National Academy of Sciences
+      - name: Data Intelligence — Associate Editor
+        date: 2024-
+        issuer: MIT Press
+      - name: IEEE Transactions on Artificial Intelligence — Associate Editor
+        date: 2023-
+        issuer: IEEE
+      - name: Meta-Radiology — Associate Editor
+        date: 2023-
+        issuer: Elsevier
+      - name: BMC Biomedical Engineering — Associate Editor
+        date: 2023-
+        issuer: BMC
+      - name: BMC Artificial Intelligence — Associate Editor
+        date: 2024-
+        issuer: BMC
+      - name: Connected Health and Telemedicine — Associate Editor
+        date: 2024-
+        issuer: OAE Publishing
+      - name: Frontiers in Oncology / Radiology / Neuroscience / Cardiovascular Medicine — Associate Editor
+        date: 2021-
+        issuer: Frontiers
+      - name: "Neurocomputing — Guest Editor, Special Issue on Foundation Models"
+        date: 2026
+        issuer: Elsevier
+      - name: "IEEE TNNLS — Guest Editor, Special Issue on Advancements in Foundation Models"
+        date: 2024
+        issuer: IEEE
+
+    Workshop and Program Leadership:
+      - name: "SIGGRAPH Frontiers: Quantum Machine Learning — Organizer and Program Chair"
+        start_date: 2026
+        summary: Association for Computing Machinery (ACM)
+      - name: "AAAI Workshop — AI for Health — Organizer and Program Chair"
+        start_date: 2025
+        summary: Association for the Advancement of Artificial Intelligence (AAAI)
+      - name: "ISBI Special Session — Organizer and Program Chair"
+        start_date: 2025
+        summary: IEEE Engineering in Medicine and Biology Society (EMBS)
+      - name: "NeurIPS Workshop on Advancements in Medical Foundation Models — Organizer and Program Chair"
+        start_date: 2024
+        summary: NeurIPS Foundation
+      - name: "MICCAI Workshop on Multiscale Multimodal Medical Imaging (MMMI) — Founding Program Chair"
+        start_date: 2019
+        end_date: 2024
+        summary: MICCAI Society
+      - name: "MICCAI Workshop on Embodied AI / SAGES Critical View of Safety Challenge — Organizer and Program Chair"
+        start_date: 2024
+        summary: MICCAI Society
+
+    Grant Review Service:
+      - name: "NWO Open Technology Programme — Ad hoc Reviewer"
+        date: 2026
+        issuer: Dutch Research Council (NWO)
+      - name: Bradley-Alavi Student Fellowship — Study Section Member
+        date: 2026
+        issuer: Society of Nuclear Medicine and Molecular Imaging
+      - name: "ZMH1 ERB-E (03) S — BRAIN Initiative Ethics Panel — Ad hoc Reviewer"
+        date: 2025
+        issuer: National Institutes of Health
+      - name: "ZRG1 CTH-E (57) — Academic-Industrial Partnerships PAR Panel — Ad hoc Reviewer"
+        date: 2024
+        issuer: National Institutes of Health
+
+    Professional Societies:
+      - name: Society of Nuclear Medicine and Molecular Imaging (SNMMI)
+        date: 2023-
+        issuer: Member
+      - name: American Medical Informatics Association (AMIA)
+        date: 2023-
+        issuer: Member
+      - name: MICCAI Society
+        date: 2011-
+        issuer: Member
+      - name: IEEE Engineering in Medicine and Biology Society (EMBS)
+        date: 2011-
+        issuer: Member
+      - name: Institute of Electrical and Electronics Engineers (IEEE)
+        date: 2011-
+        issuer: Member
+
+    Patents and Innovations:
+      - name: System and Method for Tokenization of Anatomical Structures for Medical Imaging
+        summary: Anatomy-aware tokenization of 2D/3D medical images as semantic disentangled token groups.
+      - name: System and Method for Synthesizing 3D Volumetric Medical Images
+        summary: Pose-conditioned diffusion models synthesizing high-resolution 3D CT-like volumes from 2D radiographs.
+      - name: Automated Detection and Management of Valvular Heart Disease Using Machine Learning
+        start_date: 2024
+        summary: Aortic Stenosis Ensemble Risk Prediction (AS-ERP) model for length-of-stay and readmission prediction from EMR.
+      - name: Machine Learning Model for Prediction of Early Discharge after TAVR
+        start_date: 2023
+        summary: Predicts early discharge (<36h) after transcatheter aortic valve replacement from in-house EMR data.
+      - name: "PETNet: Predicting Alzheimer's Disease by Hierarchical Graph Convolution from PET Imaging"
+        start_date: 2021
+        summary: Graph convolutional network for automatic AD and MCI diagnosis from PET imaging.
+      - name: Brain Image Analysis by Graph-based Matched Signal Detection
+        start_date: 2021
+        summary: MSD algorithm identifying graph-signal subspaces via Laplacian eigenvectors.
+      - name: Inference of 3D Chest CT Images from 2D Chest Radiographs
+        start_date: 2019
+        summary: Trans-dimensional 2D-3D mapping learned from paired radiograph/CT data. Filed as Invention Disclosure.
+      - name: Automatic Pre-screening Method for Pneumothorax Detection
+        start_date: 2017
+        summary: Software system detecting pneumothorax from CT, validated by multiple radiologists. Filed as Invention Disclosure to Partners HealthCare.
