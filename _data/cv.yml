@@ -4,8 +4,7 @@ cv:
   email: xiangli.shaun@gmail.com
   location: Boston, MA
   image: ''
-  summary: Assistant Professor in the Department of Radiology at Massachusetts General Hospital and Harvard Medical School, and Affiliate Faculty at the Harvard Kempner Institute. Research spans medical
-    foundation models, generative AI, expert-machine alignment, medical informatics, and counterfactual causal inference.
+  summary: Assistant Professor in the Department of Radiology at Massachusetts General Hospital and Harvard Medical School, and Affiliate Faculty at the Harvard Kempner Institute. Research spans medical foundation models, generative AI, expert-machine alignment, medical informatics, and counterfactual causal inference.
   social_networks:
   - network: GitHub
     username: XiangLi-Shaun
@@ -67,27 +66,9 @@ cv:
       highlights:
       - 'Mentors: Associate Prof. Quanzheng Li and Distinguished Prof. James H. Thrall.'
     Current Research Funding:
-    - company: NIH U54 · 1U54DE035412-01 · Co-Investigator
-      position: 360° Collaborative Hub for AI in TMD Research (360° Chat-TMD)
-      location: Direct cost $5,584,812 / 5 yr
-      start_date: 2026
-      end_date: 2030
-      highlights:
-      - Establish a Center of Excellence in TMD research, training and outreach.
-    - company: NIH R01 · 1R01EB038264-01A1 · Multiple PI
-      position: 'UniBrain: An End-to-End Unified Toolkit for Comprehensive Neuroimaging Analysis'
-      location: Direct cost $2,525,515 / 4 yr
-      start_date: 2026
-      end_date: 2029
-      highlights:
-      - Develop AI-empowered technologies and solutions for neuroimaging analysis.
-    - company: NIH R01 · 1R01EB038426-01 · Subcontract PI (MGH)
-      position: Automated PET Report Generation with Visual Grounding
-      location: Direct cost $2,304,244 / 4 yr
-      start_date: 2026
-      end_date: 2029
-      highlights:
-      - Visually grounded PET report generation using federated learning.
+    - bullet: '**2026–2030** · *360° Collaborative Hub for AI in TMD Research (360° Chat-TMD)* — NIH U54, 1U54DE035412-01. **Co-Investigator**; direct cost $5,584,812 over 5 years. Establishing a Center of Excellence in TMD research, training and outreach.'
+    - bullet: '**2026–2029** · *UniBrain: An End-to-End Unified Toolkit for Comprehensive Neuroimaging Analysis* — NIH R01, 1R01EB038264-01A1. **Multiple PI**; direct cost $2,525,515 over 4 years. Developing AI-empowered technologies for neuroimaging analysis.'
+    - bullet: '**2026–2029** · *Automated PET Report Generation with Visual Grounding* — NIH R01, 1R01EB038426-01. **Subcontract PI (MGH)**; direct cost $2,304,244 over 4 years. Visually grounded PET report generation using federated learning.'
     Honors and Awards:
     - title: Editor's Choice Article
       awarder: Medical Physics
@@ -137,57 +118,23 @@ cv:
       date: 2011
       summary: Brain State Change Detection via Fiber-centered Functional Connectivity Analysis.
     Editorial Service:
-    - date: 2025-
-      title: Guest Associate Editor
-      awarder: IEEE Transactions on Medical Imaging
-    - date: '2025'
-      title: Ad-hoc Editor
-      awarder: Proceedings of the National Academy of Sciences (PNAS)
-    - date: 2024-
-      title: Associate Editor
-      awarder: Data Intelligence
-    - date: 2023-
-      title: Associate Editor
-      awarder: IEEE Transactions on Artificial Intelligence
-    - date: 2023-
-      title: Associate Editor
-      awarder: Meta-Radiology
-    - date: 2023-
-      title: Associate Editor
-      awarder: BMC Biomedical Engineering
-    - date: 2024-
-      title: Associate Editor
-      awarder: BMC Artificial Intelligence
-    - date: 2024-
-      title: Associate Editor
-      awarder: Connected Health and Telemedicine
-    - date: 2021-
-      title: Associate Editor
-      awarder: Frontiers in Oncology, Radiology, Neuroscience, and Cardiovascular Medicine
-    - date: '2026'
-      title: Guest Editor
-      awarder: Neurocomputing — Special Issue on Foundation Models
-    - date: '2024'
-      title: Guest Editor
-      awarder: IEEE TNNLS — Special Issue on Advancements in Foundation Models
+    - bullet: '**IEEE Transactions on Medical Imaging** — Guest Associate Editor, 2025–'
+    - bullet: '**Proceedings of the National Academy of Sciences (PNAS)** — Ad-hoc Editor, 2025'
+    - bullet: '**Data Intelligence** — Associate Editor, 2024–'
+    - bullet: '**IEEE Transactions on Artificial Intelligence** — Associate Editor, 2023–'
+    - bullet: '**Meta-Radiology** — Associate Editor, 2023–'
+    - bullet: '**BMC Biomedical Engineering** — Associate Editor, 2023–'
+    - bullet: '**BMC Artificial Intelligence** — Associate Editor, 2024–'
+    - bullet: '**Connected Health and Telemedicine** — Associate Editor, 2024–'
+    - bullet: '**Frontiers** in Oncology, Radiology, Neuroscience, and Cardiovascular Medicine — Associate Editor, 2021–'
+    - bullet: '**Neurocomputing** — Guest Editor, Special Issue on Recent Advancements in Foundation Models, 2026'
+    - bullet: '**IEEE Transactions on Neural Networks and Learning Systems** — Guest Editor, Special Issue on Advancements in Foundation Models, 2024'
     Grant Review Service:
-    - date: '2026'
-      title: Ad hoc Reviewer
-      awarder: Dutch Research Council (NWO), Open Technology Programme
-    - date: '2026'
-      title: Study Section Member
-      awarder: Society of Nuclear Medicine and Molecular Imaging — Bradley-Alavi Student Fellowship
-    - date: '2025'
-      title: Ad hoc Reviewer
-      awarder: NIH — BRAIN Initiative, ZMH1 ERB-E (03) S
-    - date: '2024'
-      title: Ad hoc Reviewer
-      awarder: NIH — Academic-Industrial Partnerships PAR Panel, ZRG1 CTH-E (57)
+    - bullet: '**2026** · Dutch Research Council (NWO), Open Technology Programme — Ad hoc Reviewer'
+    - bullet: '**2026** · Society of Nuclear Medicine and Molecular Imaging, Bradley-Alavi Student Fellowship — Study Section Member'
+    - bullet: '**2025** · NIH BRAIN Initiative, ZMH1 ERB-E (03) S — Ad hoc Reviewer'
+    - bullet: '**2024** · NIH, Academic-Industrial Partnerships PAR Panel, ZRG1 CTH-E (57) — Ad hoc Reviewer'
     Patents:
-    - title: System and Method for Tokenization of Anatomical Structures for Medical Imaging
-      summary: Anatomy-aware tokenization of 2D and 3D medical images as semantic disentangled token groups.
-    - title: System and Method for Synthesizing 3D Volumetric Medical Images Using a Probabilistic-Based Machine Learning Model
-      summary: Pose-conditioned diffusion models synthesising high-resolution 3D CT-like volumes from standard 2D radiographs.
-    - title: Automated Detection and Management of Valvular Heart Disease Using Machine Learning
-      date: '2024'
-      summary: Aortic Stenosis Ensemble Risk Prediction (AS-ERP) model predicting length of stay and readmission from EMR data.
+    - bullet: '**System and Method for Tokenization of Anatomical Structures for Medical Imaging** — anatomy-aware tokenization of 2D and 3D medical images as semantic disentangled token groups.'
+    - bullet: '**System and Method for Synthesizing 3D Volumetric Medical Images Using a Probabilistic-Based Machine Learning Model** — pose-conditioned diffusion models synthesizing high-resolution 3D CT-like volumes from standard 2D radiographs.'
+    - bullet: '**Automated Detection and Management of Valvular Heart Disease Using Machine Learning** (2024) — Aortic Stenosis Ensemble Risk Prediction (AS-ERP) model predicting length of stay and readmission from EMR data.'
