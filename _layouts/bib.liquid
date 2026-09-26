@@ -69,69 +69,39 @@
     <div class="author">
       {%- comment -%}
         LOCAL OVERRIDE of al_folio_core's author rendering.
-        Rule: 5 authors or fewer -> show everyone. Otherwise show the first author,
-        Xiang Li with one neighbour either side, and the last author; an ellipsis
-        marks each gap. Replaces the theme's "N more authors" truncation.
+        Shows every author — no truncation, no "N more authors" toggle.
+        Xiang Li is wrapped in <em>, which _includes/custom_styles.liquid
+        renders bold in the theme colour with no underline.
       {%- endcomment -%}
       {%- assign n = entry.author_array | size -%}
-      {%- assign last_idx = n | minus: 1 -%}
-
-      {%- assign self_idx = -1 -%}
-      {%- for a in entry.author_array -%}
-        {%- assign a_last = a.last | regex_replace: '[*∗†‡§¶‖&^]', '' -%}
-        {%- if site.scholar.last_name contains a_last and site.scholar.first_name contains a.first -%}
-          {%- assign self_idx = forloop.index0 -%}
-          {%- break -%}
-        {%- endif -%}
-      {%- endfor -%}
-      {%- assign win_lo = self_idx | minus: 1 -%}
-      {%- assign win_hi = self_idx | plus: 1 -%}
-      {%- assign prev = -1 -%}
-
       {%- for author in entry.author_array -%}
-        {%- assign i = forloop.index0 -%}
-        {%- assign show = false -%}
-        {%- if n <= 5 -%}
-          {%- assign show = true -%}
-        {%- elsif i == 0 -%}
-          {%- assign show = true -%}
-        {%- elsif i == last_idx -%}
-          {%- assign show = true -%}
-        {%- elsif self_idx >= 0 and i >= win_lo and i <= win_hi -%}
-          {%- assign show = true -%}
-        {%- elsif self_idx < 0 and i == 1 -%}
-          {%- assign show = true -%}
+        {%- unless forloop.first -%}
+          {%- if forloop.last and n > 1 %}, and {% else %}, {% endif -%}
+        {%- endunless -%}
+
+        {%- assign a_last = author.last | regex_replace: '[*∗†‡§¶‖&^]', '' -%}
+        {%- assign a_last_html = author.last | regex_replace: '([*∗†‡§¶‖&^]+)', '<sup>\1</sup>' -%}
+        {%- assign is_self = false -%}
+        {%- if site.scholar.last_name contains a_last and site.scholar.first_name contains author.first -%}
+          {%- assign is_self = true -%}
+        {%- endif -%}
+        {%- assign coauthor_url = null -%}
+        {%- assign clean_last = a_last | downcase | remove_accents -%}
+        {%- if site.data.coauthors[clean_last] -%}
+          {%- for coauthor in site.data.coauthors[clean_last] -%}
+            {%- if coauthor.firstname contains author.first -%}
+              {%- assign coauthor_url = coauthor.url -%}
+              {%- break -%}
+            {%- endif -%}
+          {%- endfor -%}
         {%- endif -%}
 
-        {%- if show -%}
-          {%- if prev >= 0 -%}
-            {%- assign gap = i | minus: prev -%}
-            {%- if gap == 1 %}, {% else %} &hellip; {% endif -%}
-          {%- endif -%}
-          {%- assign a_last = author.last | regex_replace: '[*∗†‡§¶‖&^]', '' -%}
-          {%- assign a_last_html = author.last | regex_replace: '([*∗†‡§¶‖&^]+)', '<sup>\1</sup>' -%}
-          {%- assign is_self = false -%}
-          {%- if site.scholar.last_name contains a_last and site.scholar.first_name contains author.first -%}
-            {%- assign is_self = true -%}
-          {%- endif -%}
-          {%- assign coauthor_url = null -%}
-          {%- assign clean_last = a_last | downcase | remove_accents -%}
-          {%- if site.data.coauthors[clean_last] -%}
-            {%- for coauthor in site.data.coauthors[clean_last] -%}
-              {%- if coauthor.firstname contains author.first -%}
-                {%- assign coauthor_url = coauthor.url -%}
-                {%- break -%}
-              {%- endif -%}
-            {%- endfor -%}
-          {%- endif -%}
-          {%- if is_self -%}
-            <em>{{ author.first }} {{ a_last_html }}</em>
-          {%- elsif coauthor_url -%}
-            <a href="{{ coauthor_url }}">{{ author.first }} {{ a_last_html }}</a>
-          {%- else -%}
-            {{ author.first }} {{ a_last_html }}
-          {%- endif -%}
-          {%- assign prev = i -%}
+        {%- if is_self -%}
+          <em>{{ author.first }} {{ a_last_html }}</em>
+        {%- elsif coauthor_url -%}
+          <a href="{{ coauthor_url }}">{{ author.first }} {{ a_last_html }}</a>
+        {%- else -%}
+          {{ author.first }} {{ a_last_html }}
         {%- endif -%}
       {%- endfor -%}
       {% if entry.annotation %}
