@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Congratulations to our high-school intern **Emmett Chen**, a junior at Noble and Greenough School, who took **second place at the 2026 Massachusetts Science and Engineering Fair** for his work at CAMCA on 3D hand pose estimation from a limited number of 2D views.
+Our high-school intern **Emmett Chen**, a junior at Noble and Greenough School, won second place at the 2026 Massachusetts Science and Engineering Fair for his work at CAMCA on 3D hand pose estimation from limited 2D views. Congratulations, Emmett!

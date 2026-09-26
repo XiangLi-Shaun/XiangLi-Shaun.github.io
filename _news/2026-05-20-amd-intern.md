@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our intern **Sophia Liu** won first place at an event organised by AMD and 36Kr, for a public-interest project building educational AI agents for teachers in rural mountain schools — managing teaching-resource libraries and generating personalised materials, assignments, and reading lists for individual students.
+Our intern **Sophia Liu** won first place at an event organised by AMD and 36Kr, for a public-interest project building educational AI agents for teachers in rural mountain schools. Congratulations, Sophia!

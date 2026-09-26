@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our fMRI foundation model **NeuroSTORM** is published in *Nature Biomedical Engineering*. NeuroSTORM is pre-trained on **28.65 million fMRI frames** — over 9,000 hours from more than 50,000 subjects, spanning all major public fMRI datasets — and validated across five downstream tasks and two clinical datasets, outperforming existing methods on every benchmark. [Source code and model weights](https://github.com/CUHK-AIM-Group/NeuroSTORM) are released.
+Our fMRI foundation model **NeuroSTORM** is now online at *Nature Biomedical Engineering*. NeuroSTORM is pre-trained on 28.65 million fMRI frames — over 9,000 hours from more than 50,000 subjects, covering all major public fMRI datasets. We validated it across five downstream tasks and two clinical datasets, where it consistently outperformed existing methods. Source code and model weights are released.
