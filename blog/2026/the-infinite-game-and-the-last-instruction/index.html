@@ -1,0 +1,194 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> The Infinite Game and The Last Instruction | Xiang Li </title> <meta name="author" content="Xiang Li"> <meta name="description" content="Learning of the machine moves in three recurring motions — raising problems, solving them, and judging whether the objective is worth pursuing. We have built the first two into an engine that does not stop. The third we have barely begun."> <meta name="keywords" content="medical AI, foundation models, generative AI, medical imaging, radiology, Harvard, MGH"> <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; media-src 'self' https:; frame-src 'self' https:; connect-src 'self' https:;"> <style>
+  :root {
+    --max-content-width: 930px;
+  }
+</style> <link rel="stylesheet" href="/assets/css/tailwind.css?v=50c64c15cbb9fd1ce6056fdb8bcb4b62"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" integrity="sha256-MVopmdyC2tYTiJ8wlktf0uh0v4NgT+vNdyVFepi7Q0c=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.5/css/academicons.min.css" integrity="sha256-SzrCOBJbGVFMahewkgjwnApaV2+av1DwMAA+/QGLyZw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/scholar-icons@1.0.3/css/scholar-icons.css" integrity="sha256-VY3hHVj/hNX3fYG6wtbA6TcKJQl7+FthzGSyIB64klY=" crossorigin="anonymous"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%F0%9F%A7%A0&lt;/text&gt;&lt;/svg&gt;"> <link rel="stylesheet" href="/assets/css/main.css?v=3116ba77db9ee1581d05bb3e86fbf7f1"> <link rel="canonical" href="https://xiangli-shaun.github.io/blog/2026/the-infinite-game-and-the-last-instruction/"> <script src="/assets/js/theme.js?v=5286c3e4c334d0ecb8fc0c40ff4fa7ec"></script> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?v=5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
+    initTheme();
+  </script> </head> <body class="fixed-top-nav sticky-bottom-footer"> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> <span class="font-weight-bold">Xiang</span> Li </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">about </a> </li> <li class="nav-item "> <a class="nav-link" href="/news/">news </a> </li> <li class="nav-item "> <a class="nav-link" href="/publications/">publications </a> </li> <li class="nav-item active"> <a class="nav-link" href="/blog/">My Blogs </a> </li> <li class="nav-item "> <a class="nav-link" href="/cv/">cv </a> </li> <li class="nav-item "> <a class="nav-link" href="/repositories/">repositories </a> </li> <li class="nav-item"> <button id="search-toggle" type="button" title="Search" aria-label="Open search"> <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">The Infinite Game and The Last Instruction</h1> <p class="post-meta"> Created on May 19, 2026 </p> <p class="post-tags"> <a href="/blog/2026"> <i class="fa-solid fa-calendar fa-sm"></i> 2026 </a>   ·   <a href="/blog/tag/ai-alignment"> <i class="fa-solid fa-hashtag fa-sm"></i> ai-alignment</a>   <a href="/blog/tag/ai-safety"> <i class="fa-solid fa-hashtag fa-sm"></i> ai-safety</a>   <a href="/blog/tag/machine-learning"> <i class="fa-solid fa-hashtag fa-sm"></i> machine-learning</a>   <a href="/blog/tag/essay"> <i class="fa-solid fa-hashtag fa-sm"></i> essay</a>   ·   <a href="/blog/category/essays"> <i class="fa-solid fa-tag fa-sm"></i> essays</a> </p> </header> <article class="post-content"> <div id="markdown-content"> <p><em>A note on learning of the machine</em></p> <p>Learning of the machine can be seen as three recurring motions: First, a <em>problem raiser</em> selects what to learn from: it encounters the environment and samples material from it. Second, a <em>problem solver</em> transforms that material toward some objective optimally: it extracts regularity, forms a model, or to <em>compress</em> them, as Chaitin noted in his book <em>Meta Math!</em> Third, a <em>problem judger</em> evaluates the objective itself: it asks whether such transformation has value, either for the internal economy of the system or for some external agent, organism, or institution. Decades of work across sub-disciplines that approximate learning: actor-environment in reinforcement learning, generator-discriminator in adversarial training, hypothesize-and-test in scientific methods, genotype-phenotype-fitness in evolution, all of these keep recovering these three motions in different vocabularies. Two observations about them drive the argument that follows.</p> <p>First observation: if the first two motions (problem raiser-solver) are smartly connected, they will form a self-feeding loop with no natural termination. An evolving mechanism that picks what to consider, coupled with an evolving mechanism that transforms what is picked, with each of them continually sharpening the other, enters an infinite game. The raiser-solver enact, in classical terms, the exploration–exploitation dynamic at the heart of learning: the first explores, searching for material the system has not yet mastered; the second exploits, consolidating what is found into the system’s capabilities. The infinite game emerges when neither side is allowed to dominate, when exploration is never fully resolved into exploitation, and exploitation continually surfaces new directions for exploration. Such equilibrium can take various forms. Yet given the optimal conditions: unlimited computing, sufficient data, a stable and computable environment, such a system can asymptotically discover all compressible regularities. This is, in spirit, the promise that <em>Solomonoff’s theory of universal induction</em> makes precise: that an idealized learner, given enough resources, converges on the shortest programs explaining its observations. The interesting recent exploration in AI is to ground the problem raiser in <em>computational substrates</em>: Python interpreters, theorem provers, chess engines, SAT solvers, rather than in static information (e.g., text). Text substrates produce retrieval-shaped tasks because text is information; computational substrates produce reasoning-shaped tasks because the answer is the result of work the raiser performs and the solver must simulate. Our vision is that an iterated raiser–solver loop could break through ceilings that pretraining over the whole of human text (and non-text) appears to have reached, because pretraining compresses what humans wrote about the world, yet the infinite game compresses the world. <strong>Note how this loop can proceed without an explicit problem judger:</strong> the substrates themselves appear to judge, because whatever resists compression, prediction, or control becomes the next problem to be raised. Such is almost the condition of modern AI/ML research: the judge is not absent because valuation has vanished, but because it has been buried inside data, loss, benchmark, reward, and scale.</p> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/blog/infinite-game-480.webp 480w,/assets/img/blog/infinite-game-800.webp 800w,/assets/img/blog/infinite-game-1400.webp 1400w," type="image/webp" sizes="95vw"></source> <img src="/assets/img/blog/infinite-game.png" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="eager" onerror="this.onerror=null; document.querySelectorAll('.responsive-img-srcset').forEach(function (n) { n.remove(); });"> </picture> <figcaption class="caption">Abstract illustration of how the problem raiser-solver game iterates</figcaption> </figure> <p>Second observation: following the note above, the three motions are not equally investigated by AI community, and they fall in an order. The problem solver is the strongest and most developed. Gradient descent, backprop, transformers, and modern optimizers have made the transformation engine so reliable that human contribution become more architectural and engineering. Even those are increasingly automated. The problem raiser is traditionally weaker but has got a lot of advancement in the recent decade. Self-supervised learning has been a major force here, letting systems manufacture their own training signal from raw data rather than depending on hand-labeled examples. But what most systems still learn from are human-curated artifacts: the pre-training corpus, the fine-tuning set, the RLHF preference data, and the annotations woven through them all. The problem judger is the weakest, and weakest in a different sense from the others, <em>constitutive</em> rather than technical. <strong>The machine does not originate value, and humans rarely even articulate the value they intend to instill.</strong> Most of the time the “problem judging” is implied, smuggled in through data choices, loss functions, and reward shaping, rather than stated. Evaluation criteria can be formalized, but value itself cannot be reduced to a loss without remainder. While every modern AI system has something playing the role of the judge: a reward model, a verifier, a parsimony term, a frontier band. What none of these implementations do is judging, let alone originating value. Each is a proxy for a preference supplied from outside, almost always by a human. The machine can often answer: “Did I improve according to this objective?” But it usually cannot independently answer: “Is this objective worth pursuing?” That distinction matters. A chess engine can generate brilliant moves, but “winning at chess” is given to it. A recommender system can maximize engagement, but “engagement is valuable” is an imposed assumption. Even when a model appears to “self-evaluate,” it is usually evaluating against internalized human-labeled preferences or externally designed heuristics (e.g., regularizations), thus what they really generated are instrumental, internal sub-values.</p> <p>What makes the gap in the second observation urgent, rather than merely structural, is the pace at which the problem raiser-solver are developing, the infinite game becoming real. The trend will be toward more general, more domain-spanning instances of the same architecture. Yet the problem judger is not arriving at the same rate to close the gap. The result is a near future in which the infinite game produces increasingly powerful artifacts whose directions remain implied, inheriting the definition of “value” through <em>lossy proxies</em>: datasets, reward models, constitutions, preference labels, benchmarks, deployment incentives, product metrics, etc. As the problem raiser-solver becomes more autonomous and the infinite game becomes more powerful, those inherited proxies are forced to bear more normative weight than they were ever designed to carry. <strong>Capability without justified direction is what <em>dangerous</em> names.</strong> The danger does not abate as the system gets better at the first two motions; it compounds with them. The artifacts built by the infinite game-powered engine will be governed not by values they originated, nor by values we fully chose (and hope), but by the residue of objectives we failed to understand before amplifying.</p> <p>We do not yet know, largely, how to close the gap. The deeper question is whether a learning system can in principle generate the standard against which it evaluates, or whether value must always be imported from external. For humanity, the desired system shall integrate all the three motions, thus a powerful predictor of the world weighted by what good is, which is something the system comes to hold rather than something it expects to be handed. Such system contains three layers of instruction. The first instruction is operation: “do this task”. The second instruction is optimization: “do this task the best towards this goal”. The third, and <em>last instruction</em> is direction: “decide what the goal should be, and why it is worth pursuing at all.” AI has become extremely good at everything below <em>the last instruction</em>. It can search, compress, imitate, generalize, optimize, self-correct, generate curricula, and use tools. What it cannot yet do is originate the authority of the standard by which those activities are judged. It can ask whether an answer satisfies a rule, but not whether the rule deserves to govern. The <em>last instruction</em> is also the one we have least understood, because it is the one we have seldom asked, or been able to ask, the machine to write for itself. The next decade of work, equal parts technical and philosophical, will be done there.</p> <hr> <p><em>Originally published on <a href="https://medium.com/@xiangli.shaun/the-infinite-game-and-the-last-instruction-5c25bb1197e3" rel="external nofollow noopener" target="_blank">Medium</a>, 19 May 2026.</em></p> </div> </article> </div> </div> <script>
+  window.alFolio = {
+    compatBootstrap: false
+  };
+</script> <script src="/assets/js/nav-toggle.js?v=141bd79a73ebc0f0b6ea58e440ae79fc"></script> <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script> <script defer src="/assets/js/masonry.js?v=e49affc7bd2646f6acdad1dbe02c2359" type="text/javascript"></script> <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI=" crossorigin="anonymous"></script> <script src="/assets/al_math/js/mathjax-setup.js"></script> <script src="/assets/js/tooltips-setup.js?v=fe487e99db6c43751e6e7bdb2d6a0611"></script> <script src="/assets/js/no_defer.js?v=53b1b1a645525975c963ce8bf8bfefcf"></script> <script defer src="/assets/js/common.js?v=87baac90f765f2f3362dcf6aaf312a8a"></script> <script defer src="/assets/js/copy_code.js?v=c8a01c11a92744d44b093fc3bda915df" type="text/javascript"></script> <script defer src="/assets/js/jupyter_new_tab.js?v=896d254890d9b47f0281f63bfccf0dee"></script> <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script> <script async src="https://badge.dimensions.ai/badge.js"></script> <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script> <script defer src="/assets/al_img_tools/js/zoom.js"></script> <script defer src="/assets/js/progress-bar.js?v=499464c5c63ced6cf7ad62509f1e2610" type="text/javascript"></script> <script src="https://cdn.jsdelivr.net/npm/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js" integrity="sha256-uMJJ3EoTyfRBoTbR+lrfu1uRQ87RZG8AR3cVNuQVeFg=" crossorigin="anonymous"></script> <script>
+    addBackToTop();
+  </script> <script type="module" src="/assets/al_search/js/search/ninja-keys.min.js"></script> <ninja-keys hidebreadcrumbs noautoloadmdicons placeholder="Type to start searching"></ninja-keys> <script src="/assets/al_search/js/search-setup.js"></script> <script>
+// get the ninja-keys element
+const ninja = document.querySelector('ninja-keys');
+
+// add the home and posts menu items
+ninja.data = [{
+    id: "nav-about",
+    title: "about",
+    section: "Navigation",
+    handler: () => {
+      window.location.href = "/";
+    },
+  },{id: "nav-news",
+          title: "news",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/news/";
+          },
+        },{id: "nav-publications",
+          title: "publications",
+          description: "publications by categories in reversed chronological order. generated by jekyll-scholar.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/publications/";
+          },
+        },{id: "nav-my-blogs",
+          title: "My Blogs",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/blog/";
+          },
+        },{id: "nav-cv",
+          title: "cv",
+          description: "Education, appointments, funding, honors, editorial service, and patents. The full Harvard-format CV is available as a PDF above.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/cv/";
+          },
+        },{id: "nav-repositories",
+          title: "repositories",
+          description: "Open-source code and benchmarks from my group and collaborators.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/repositories/";
+          },
+        },{id: "post-the-infinite-game-and-the-last-instruction",
+        
+          title: "The Infinite Game and The Last Instruction",
+        
+        description: "Learning of the machine moves in three recurring motions — raising problems, solving them, and judging whether the objective is worth pursuing. We have built the first two into an engine that does not stop. The third we have barely begun.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/the-infinite-game-and-the-last-instruction/";
+          
+        },
+      },{id: "news-two-papers-accepted-at-iclr-2025",
+          title: 'Two papers accepted at **ICLR 2025**.',
+          description: "",
+          section: "News",},{id: "news-released-medreason-a-medical-reasoning-dataset-with-33k-examples",
+          title: 'Released **MedReason**, a medical reasoning dataset with 33K examples.',
+          description: "",
+          section: "News",},{id: "news-our-fairness-in-segmentation-paper-was-accepted-as-a-spotlight-poster-at-icml-2025",
+          title: 'Our fairness-in-segmentation paper was accepted as a **Spotlight Poster at ICML 2025**.',
+          description: "",
+          section: "News",},{id: "news-three-papers-accepted-at-miccai-2025",
+          title: 'Three papers accepted at **MICCAI 2025**.',
+          description: "",
+          section: "News",},{id: "news-our-paper-was-selected-as-an-editor-39-s-choice-in-medical-physics",
+          title: 'Our paper was selected as an **Editor&amp;#39;s Choice** in *Medical Physics*.',
+          description: "",
+          section: "News",},{id: "news-our-student-received-a-mentorship-award-for-work-on-agentic-ai-for-clinical-workflows",
+          title: 'Our student received a mentorship award for work on **agentic AI** for clinical...',
+          description: "",
+          section: "News",},{
+        id: 'social-email',
+        title: 'email',
+        section: 'Socials',
+        handler: () => {
+          window.open("mailto:%78%69%61%6E%67%6C%69.%73%68%61%75%6E@%67%6D%61%69%6C.%63%6F%6D", "_blank");
+        },
+      },{
+        id: 'social-cv',
+        title: 'CV',
+        section: 'Socials',
+        handler: () => {
+          window.open("/CV_xiang.pdf", "_blank");
+        },
+      },{
+        id: 'social-rss',
+        title: 'RSS Feed',
+        section: 'Socials',
+        handler: () => {
+          window.open("/feed.xml", "_blank");
+        },
+      },{
+        id: 'social-github',
+        title: 'GitHub',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://github.com/XiangLi-Shaun", "_blank");
+        },
+      },{
+        id: 'social-linkedin',
+        title: 'LinkedIn',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://www.linkedin.com/in/xiang-li-11b2b99", "_blank");
+        },
+      },{
+        id: 'social-scholar',
+        title: 'Google Scholar',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://scholar.google.com/citations?user=MjkwwiQAAAAJ", "_blank");
+        },
+      },{
+        id: 'social-orcid',
+        title: 'ORCID',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://orcid.org/0000-0002-9851-6376", "_blank");
+        },
+      },{
+        id: 'social-semanticscholar',
+        title: 'Semantic Scholar',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://www.semanticscholar.org/author/2324811229", "_blank");
+        },
+      },{
+        id: 'social-dblp',
+        title: 'DBLP',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://dblp.org/pid/40/1491-1.html", "_blank");
+        },
+      },{
+        id: 'social-mastodon',
+        title: 'Mastodon',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://xiangli_shaun@mastodon.social", "_blank");
+        },
+      },{
+        id: 'social-mgh_profile',
+        title: 'Mgh_profile',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://researchers.mgh.harvard.edu/profile?profile_id=15451263", "_blank");
+        },
+      },{
+      id: 'light-theme',
+      title: 'Change theme to light',
+      description: 'Change the theme of the site to Light',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("light");
+      },
+    },
+    {
+      id: 'dark-theme',
+      title: 'Change theme to dark',
+      description: 'Change the theme of the site to Dark',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("dark");
+      },
+    },
+    {
+      id: 'system-theme',
+      title: 'Use system default theme',
+      description: 'Change the theme of the site to System Default',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("system");
+      },
+    },];
+
+</script> <script src="/assets/al_search/js/shortcut-key.js"></script> </body> </html>
