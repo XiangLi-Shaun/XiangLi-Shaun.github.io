@@ -1,9 +1,27 @@
-"AJP":
-  url: https://aapt.scitation.org/journal/ajp
-  color: "#00369f"
+# Venue tags shown beside each publication. Keys must match `abbr` in papers.bib.
+# Replaces al-folio's demo list (AJP, PhysRev — Einstein's physics journals).
 
-"PhysRev":
-  url: https://journals.aps.org/
-
-"Vision":
-  color: "#009f36"
+"Nat. Med.":   { url: "https://www.nature.com/nm/",            color: "#0b6e4f" }
+"Nat. BME":    { url: "https://www.nature.com/natbiomedeng/",  color: "#0b6e4f" }
+"NeurIPS":     { url: "https://neurips.cc/",                   color: "#8b2f7a" }
+"ICLR":        { url: "https://iclr.cc/",                      color: "#8b2f7a" }
+"ICML":        { url: "https://icml.cc/",                      color: "#8b2f7a" }
+"AAAI":        { url: "https://aaai.org/",                     color: "#8b2f7a" }
+"KDD":         { url: "https://www.kdd.org/",                  color: "#8b2f7a" }
+"ACL":         { url: "https://www.aclweb.org/portal/",        color: "#8b2f7a" }
+"MICCAI":      { url: "https://www.miccai.org/",               color: "#1f5fa9" }
+"ISBI":        { url: "https://biomedicalimaging.org/",        color: "#1f5fa9" }
+"MedIA":       { url: "https://www.sciencedirect.com/journal/medical-image-analysis", color: "#1f5fa9" }
+"IEEE TMI":    { url: "https://www.embs.org/tmi/",             color: "#00629b" }
+"IEEE TPAMI":  { url: "https://www.computer.org/csdl/journal/tp", color: "#00629b" }
+"IEEE TBME":   { url: "https://www.embs.org/tbme/",            color: "#00629b" }
+"IEEE JBHI":   { url: "https://www.embs.org/jbhi/",            color: "#00629b" }
+"Radiology":   { url: "https://pubs.rsna.org/journal/radiology", color: "#b5651d" }
+"JNM":         { url: "https://jnm.snmjournals.org/",          color: "#b5651d" }
+"Med. Phys.":  { url: "https://aapm.onlinelibrary.wiley.com/journal/24734209", color: "#b5651d" }
+"AMIA":        { url: "https://amia.org/",                     color: "#b5651d" }
+"NeuroImage":  { url: "https://www.sciencedirect.com/journal/neuroimage", color: "#5a6b7d" }
+"HBM":         { url: "https://onlinelibrary.wiley.com/journal/10970193", color: "#5a6b7d" }
+"Cereb. Cortex": { url: "https://academic.oup.com/cercor",     color: "#5a6b7d" }
+"BIB":         { url: "https://link.springer.com/journal/11682", color: "#5a6b7d" }
+"arXiv":       { url: "https://arxiv.org/",                    color: "#7a7a7a" }

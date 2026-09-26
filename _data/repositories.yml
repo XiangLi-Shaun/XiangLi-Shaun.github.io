@@ -1,14 +1,9 @@
+# GitHub profiles/repos shown on the (currently hidden) /repositories/ page.
+# Was seeded with al-folio's demo list: torvalds, alshedivat, jekyll, bootstrap...
 github_users:
-  - torvalds
-  - alshedivat
+  - XiangLi-Shaun
 
 repo_description_lines_max: 2
 
-github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+# Add your own repos here, e.g. - XiangLi-Shaun/some-project
+github_repos: []
