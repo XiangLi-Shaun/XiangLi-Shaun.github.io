@@ -1,34 +1,35 @@
 ---
 layout: post
 title: The Infinite Game and The Last Instruction
+subtitle: A note on learning of the machine
 date: 2026-05-19
-description: Machine learning moves in three motions — identifying problems, solving them, and judging what is worth doing. Today's systems master the first two. The third is the last instruction.
-tags: ai-alignment ai-safety essay
+description: Learning of the machine moves in three recurring motions — raising problems, solving them, and judging whether the objective is worth pursuing. We have built the first two into an engine that does not stop. The third we have barely begun.
+tags: ai-alignment ai-safety machine-learning essay
 categories: essays
 giscus_comments: false
 related_posts: false
-published: false # flip to true once the body is in
 ---
 
-<!--
-  PLACEHOLDER — body not yet added.
-  `published: false` keeps this out of the build, so nothing incomplete reaches the live site.
+*A note on learning of the machine*
 
-  To finish:
-    1. Paste the full text of the Medium post below this comment block.
-    2. Save the diagram to assets/img/blog/infinite-game.png and reference it (see snippet below).
-    3. Set `published: true` above.
--->
+Learning of the machine can be seen as three recurring motions: First, a *problem raiser* it selects what to learn from, it encounters the environment and samples material from it. Second, a *problem solver* transforms that material toward some objective optimally: it extracts regularity, forms a model, or to *compress* them, as Chaitin noted in his book *Meta Math!* Third, a *problem judger* evaluates the objective itself: it asks whether such transformation has value, either for the internal economy of the system or for some external agent, organism, or institution. Decades of work across sub-disciplines that approximate learning: actor-environment in reinforcement learning, generator-discriminator in adversarial training, hypothesize-and-test in scientific methods, genotype-phenotype-fitness in evolution, all of these keep recovering these three motions in different vocabularies. Two observations about them drive the argument that follows.
 
-{% raw %}
-<!-- image snippet, once you have the file:
-{% include figure.liquid
+First observation: if the first two motions (problem raiser-solver) are smartly connected, they will form a self-feeding loop with no natural termination. An evolving mechanism that picks what to consider, coupled with an evolving mechanism that transforms what is picked, with each of them continually sharpening the other, enters an infinite game. The raiser-solver enact, in classical terms, the exploration–exploitation dynamic at the heart of learning: the first explores, searching for material the system has not yet mastered; the second exploits, consolidating what is found into the system's capabilities. The infinite game emerges when neither side is allowed to dominate, when exploration is never fully resolved into exploitation, and exploitation continually surfaces new directions for exploration. Such equilibrium can take various forms. Yet given the optimal conditions: unlimited computing, sufficient data, a stable and computable environment, such a system can asymptotically discover all compressible regularities. This is, in spirit, the promise that *Solomonoff's theory of universal induction* makes precise: that an idealized learner, given enough resources, converges on the shortest programs explaining its observations. The interesting recent exploration in AI is to ground the problem raiser in *computational substrates*: Python interpreters, theorem provers, chess engines, SAT solvers, rather than in static information (e.g., text). Text substrates produce retrieval-shaped tasks because text is information; computational substrates produce reasoning-shaped tasks because the answer is the result of work the raiser performs and the solver must simulate. Our vision is that an iterated raiser–solver loop could break through ceilings that pretraining over the whole of human text (and non-text) appears to have reached, because pretraining compresses what humans wrote about the world, yet the infinite game compresses the world. **Note how this loop can proceed without an explicit problem judger:** the substrates themselves appear to judge, because whatever resists compression, prediction, or control becomes the next problem to be raised. Such is almost the condition of modern AI/ML research: the judge is not absent because valuation has vanished, but because it has been buried inside data, loss, benchmark, reward, and scale.
+
+<!-- Save the diagram from the Medium post to assets/img/blog/infinite-game.png, then delete these
+     comment markers to show it. (Medium's CDN is not reachable from the build sandbox.)
+{% include figure.liquid loading="eager"
    path="assets/img/blog/infinite-game.png"
    class="img-fluid rounded z-depth-1"
-   caption="The problem raiser–solver loop." %}
+   caption="Abstract illustration of how the problem raiser-solver game iterates" %}
 -->
-{% endraw %}
+
+Second observation: following the note above, the three motions are not equally investigated by AI community, and they fall in an order. The problem solver is the strongest and most developed. Gradient descent, backprop, transformers, and modern optimizers have made the transformation engine so reliable that human contribution become more architectural and engineering. Even those are increasingly automated. The problem raiser is traditionally weaker but has got a lot of advancement in the recent decade. Self-supervised learning has been a major force here, letting systems manufacture their own training signal from raw data rather than depending on hand-labeled examples. But what most systems still learn from are human-curated artifacts: the pre-training corpus, the fine-tuning set, the RLHF preference data, and the annotations woven through them all. The problem judger is the weakest, and weakest in a different sense from the others, *constitutive* rather than technical. **The machine does not originate value, and humans rarely even articulate the value they intend to instill.** Most of the time the "problem judging" is implied, smuggled in through data choices, loss functions, and reward shaping, rather than stated. Evaluation criteria can be formalized, but value itself cannot be reduced to a loss without remainder. While every modern AI system has something playing the role of the judge: a reward model, a verifier, a parsimony term, a frontier band. What none of these implementations do is judging, let alone originating value. Each is a proxy for a preference supplied from outside, almost always by a human. The machine can often answer: "Did I improve according to this objective?" But it usually cannot independently answer: "Is this objective worth pursuing?" That distinction matters. A chess engine can generate brilliant moves, but "winning at chess" is given to it. A recommender system can maximize engagement, but "engagement is valuable" is an imposed assumption. Even when a model appears to "self-evaluate," it is usually evaluating against internalized human-labeled preferences or externally designed heuristics (e.g., regularizations), thus what they really generated are instrumental, internal sub-values.
+
+What makes the gap in the second observation urgent, rather than merely structural, is the pace at which the problem raiser-solver are developing, the infinite game becoming real. Then trend will be more general, more domain-spanning instances of the same architecture. Yet the problem judger is not arriving at the same rate to close the gap. The result is a near future in which the infinite game produces increasingly powerful artifacts whose directions remain implied, inheriting the definition of "value" through *lossy proxies*: datasets, reward models, constitutions, preference labels, benchmarks, deployment incentives, product metrics, etc. As the problem raiser-solver becomes more autonomous and the infinite game becomes more powerful, those inherited proxies are forced to bear more normative weight than they were ever designed to carry. **Capability without justified direction is what dangerous names.** The danger does not abate as the system gets better at the first two motions; it compounds with them. The artifacts built by the infinite game-powered engine will be governed not by values they originated, nor by values we fully chose (and hope), but by the residue of objectives we failed to understand before amplifying.
+
+We do not yet know, largely, how to close the gap. The deeper question is whether a learning system can in principle generate the standard against which it evaluates, or whether value must always be imported from external. For humanity, the desired system shall integrate all the three motions, thus a powerful predictor of the world weighted by what good is, which is something the system comes to hold rather than something it expects to be handed. Such system contains three layers of instruction. The first instruction is operation: "do this task". The second instruction is optimization: "do this task the best towards this goal". The third, and *last instruction* is direction: "decide what the goal should be, and why it is worth pursuing at all." AI has become extremely good at everything below *the last instruction*. It can search, compress, imitate, generalize, optimize, self-correct, generate curricula, and use tools. What it cannot yet do is originate the authority of the standard by which those activities are judged. It can ask whether an answer satisfies a rule, but not whether the rule deserves to govern. The *last instruction* is also the one we have least understood, because it is the one we have seldom asked, or be able to ask, the machine to write for itself. The next decade of work, equal parts technical and philosophical, will be done there.
 
 ---
 
-*Originally published on [Medium](https://medium.com/@xiangli.shaun/the-infinite-game-and-the-last-instruction-5c25bb1197e3).*
+*Originally published on [Medium](https://medium.com/@xiangli.shaun/the-infinite-game-and-the-last-instruction-5c25bb1197e3), 19 May 2026.*
