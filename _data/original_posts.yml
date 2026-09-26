@@ -17,9 +17,9 @@
 - date: 2026-07-02
   title_zh: 当代码开始自己写自己
   title_en: When Code Begins to Write Itself
-  confirmed: false
-  post:
-  url:
+  confirmed: true
+  post: 2026-07-02-when-code-begins-to-write-itself
+  url: https://mp.weixin.qq.com/s/BBg8rxH9EwfmFkKkZYJVhA
 
 - date: 2026-05-23
   title_zh: 从《青春无悔》到《想把我唱给你听》
