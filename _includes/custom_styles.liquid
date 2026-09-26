@@ -1,0 +1,25 @@
+{% comment %}
+Local style overrides for the publication lists (homepage + /publications/).
+The theme ships these in al_folio_core; overriding here keeps the gem untouched.
+Included from _pages/about.md and _pages/publications.md.
+{% endcomment %}
+<style>
+  /* My name in an author list: bold + theme colour, no underline.
+     Theme default is `.author > em { border-bottom: 1px solid; font-style: normal }` */
+  .author > em {
+    border-bottom: none;
+    font-style: normal;
+    font-weight: 700;
+    color: var(--global-theme-color);
+  }
+
+  /* Co-author links and the "N more authors" toggle: drop the dashed underlines,
+     including the ones revealed after expanding. */
+  .author a,
+  .author a:hover,
+  .author > span.more-authors,
+  .author > span.more-authors:hover {
+    border-bottom: none;
+    text-decoration: none;
+  }
+</style>

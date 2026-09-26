@@ -118,22 +118,22 @@ cv:
       date: 2011
       summary: Brain State Change Detection via Fiber-centered Functional Connectivity Analysis.
     Editorial Service:
-    - bullet: '**IEEE Transactions on Medical Imaging** — Guest Associate Editor, 2025–'
-    - bullet: '**Proceedings of the National Academy of Sciences (PNAS)** — Ad-hoc Editor, 2025'
-    - bullet: '**Data Intelligence** — Associate Editor, 2024–'
-    - bullet: '**IEEE Transactions on Artificial Intelligence** — Associate Editor, 2023–'
-    - bullet: '**Meta-Radiology** — Associate Editor, 2023–'
-    - bullet: '**BMC Biomedical Engineering** — Associate Editor, 2023–'
-    - bullet: '**BMC Artificial Intelligence** — Associate Editor, 2024–'
-    - bullet: '**Connected Health and Telemedicine** — Associate Editor, 2024–'
-    - bullet: '**Frontiers** in Oncology, Radiology, Neuroscience, and Cardiovascular Medicine — Associate Editor, 2021–'
-    - bullet: '**Neurocomputing** — Guest Editor, Special Issue on Recent Advancements in Foundation Models, 2026'
-    - bullet: '**IEEE Transactions on Neural Networks and Learning Systems** — Guest Editor, Special Issue on Advancements in Foundation Models, 2024'
+    - bullet: '**IEEE Transactions on Medical Imaging** — Guest Associate Editor'
+    - bullet: '**Proceedings of the National Academy of Sciences (PNAS)** — Ad-hoc Editor'
+    - bullet: '**Data Intelligence** — Associate Editor'
+    - bullet: '**IEEE Transactions on Artificial Intelligence** — Associate Editor'
+    - bullet: '**Meta-Radiology** — Associate Editor'
+    - bullet: '**BMC Biomedical Engineering** — Associate Editor'
+    - bullet: '**BMC Artificial Intelligence** — Associate Editor'
+    - bullet: '**Connected Health and Telemedicine** — Associate Editor'
+    - bullet: '**Frontiers** in Oncology, Radiology, Neuroscience, and Cardiovascular Medicine — Associate Editor'
+    - bullet: '**Neurocomputing** — Guest Editor, Special Issue on Recent Advancements in Foundation Models'
+    - bullet: '**IEEE Transactions on Neural Networks and Learning Systems** — Guest Editor, Special Issue on Advancements in Foundation Models'
     Grant Review Service:
-    - bullet: '**2026** · Dutch Research Council (NWO), Open Technology Programme — Ad hoc Reviewer'
-    - bullet: '**2026** · Society of Nuclear Medicine and Molecular Imaging, Bradley-Alavi Student Fellowship — Study Section Member'
-    - bullet: '**2025** · NIH BRAIN Initiative, ZMH1 ERB-E (03) S — Ad hoc Reviewer'
-    - bullet: '**2024** · NIH, Academic-Industrial Partnerships PAR Panel, ZRG1 CTH-E (57) — Ad hoc Reviewer'
+    - bullet: Dutch Research Council (NWO), Open Technology Programme — Ad hoc Reviewer
+    - bullet: Society of Nuclear Medicine and Molecular Imaging, Bradley-Alavi Student Fellowship — Study Section Member
+    - bullet: NIH BRAIN Initiative, ZMH1 ERB-E (03) S — Ad hoc Reviewer
+    - bullet: NIH, Academic-Industrial Partnerships PAR Panel, ZRG1 CTH-E (57) — Ad hoc Reviewer
     Patents:
     - bullet: '**System and Method for Tokenization of Anatomical Structures for Medical Imaging** — anatomy-aware tokenization of 2D and 3D medical images as semantic disentangled token groups.'
     - bullet: '**System and Method for Synthesizing 3D Volumetric Medical Images Using a Probabilistic-Based Machine Learning Model** — pose-conditioned diffusion models synthesizing high-resolution 3D CT-like volumes from standard 2D radiographs.'

@@ -44,3 +44,5 @@ James H. Thrall.
 I have published over 250 papers with more than 17,000 citations and an h-index of 60. I serve as Associate Editor for *IEEE Transactions on Medical Imaging*
 and *Data Intelligence*, as founding chair of MICCAI and NeurIPS workshops on medical
 foundation models, and as Area Chair for NeurIPS, KDD, AAAI, ACM MM, and MICCAI.
+
+{% include custom_styles.liquid %}

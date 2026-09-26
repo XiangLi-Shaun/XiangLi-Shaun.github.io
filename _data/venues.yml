@@ -1,3 +1,5 @@
+# NOTE: currently unused. Venue badges were removed by deleting every `abbr`
+# field from papers.bib. Re-add `abbr = {NeurIPS}` to an entry to bring them back.
 # Venue tags shown beside each publication. Keys must match `abbr` in papers.bib.
 # Replaces al-folio's demo list (AJP, PhysRev — Einstein's physics journals).
 
