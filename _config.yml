@@ -229,7 +229,7 @@ kramdown:
       start_line: 1
 
 # Includes & excludes
-include: ["_pages"]
+include: ["_pages", ".nojekyll"] # .nojekyll stops GitHub re-building the built site
 exclude:
   - AGENTS.md
   - al-folio-upgrade-report.md
