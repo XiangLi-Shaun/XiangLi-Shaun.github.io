@@ -64,7 +64,16 @@
   title_en: "AI at the Boundary: What AI Truly Cannot Do Is Precisely What Lives on the Computer"
   confirmed: false
   post:
-  url:
+  url: http://mp.weixin.qq.com/s/3DF586rfTjKHvFYgEaLTfQ
+  paper: https://arxiv.org/abs/2605.14407
+  bib_key: li2026metis
+  note: >-
+    The formal version is the sole-authored paper "Metis AI: The Overlooked Middle Zone
+    Between AI-Native and World-Movers" (arXiv:2605.14407, 14 May 2026). The posts that
+    invoke the techne/metis frame link to the paper, since the WeChat original is in
+    Chinese and gated. Canonical terms for the five structural characteristics:
+    consequential irreversibility, relational irreducibility, normative open texture,
+    adversarial co-evolution, accountability anchoring.
 
 - date: 2026-04-18
   title_zh: 两个人，用AI赚了120亿？
