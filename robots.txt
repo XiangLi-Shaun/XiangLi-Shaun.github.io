@@ -1,4 +1,4 @@
 User-agent: *
-Disallow:
+Disallow: /hidden/
 
 Sitemap: https://xiangli-shaun.github.io/sitemap.xml
